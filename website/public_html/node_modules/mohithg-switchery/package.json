@@ -1,0 +1,53 @@
+{
+  "_args": [
+    [
+      "mohithg-switchery@0.8.4",
+      "C:\\Users\\Ovi-PC\\Downloads\\themekit-master\\themekit"
+    ]
+  ],
+  "_from": "mohithg-switchery@0.8.4",
+  "_id": "mohithg-switchery@0.8.4",
+  "_inBundle": false,
+  "_integrity": "sha512-mHy1FbuB3WqVNHxqz/9u1RZyDiDH9pfR7BTorkina6PPIeITtEvW7ADTYD0wgVqnlkJXuiMPeR+YZm1lUrDfkg==",
+  "_location": "/mohithg-switchery",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "mohithg-switchery@0.8.4",
+    "name": "mohithg-switchery",
+    "escapedName": "mohithg-switchery",
+    "rawSpec": "0.8.4",
+    "saveSpec": null,
+    "fetchSpec": "0.8.4"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/mohithg-switchery/-/mohithg-switchery-0.8.4.tgz",
+  "_spec": "0.8.4",
+  "_where": "C:\\Users\\Ovi-PC\\Downloads\\themekit-master\\themekit",
+  "author": {
+    "name": "Mohith G"
+  },
+  "bugs": {
+    "url": "https://github.com/mohithg/switchery/issues"
+  },
+  "description": "Create iOS 7 styled switches from default input checkboxes",
+  "devDependencies": {
+    "component": "^1.0.0",
+    "grunt-exec": "latest",
+    "spacejam": "latest",
+    "uglify-js": "~2.4.8",
+    "uglifycss": "0.0.7"
+  },
+  "homepage": "https://github.com/mohithg/switchery#readme",
+  "license": "MIT",
+  "main": "dist/switchery.js",
+  "name": "mohithg-switchery",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mohithg/switchery.git"
+  },
+  "version": "0.8.4"
+}

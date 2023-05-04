@@ -1,0 +1,49 @@
+{
+  "_args": [
+    [
+      "weather-icons@1.3.2",
+      "C:\\Users\\Ovi-PC\\Downloads\\themekit-master\\themekit"
+    ]
+  ],
+  "_from": "weather-icons@1.3.2",
+  "_id": "weather-icons@1.3.2",
+  "_inBundle": false,
+  "_integrity": "sha1-isAA+ShYQnJSuAzFega/qCeQCsA=",
+  "_location": "/weather-icons",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "weather-icons@1.3.2",
+    "name": "weather-icons",
+    "escapedName": "weather-icons",
+    "rawSpec": "1.3.2",
+    "saveSpec": null,
+    "fetchSpec": "1.3.2"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/weather-icons/-/weather-icons-1.3.2.tgz",
+  "_spec": "1.3.2",
+  "_where": "C:\\Users\\Ovi-PC\\Downloads\\themekit-master\\themekit",
+  "authors": [
+    "Erik Flowers <erik@helloerik.com>"
+  ],
+  "description": "189 weather themed icons inspired by Font Awesome and ready for Bootstrap",
+  "homepage": "http://erikflowers.github.io/weather-icons/",
+  "ignore": [
+    "cheatsheet/",
+    "reference/"
+  ],
+  "keywords": [
+    "css",
+    "icon-font",
+    "weather",
+    "icon",
+    "icons"
+  ],
+  "license": "MIT",
+  "name": "weather-icons",
+  "version": "1.3.2"
+}

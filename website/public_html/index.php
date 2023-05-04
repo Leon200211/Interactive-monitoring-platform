@@ -1,17 +1,3 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <link rel="icon" href="assets/imgs/samolet_logo_sign_blue.png" type="image/x-icon" />-->
-<!--    <title>Самолёт. Покупка квартир</title>-->
-<!--</head>-->
-<!--<body>-->
-<!--<div class="header">-->
-<!--    <div class="container"></div>-->
-<!--</div>-->
-
-<!--</body>-->
-<!--</html>-->
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
@@ -26,21 +12,21 @@
 
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800" rel="stylesheet">
 
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="node_modules/icon-kit/dist/css/iconkit.min.css">
-    <link rel="stylesheet" href="node_modules/ionicons/dist/css/ionicons.min.css">
-    <link rel="stylesheet" href="node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
-    <link rel="stylesheet" href="node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="node_modules/jvectormap/jquery-jvectormap.css">
-    <link rel="stylesheet" href="node_modules/tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.min.css">
-    <link rel="stylesheet" href="node_modules/weather-icons/css/weather-icons.min.css">
-    <link rel="stylesheet" href="node_modules/c3/c3.min.css">
-    <link rel="stylesheet" href="node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
-    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.css">
-    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.css">
-    <link rel="stylesheet" href="dist/css/theme.min.css">
-    <script src="src/js/vendor/modernizr-2.8.3.min.js"></script>
+    <link rel="stylesheet" href="assets/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="assets/node_modules/icon-kit/dist/css/iconkit.min.css">
+    <link rel="stylesheet" href="assets/node_modules/ionicons/dist/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="assets/node_modules/jvectormap/jquery-jvectormap.css">
+    <link rel="stylesheet" href="assets/node_modules/tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.min.css">
+    <link rel="stylesheet" href="assets/node_modules/weather-icons/css/weather-icons.min.css">
+    <link rel="stylesheet" href="assets/node_modules/c3/c3.min.css">
+    <link rel="stylesheet" href="assets/node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/node_modules/owl.carousel/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="assets/node_modules/owl.carousel/dist/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="assets/dist/css/theme.min.css">
+    <script src="assets/src/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
@@ -982,22 +968,22 @@
                         </a>
                         <a href="javascript:void(0)" class="list-group-item" data-chat-user="Sylvia Harvey">
                             <figure class="user--busy">
-                                <img src="img/users/4.jpg" class="rounded-circle" alt="">
+                                <img src="assets/img/users/4.jpg" class="rounded-circle" alt="">
                             </figure><span><span class="name">Sylvia Harvey</span>  <span class="username">@sylvia</span> </span>
                         </a>
                         <a href="javascript:void(0)" class="list-group-item active" data-chat-user="Marsha Hoffman">
                             <figure class="user--busy">
-                                <img src="img/users/5.jpg" class="rounded-circle" alt="">
+                                <img src="assets/img/users/5.jpg" class="rounded-circle" alt="">
                             </figure><span><span class="name">Marsha Hoffman</span>  <span class="username">@m_hoffman</span> </span>
                         </a>
                         <a href="javascript:void(0)" class="list-group-item" data-chat-user="Mason Grant">
                             <figure class="user--offline">
-                                <img src="img/users/1.jpg" class="rounded-circle" alt="">
+                                <img src="assets/img/users/1.jpg" class="rounded-circle" alt="">
                             </figure><span><span class="name">Mason Grant</span>  <span class="username">@masongrant</span> </span>
                         </a>
                         <a href="javascript:void(0)" class="list-group-item" data-chat-user="Shelly Sullivan">
                             <figure class="user--offline">
-                                <img src="img/users/2.jpg" class="rounded-circle" alt="">
+                                <img src="assets/img/users/2.jpg" class="rounded-circle" alt="">
                             </figure><span><span class="name">Shelly Sullivan</span>  <span class="username">@shelly</span></span>
                         </a>
                     </div>
@@ -1018,7 +1004,7 @@
                             <div class="message media reply">
                                 <figure class="user--online">
                                     <a href="#">
-                                        <img src="img/users/3.jpg" class="rounded-circle" alt="">
+                                        <img src="assets/img/users/3.jpg" class="rounded-circle" alt="">
                                     </a>
                                 </figure>
                                 <div class="message-body media-body">
@@ -1028,7 +1014,7 @@
                             <div class="message media">
                                 <figure class="user--online">
                                     <a href="#">
-                                        <img src="img/users/1.jpg" class="rounded-circle" alt="">
+                                        <img src="assets/img/users/1.jpg" class="rounded-circle" alt="">
                                     </a>
                                 </figure>
                                 <div class="message-body media-body">
@@ -1038,7 +1024,7 @@
                             <div class="message media reply">
                                 <figure class="user--offline">
                                     <a href="#">
-                                        <img src="img/users/5.jpg" class="rounded-circle" alt="">
+                                        <img src="assets/img/users/5.jpg" class="rounded-circle" alt="">
                                     </a>
                                 </figure>
                                 <div class="message-body media-body">
@@ -1049,7 +1035,7 @@
                             <div class="message media">
                                 <figure class="user--online">
                                     <a href="#">
-                                        <img src="img/users/1.jpg" class="rounded-circle" alt="">
+                                        <img src="assets/img/users/1.jpg" class="rounded-circle" alt="">
                                     </a>
                                 </figure>
                                 <div class="message-body media-body">
@@ -1059,7 +1045,7 @@
                             <div class="message media reply">
                                 <figure class="user--busy">
                                     <a href="#">
-                                        <img src="img/users/5.jpg" class="rounded-circle" alt="">
+                                        <img src="assets/img/users/5.jpg" class="rounded-circle" alt="">
                                     </a>
                                 </figure>
                                 <div class="message-body media-body">
@@ -1069,7 +1055,7 @@
                             <div class="message media">
                                 <figure class="user--online">
                                     <a href="#">
-                                        <img src="img/users/1.jpg" class="rounded-circle" alt="">
+                                        <img src="assets/img/users/1.jpg" class="rounded-circle" alt="">
                                     </a>
                                 </figure>
                                 <div class="message-body media-body">
@@ -1196,24 +1182,24 @@
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script>window.jQuery || document.write('<script src="src/js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
-<script src="node_modules/screenfull/dist/screenfull.js"></script>
-<script src="node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
-<script src="node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
-<script src="node_modules/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-<script src="node_modules/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
-<script src="node_modules/jvectormap/jquery-jvectormap.min.js"></script>
-<script src="node_modules/jvectormap/tests/assets/jquery-jvectormap-world-mill-en.js"></script>
-<script src="node_modules/moment/moment.js"></script>
-<script src="node_modules/tempusdominus-bootstrap-4/build/js/tempusdominus-bootstrap-4.min.js"></script>
-<script src="node_modules/d3/dist/d3.min.js"></script>
-<script src="node_modules/c3/c3.min.js"></script>
-<script src="js/tables.js"></script>
-<script src="js/widgets.js"></script>
-<script src="js/charts.js"></script>
-<script src="dist/js/theme.min.js"></script>
+<script src="assets/node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+<script src="assets/node_modules/screenfull/dist/screenfull.js"></script>
+<script src="assets/node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="assets/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="assets/node_modules/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="assets/node_modules/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+<script src="assets/node_modules/jvectormap/jquery-jvectormap.min.js"></script>
+<script src="assets/node_modules/jvectormap/tests/assets/jquery-jvectormap-world-mill-en.js"></script>
+<script src="assets/node_modules/moment/moment.js"></script>
+<script src="assets/node_modules/tempusdominus-bootstrap-4/build/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="assets/node_modules/d3/dist/d3.min.js"></script>
+<script src="assets/node_modules/c3/c3.min.js"></script>
+<script src="assets/js/tables.js"></script>
+<script src="assets/js/widgets.js"></script>
+<script src="assets/js/charts.js"></script>
+<script src="assets/dist/js/theme.min.js"></script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

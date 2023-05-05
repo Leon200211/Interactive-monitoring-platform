@@ -25,7 +25,7 @@ class ProjectController extends BaseController
 
     public function outputData()
     {
-        return $this->render($_SERVER['DOCUMENT_ROOT'] . '/templates/default/zk-cards');
+        return $this->render($_SERVER['DOCUMENT_ROOT'] . '/templates/default/rublyovka');
     }
 
 }

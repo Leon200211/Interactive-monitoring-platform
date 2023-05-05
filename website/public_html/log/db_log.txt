@@ -10,3 +10,7 @@ Fault: 05-05-2023 8:55:52 - Ошибка в SQL запросе: UPDATE users SET
 fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
  In line 57
 
+Fault: 05-05-2023 14:27:01 - Ошибка подключение к БД: 1045 Access denied for user 'root'@'localhost' (using password: YES)
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
+ In line 29
+

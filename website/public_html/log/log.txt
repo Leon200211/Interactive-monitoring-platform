@@ -1,0 +1,20 @@
+Fault: 05-05-2023 8:41:39 - Не найден контроллер
+fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 05-05-2023 8:41:39 - Не найден контроллер
+fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 05-05-2023 8:41:39 - Не найден контроллер
+fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 05-05-2023 8:41:39 - Не найден контроллер
+fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 05-05-2023 8:41:39 - Не найден контроллер
+fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+

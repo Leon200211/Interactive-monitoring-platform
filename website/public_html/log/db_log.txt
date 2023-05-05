@@ -1,0 +1,4 @@
+Fault: 05-05-2023 8:41:41 - Ошибка подключение к БД: 1045 Access denied for user ''@'localhost' (using password: NO)
+fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
+ In line 29
+

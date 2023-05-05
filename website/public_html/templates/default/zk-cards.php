@@ -30,7 +30,7 @@ require_once "include/head.php";
                                 <h3 style="font-weight: 700">Квартал жулебино</h3>
                             </div>
                             <div class="card-body timeline">
-                                <div class="header bg-theme" style="background-image: url('assets/imgs/maincard.jpg'); object-position: 50% 50%; height: 300px; width: auto; background-size: cover">
+                                <div class="header bg-theme" style="background-image: url('../../assets/imgs/maincard.jpg'); object-position: 50% 50%; height: 300px; width: auto; background-size: cover">
                                 </div>
                                 <div class="card-text">станция Жулебино <i class="ik ik-user"></i>5 мин</div>
                             </div>
@@ -42,7 +42,7 @@ require_once "include/head.php";
                                 <h3 style="font-weight: 700">Квартал жулебино</h3>
                             </div>
                             <div class="card-body timeline">
-                                <div class="header bg-theme" style="background-image: url('assets/imgs/maincard.jpg'); object-position: 50% 50%; height: 300px; width: auto; background-size: cover">
+                                <div class="header bg-theme" style="background-image: url('../../assets/imgs/maincard.jpg'); object-position: 50% 50%; height: 300px; width: auto; background-size: cover">
                                 </div>
                                 <div class="card-text">станция Жулебино <i class="ik ik-user"></i>5 мин</div>
                             </div>
@@ -54,7 +54,7 @@ require_once "include/head.php";
                                 <h3 style="font-weight: 700">Квартал жулебино</h3>
                             </div>
                             <div class="card-body timeline">
-                                <div class="header bg-theme" style="background-image: url('assets/imgs/maincard.jpg'); object-position: 50% 50%; height: 300px; width: auto; background-size: cover">
+                                <div class="header bg-theme" style="background-image: url('../../assets/imgs/maincard.jpg'); object-position: 50% 50%; height: 300px; width: auto; background-size: cover">
                                 </div>
                                 <div class="card-text">станция Жулебино <i class="ik ik-user"></i>5 мин</div>
                             </div>
@@ -66,7 +66,7 @@ require_once "include/head.php";
                                 <h3 style="font-weight: 700">Квартал жулебино</h3>
                             </div>
                             <div class="card-body timeline">
-                                <div class="header bg-theme" style="background-image: url('assets/imgs/maincard.jpg'); object-position: 50% 50%; height: 300px; width: auto; background-size: cover">
+                                <div class="header bg-theme" style="background-image: url('../../assets/imgs/maincard.jpg'); object-position: 50% 50%; height: 300px; width: auto; background-size: cover">
                                 </div>
                                 <div class="card-text">станция Жулебино <i class="ik ik-user"></i>5 мин</div>
                             </div>
@@ -78,7 +78,7 @@ require_once "include/head.php";
                                 <h3 style="font-weight: 700">Квартал жулебино</h3>
                             </div>
                             <div class="card-body timeline">
-                                <div class="header bg-theme" style="background-image: url('assets/imgs/maincard.jpg'); object-position: 50% 50%; height: 300px; width: auto; background-size: cover">
+                                <div class="header bg-theme" style="background-image: url('../../assets/imgs/maincard.jpg'); object-position: 50% 50%; height: 300px; width: auto; background-size: cover">
                                 </div>
                                 <div class="card-text">станция Жулебино <i class="ik ik-user"></i>5 мин</div>
                             </div>
@@ -90,7 +90,7 @@ require_once "include/head.php";
                                 <h3 style="font-weight: 700">Квартал жулебино</h3>
                             </div>
                             <div class="card-body timeline">
-                                <div class="header bg-theme" style="background-image: url('assets/imgs/maincard.jpg'); object-position: 50% 50%; height: 300px; width: auto; background-size: cover">
+                                <div class="header bg-theme" style="background-image: url('../../assets/imgs/maincard.jpg'); object-position: 50% 50%; height: 300px; width: auto; background-size: cover">
                                 </div>
                                 <div class="card-text">станция Жулебино <i class="ik ik-user"></i>5 мин</div>
                             </div>
@@ -102,7 +102,7 @@ require_once "include/head.php";
                                 <h3 style="font-weight: 700">Квартал жулебино</h3>
                             </div>
                             <div class="card-body timeline">
-                                <div class="header bg-theme" style="background-image: url('assets/imgs/maincard.jpg'); object-position: 50% 50%; height: 300px; width: auto; background-size: cover">
+                                <div class="header bg-theme" style="background-image: url('../../assets/imgs/maincard.jpg'); object-position: 50% 50%; height: 300px; width: auto; background-size: cover">
                                 </div>
                                 <div class="card-text">станция Жулебино <i class="ik ik-user"></i>5 мин</div>
                             </div>
@@ -114,7 +114,7 @@ require_once "include/head.php";
                                 <h3 style="font-weight: 700">Квартал жулебино</h3>
                             </div>
                             <div class="card-body timeline">
-                                <div class="header bg-theme" style="background-image: url('assets/imgs/maincard.jpg'); object-position: 50% 50%; height: 300px; width: auto; background-size: cover">
+                                <div class="header bg-theme" style="background-image: url('../../assets/imgs/maincard.jpg'); object-position: 50% 50%; height: 300px; width: auto; background-size: cover">
                                 </div>
                                 <div class="card-text">станция Жулебино <i class="ik ik-user"></i>5 мин</div>
                             </div>

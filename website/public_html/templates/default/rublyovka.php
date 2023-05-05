@@ -21,15 +21,24 @@ require_once "include/head.php";
         ?>
 
 <!--        <a class="first-house a" href="#first-house"></a>-->
+
         <div class="main-content">
+            <div class="card-head">
+                <span class="title-head">Рублёвский проспект</span>
+                <span class="main-head">О проекте</span>
+                <span class="main-head">Генплан</span>
+                <span class="main-head">Ипотека</span>
+                <span class="main-head">Расположения</span>
+                <span class="main-head">Планировки</span>
+            </div>
             <div class="container-fluid">
                 <div class="img-rublyovka" style="min-height: 629.438px;">
                         <img src="<?=SITE_URL?>templates/default/assets/imgs/main-plan1.jpg" alt="" style="width: 100%; height: 800px; border-radius: 50px; border: solid 4px #404E67">
                     <div style="margin-top: -848px; ">
                     <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="2.0" x="0px" viewBox="0 0 1920 1080">
 
-                    <g class="visual_poly"><polygon points="647.1,821.9 655.9,805.2 662.7,806.1 668.6,794.3 668.6,779.4 676.2,763.1 761.3,765.7
-		761.3,790.6 761,809.8 697,809.1 690.5,820.4 731.4,837 732.5,864.5 722.1,880.3 647.1,849.5"></g>
+                    <g class="visual_poly"><polygon points="647.1,821.9 654.9,801.2 662.7,796.1 668.6,794.3 668.6,779.4 676.2,763.1 761.3,765.7
+		761.3,790.6 761,809.8 697,809.1 690.5,813.4 731.4,825 732.5,864.5 722.1,880.3 647.1,849.5"></g>
 
                     <g class="visual_poly"><polygon points="466.8,761.4 476.3,747.6 476.3,741 490.7,720.7 602.4,759.6 603.7,787.2 593.4,803.1
 		504.8,771.5 498.9,778.4 571.9,804 574.5,831.6 563.8,846 452.2,806.3 448.9,780.5 462.6,760.2"></g>
@@ -62,6 +71,22 @@ require_once "include/head.php";
                         return {x: x, y: y}
                 </script>
                 <style>
+                    .card-head{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-left: 80px;
+                        margin-right: 65px;
+                    }
+                    .title-head{
+                        font-size: 32px;
+                    }
+                    .main-head{
+                        margin-top: 15px;
+                        font-size: 15px;
+                        color: rgba(101, 101, 101, 0.4);
+                        cursor: pointer;
+                    }
+
                     .visual_poly {
                         fill: rgba(0, 123, 251, .40);
                         stroke: #007bfb;

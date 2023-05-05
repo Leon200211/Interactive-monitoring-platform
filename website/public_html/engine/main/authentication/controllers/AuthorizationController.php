@@ -38,6 +38,10 @@ class AuthorizationController extends AuthenticationController
 
     // создание сессии
     public function login(){
+        session_start();
+        $_SESSION['id_user'] = 1;
+        $this->redirect('/');
+
         if(!$this->model) $this->model = MainModel::getInstance();
 
         // ищем пользователя при  авторизации
@@ -122,22 +126,22 @@ class AuthorizationController extends AuthenticationController
 
         if(isset($_SESSION['id_user']) or isset($_COOKIE['id_user'])){
 
-            if(!$this->model) $this->model = MainModel::getInstance();
-
-            $id_user = isset($_SESSION['id_user']) ? $_SESSION['id_user'] : $_COOKIE['id_user'];
-
-            // удаляем куку
-            $this->model->update('users', [
-                'fields' => ['cookie' => ''],
-                'where' => [
-                    'id' => $id_user
-                ]
-            ]);
-
-            //Удаляем куки авторизации путем установления времени их жизни на текущий момент:
-            setcookie('id_user', '', time()); //удаляем логин
-            setcookie('login', '', time()); //удаляем логин
-            setcookie('key', '', time()); //удаляем ключ
+//            if(!$this->model) $this->model = MainModel::getInstance();
+//
+//            $id_user = isset($_SESSION['id_user']) ? $_SESSION['id_user'] : $_COOKIE['id_user'];
+//
+//            // удаляем куку
+//            $this->model->update('users', [
+//                'fields' => ['cookie' => ''],
+//                'where' => [
+//                    'id' => $id_user
+//                ]
+//            ]);
+//
+//            //Удаляем куки авторизации путем установления времени их жизни на текущий момент:
+//            setcookie('id_user', '', time()); //удаляем логин
+//            setcookie('login', '', time()); //удаляем логин
+//            setcookie('key', '', time()); //удаляем ключ
 
             session_destroy();
 

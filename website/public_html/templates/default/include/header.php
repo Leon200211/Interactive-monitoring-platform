@@ -29,7 +29,7 @@
                             </a>
                             <a href="#" class="media">
                                 <span class="d-flex">
-                                    <img src="assets/img/users/4.jpg" class="rounded-circle" alt="">
+                                    <img src="<?=SITE_URL?>templates/default/assets/img/users/4.jpg" class="rounded-circle" alt="">
                                 </span>
                                 <span class="media-body">
                                     <span class="heading-font-family media-heading">Steve Smith</span>
@@ -69,13 +69,13 @@
                 </div>
                 <button type="button" class="nav-link ml-10" id="apps_modal_btn" data-toggle="modal" data-target="#appsModal"><i class="ik ik-grid"></i></button>
                 <div class="dropdown">
-                    <a class="dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="avatar" src="assets/img/user.jpg" alt=""></a>
+                    <a class="dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="avatar" src="<?=SITE_URL?>templates/default/assets/img/user.jpg" alt=""></a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                         <a class="dropdown-item" href="pages/profile.html"><i class="ik ik-user dropdown-icon"></i> Profile</a>
                         <a class="dropdown-item" href="#"><i class="ik ik-settings dropdown-icon"></i> Settings</a>
                         <a class="dropdown-item" href="#"><span class="float-right"><span class="badge badge-primary">6</span></span><i class="ik ik-mail dropdown-icon"></i> Inbox</a>
                         <a class="dropdown-item" href="#"><i class="ik ik-navigation dropdown-icon"></i> Message</a>
-                        <a class="dropdown-item" href="pages/login.html"><i class="ik ik-power dropdown-icon"></i> Logout</a>
+                        <a class="dropdown-item" href="/login"><i class="ik ik-power dropdown-icon"></i> Logout</a>
                     </div>
                 </div>
 

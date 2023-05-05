@@ -9,16 +9,16 @@ require_once "include/head.php";
     <div class="container-fluid h-100">
         <div class="row flex-row h-100 bg-white">
             <div class="col-xl-8 col-lg-6 col-md-5 p-0 d-md-block d-lg-block d-sm-none d-none">
-                <div class="lavalite-bg" style="background-image: url('../../assets/img/auth/login-bg.jpeg')">
+                <div class="lavalite-bg" style="background-image: url('<?=SITE_URL?>templates/default/assets/img/auth/login-bg.jpeg')">
                     <div class="lavalite-overlay"></div>
                 </div>
             </div>
             <div class="col-xl-4 col-lg-6 col-md-7 my-auto p-0">
                 <div class="authentication-form mx-auto">
                     <div class="logo-centered">
-                        <a href="index.html"><img src="../../assets/imgs/smlt_logo_blue_ru.png" width="250px" style="margin-left: -75px"></a>
+                        <a href="index.html"><img src="<?=SITE_URL?>templates/default/assets/imgs/smlt_logo_blue_ru.png" width="250px" style="margin-left: -75px"></a>
                     </div>
-                    <form action="index.html">
+                    <form method="post" action="/login">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Почта" required="" value="johndoe@admin.com">
                             <i class="ik ik-user"></i>
@@ -39,7 +39,7 @@ require_once "include/head.php";
                             </div>
                         </div>
                         <div class="sign-btn text-center">
-                            <a class="btn btn-primary" style="width: 120px; height: 50px; font-size: 20px; padding-top: 10px" href="index.html">Войти</a>
+                            <button class="btn btn-primary" style="width: 120px; height: 50px; font-size: 20px; padding-top: 10px">Войти</button>
                         </div>
                     </form>
                 </div>

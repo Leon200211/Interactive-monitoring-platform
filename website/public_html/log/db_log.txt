@@ -2,3 +2,11 @@ Fault: 05-05-2023 8:41:41 - Ошибка подключение к БД: 1045 Ac
 fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
  In line 29
 
+Fault: 05-05-2023 8:52:42 - Ошибка в SQL запросе: SELECT users.* FROM users  WHERE users.login='' - 1146 Table 'interactive-monitoring-platform.users' doesn't exist
+fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 05-05-2023 8:55:52 - Ошибка в SQL запросе: UPDATE users SET cookie='' WHERE id='1'  - 1146 Table 'interactive-monitoring-platform.users' doesn't exist
+fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
+ In line 57
+

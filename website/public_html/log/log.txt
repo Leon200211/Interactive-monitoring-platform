@@ -6678,3 +6678,687 @@ Fault: 06-05-2023 15:52:14 - Не найден контроллер
 fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
  In line 62
 
+Fault: 06-05-2023 17:46:09 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 17:46:09 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 17:46:09 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 17:48:29 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 17:48:29 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 17:48:29 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 17:52:36 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 17:52:36 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 17:52:36 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 17:52:55 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 17:52:55 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 17:52:55 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 17:54:46 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 17:54:46 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 17:54:46 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 17:55:56 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 17:55:56 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 17:55:56 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 17:56:35 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 17:56:35 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 17:56:35 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 18:12:05 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 18:12:05 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 18:12:05 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 18:12:05 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 18:12:05 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 18:12:05 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 18:12:05 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 18:12:09 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 18:12:09 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 18:12:09 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:00:13 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:00:13 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:00:13 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:00:46 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:00:46 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:00:46 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:02:14 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:02:14 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:02:14 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:02:19 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:02:19 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:02:19 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:02:41 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:02:41 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:02:41 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:02:59 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:02:59 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:02:59 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:03:18 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:03:18 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:03:18 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:03:26 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:03:26 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:03:26 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:03:47 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:03:47 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:03:47 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:04:22 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:04:22 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:04:22 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:04:33 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:04:33 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:04:33 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:06:12 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:06:12 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:06:12 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:06:32 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:06:32 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:06:32 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:07:01 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:07:01 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:07:01 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:07:26 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:07:26 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:07:26 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:07:47 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:07:47 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:07:47 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:08:42 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:08:42 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:08:42 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:09:10 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:09:10 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:09:10 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:09:19 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:09:19 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:09:19 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:15:26 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:15:26 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:15:26 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:16:03 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:16:03 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:16:03 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:16:35 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:16:35 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:16:35 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:16:46 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:16:46 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:16:46 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:27:06 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:27:06 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:27:06 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:27:27 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:27:27 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:27:27 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:28:04 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:28:04 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:28:04 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:28:32 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:28:32 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:28:32 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:29:00 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:29:00 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:29:00 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:29:48 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:29:48 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:29:48 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:30:47 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:30:47 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:30:47 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:31:27 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:31:27 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:31:27 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:31:36 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:31:36 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:31:36 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:31:45 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:31:45 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:31:45 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:31:54 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:31:54 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:31:54 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:32:47 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:32:47 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:32:47 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:32:51 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:32:51 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:32:51 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:33:24 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:33:24 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:33:24 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:33:29 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:33:29 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:33:29 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:33:37 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:33:37 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:33:37 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:33:46 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:33:46 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:33:46 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:35:00 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:35:00 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:35:00 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:35:08 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:35:08 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:35:08 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:35:15 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:35:15 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 19:35:15 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 23:46:41 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 23:46:41 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 23:46:41 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 23:47:50 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 23:47:50 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 23:47:50 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 23:47:50 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 23:47:50 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 23:51:09 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 23:51:09 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 06-05-2023 23:51:09 - Не найден контроллер
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
+ In line 62
+

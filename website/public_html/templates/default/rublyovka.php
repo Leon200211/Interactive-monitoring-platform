@@ -31,46 +31,53 @@ require_once "include/head.php";
                 <span class="main-head">Расположения</span>
                 <span class="main-head">Планировки</span>
             </div>
-            <div class="container-fluid">
-                <div class="img-rublyovka" style="min-height: 629.438px;">
-                        <img src="<?=SITE_URL?>templates/default/assets/imgs/main-plan1.jpg" alt="" style="width: 100%; height: 800px; border-radius: 50px; border: solid 4px #404E67">
-                    <div style="margin-top: -848px; ">
-                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="2.0" x="0px" viewBox="0 0 1920 1080">
+            <div class="container-fluid" style="position: relative">
+                <div class="img-rublyovka" style="min-height: 629.438px; display: flex; flex-direction: column; position: relative">
+                    <div class="building-selection_wrap" style="position: absolute">
+                        <img src="<?=SITE_URL?>templates/default/assets/imgs/main-plan1.jpg" alt=""  class="rublyovka-img">
+<!--                    -848px-->
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="2.0" x="0px" viewBox="0 0 1920 1080" class="building-selection">
 
-                    <g class="visual_poly"><polygon points="647.1,821.9 654.9,801.2 662.7,796.1 668.6,794.3 668.6,779.4 676.2,763.1 761.3,765.7
-		761.3,790.6 761,809.8 697,809.1 690.5,813.4 731.4,825 732.5,864.5 722.1,880.3 647.1,849.5"></g>
+                    <g class="visual_poly" ><polygon id="first_house" points="647.1,827.9 655.9,811.2 662.7,813.1 668.6,801.3 668.6,786.4 676.2,770.1 761.3,772.7
+		761.3,797.6 761,816.8 697,816.1 690.5,827.4 731.4,844 732.5,871.5 722.1,887.3 647.1,855.5 	"></g>
 
-                    <g class="visual_poly"><polygon points="466.8,761.4 476.3,747.6 476.3,741 490.7,720.7 602.4,759.6 603.7,787.2 593.4,803.1
+                    <g class="visual_poly" ><polygon id="second_house" points="466.8,761.4 476.3,747.6 476.3,741 490.7,720.7 602.4,759.6 603.7,787.2 593.4,803.1
 		504.8,771.5 498.9,778.4 571.9,804 574.5,831.6 563.8,846 452.2,806.3 448.9,780.5 462.6,760.2"></g>
 
-                        <g class="visual_poly"><polygon points="420.1,766.8 408.9,787.9 320.8,765.7 315.9,737.6 329.6,714.1 331.3,714.8 343.4,694.3 343.1,690.3
+                        <g class="visual_poly" ><polygon id="third_house" points="420.1,766.8 408.9,787.9 320.8,765.7 315.9,737.6 329.6,714.1 331.3,714.8 343.4,694.3 343.1,690.3
 		356.6,667.3 443.9,688.2 447.5,717.6 436.6,736.5 416.1,731.4 415.8,726.1 372.5,716 363.8,731.1 392.1,738.1 395,733.8
 		415.4,738.6 	"></g>
 
-                        <g class="visual_poly"><polygon points="286.7,739.5 277.8,755.7 121.3,717.2 115.3,688.3 142.3,646.5 220.3,638 311.7,660
+                        <g class="visual_poly" ><polygon id="fourth_house" points="286.7,739.5 277.8,755.7 121.3,717.2 115.3,688.3 142.3,646.5 220.3,638 311.7,660
 		316.8,688.3 308,703.7 221.3,682.8 180.3,686.7 281.2,711.3">
                     </svg>
                     </div>
                 </div>
+            </div>
                 <script>
-                    function getPosition(e){
-                        var x = y = 0;
-
-                        if (!e) {
-                            var e = window.event;
-                        }
-
-                        if (e.pageX || e.pageY){
-                            x = e.pageX;
-                            y = e.pageY;
-                        } else if (e.clientX || e.clientY){
-                            x = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
-                            y = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
-                        }
-
-                        return {x: x, y: y}
+                        const first_house = document.getElementById("first_house")
+                        const second_house = document.getElementById("second_house")
+                        const third_house = document.getElementById("third_house")
+                        const fourth_house = document.getElementById("fourth_house")
                 </script>
                 <style>
+
+                    .rublyovka-img{
+                        position: relative;
+                        width: 100%; border-radius: 50px; border: solid 4px #404E67; z-index: 1;
+                    }
+                    .building-selection{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 2;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    polygon{
+                        position: static;
+                    }
                     .card-head{
                         display: flex;
                         justify-content: space-between;
@@ -82,8 +89,8 @@ require_once "include/head.php";
                     }
                     .main-head{
                         margin-top: 15px;
-                        font-size: 15px;
-                        color: rgba(101, 101, 101, 0.4);
+                        font-size: 20px;
+                        color: rgba(101, 101, 101, 0.85);
                         cursor: pointer;
                     }
 
@@ -97,30 +104,8 @@ require_once "include/head.php";
                         fill: rgba(0, 123, 251, .10);
                         transition: .3s;
                     }
-                    polygon{
-                        position: absolute;
-                        top: 0;
-                    }
-                    /*svg{*/
-                    /*    position: absolute;*/
-                    /*    z-index: 1000;*/
-                    /*}*/
-                    /*.visual_poly{*/
-                    /*    fill: rgba(0,123,251, .24);*/
-                    /*    stroke: #007bfb;*/
-                    /*}*/
-                    /*polygon{*/
-                    /*    position: absolute;*/
-                    /*    left: 295px;*/
-                    /*    top: 492px;*/
-                    /*    width: 107px;*/
-                    /*    height: 105px;*/
-                    /*    background: rgba(0, 0, 0, 0.53);*/
-                    /*    z-index: 1000;*/
-                    /*    cursor: pointer;*/
-                    /*}*/
                 </style>
-            </div>
+
         </div>
 
         <aside class="right-sidebar">
@@ -316,6 +301,9 @@ require_once "include/head.php";
     </div>
 </div>
 <style>
+    .footer{
+        margin-top: 200px;
+    }
     .card{
         cursor: pointer;
         border: 2px solid rgba(16, 15, 15, 0.15);
@@ -335,9 +323,7 @@ require_once "include/head.php";
         color: grey;
     }
 </style>
-<script>
-
-</script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"> </script>
 <?php
 require_once "include/footer.php";
 ?>

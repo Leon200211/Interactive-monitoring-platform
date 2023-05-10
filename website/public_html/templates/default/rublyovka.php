@@ -50,18 +50,27 @@ require_once "include/head.php";
 
                         <g class="visual_poly" ><polygon id="fourth_house" points="286.7,739.5 277.8,755.7 121.3,717.2 115.3,688.3 142.3,646.5 220.3,638 311.7,660
 		316.8,688.3 308,703.7 221.3,682.8 180.3,686.7 281.2,711.3"></polygon></g>
-                        <g class="floor" hidden="true" ><polygon points="198.7,794 198.7,732.7 461.8,735.3 499.3,732.7 499.3,722 522,721.3 537.3,721.3
+                        <g class="floor_1house" hidden="true" ><polygon points="198.7,794 198.7,732.7 461.8,735.3 499.3,732.7 499.3,722 522,721.3 537.3,721.3
 		537.3,728.7 648,716 648,708.9 665.1,707.8 675,707.8 675,712.7 708.5,709.4 708.5,750.8 705.9,751.5 705.9,752.6 461.3,798.7"></polygon></g>
-                        <g class="floor" hidden="true" ><polygon points="198.7,794 461.3,798.7 705.9,752.6 706,791.1 685.1,798.2 654.7,798.3 654.6,806.7
+                        <g class="floor_1house" hidden="true" ><polygon points="198.7,794 461.3,798.7 705.9,752.6 706,791.1 685.1,798.2 654.7,798.3 654.6,806.7
 		597.3,824 579.3,824 579.3,827.3 462.7,860 198.7,853.3 "></polygon></g>
-                        <g class="floor" hidden="true" ><polygon points="198.7,732.7 198.7,678 461.3,678 557,673.3 557,667 576.3,667 592.3,667 592.3,673.3
-		679,670.3 679,664.7 694.3,664.7 705.3,664.7 705.3,669.2 1128.5,667.1 1128.5,709.4 675,712.7 675,707.8 648,708.9 648,716
-		537.3,728.7 537.3,721.3 522,721.3 499.3,722 499.3,732.7 461.8,735.3	"></polygon></g>
+                        <g class="floor_1house" hidden="true" ><polygon points="198.7,732.7 198.7,678 461.3,678 557,673.3 557,667 576.3,667 592.3,667 592.3,673.3
+		679,670.3 679,664.7 694.3,664.7 705.3,664.7 705.3,669.2  1128.5,665.1 1459,662 1705,667 1705,734 1459.5,734 1128.5,707.1   675,712.7 675,707.8 648,708.9 648,716
+		537.3,728.7 537.3,721.3 522,721.3 499.3,722 499.3,732.7 461.8,735.3"></polygon></g>
+                        <g class="floor_1house" hidden="true" ><polygon points="201,450 201,380 466,375 729,465 784,465 800,485 800,530 784,512 729,512 466,448 "></polygon></g>
+                        <g class="floor_1house" hidden="true" ><polygon points="201,510 201,450 466,448 729,513 784,513 800,530 800,560 784,552 729,552 466,508 "></polygon></g>
+                        <g class="floor_1house" hidden="true" ><polygon points="201,560 201,510 466,508 729,551 784,551 800,562 800,598 784,592 729,589 466,558 "></polygon></g>
+                        <g class="floor_1house" hidden="true" ><polygon points="201,610 201,560 466,558 729,589 784,592 800,599 800,630 784,626 729,626 466,608 "></polygon></g>
+                        <g class="floor_1house" hidden="true" ><polygon points="201,670 201,610 466,608 729,627 784,626 784,665 729,663 466,668 "></polygon></g>
 
                     </div>
                 </div>
             </div>
                 <script>
+                        window.onclick = function (ev){
+                            //x + 45 ; y - 17
+                            console.log('Высота:' + ev.x + ',' + 'Длина:' + ev.y)
+                        }
                         const building_selection = document.querySelector(".building-selection_wrap")
                         const first_house = document.getElementById("first_house")
                         const second_house = document.getElementById("second_house")
@@ -69,7 +78,7 @@ require_once "include/head.php";
                         const fourth_house = document.getElementById("fourth_house")
                         first_house.onclick = function () {
                             document.querySelector(".rublyovka-img").setAttribute("src", "<?=SITE_URL?>templates/default/assets/imgs/first_house.jpg")
-                            document.querySelectorAll(".floor").forEach(function (ev) {
+                            document.querySelectorAll(".floor_1house").forEach(function (ev) {
                                 ev.onclick = ev.removeAttribute("hidden")
                             })
                             document.querySelectorAll(".visual_poly").forEach(function (el) {
@@ -124,13 +133,13 @@ require_once "include/head.php";
                         fill: rgba(0, 123, 251, .10);
                         transition: .3s;
                     }
-                    .floor {
-                        fill: rgba(0, 123, 251, 0.21);
+                    .floor_1house {
+                        fill: rgba(0, 123, 251, 0.3);
                         stroke: #007bfb;
                         cursor: pointer;
                         transition: .3s;
                     }
-                    .floor:hover{
+                    .floor_1house:hover{
                         fill: rgba(0, 123, 251, .10);
                         transition: .3s;
                     }

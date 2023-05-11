@@ -53,6 +53,11 @@ class Settings
             'controllerPath' => '\engine\main\pages\controllers\\',
             'action' => 'index'
         ],
+        '/home/floor' => [
+            'controller' => 'FloorPlan',
+            'controllerPath' => '\engine\main\pages\controllers\\',
+            'action' => 'index'
+        ],
 
     ];
 

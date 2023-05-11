@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aee93c87-cb44-423b-91fa-972836755d91" name="Changes" comment="" />
+    <list default="true" id="14921338-ddc8-45a6-9827-1ed9beb88538" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,14 +13,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2PN7x8BiX5rNHO3K51l25unRt1Z" />
+  <component name="ProjectId" id="2Pdc5vkWy83pjBF3LWBZVQitEiZ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -30,28 +30,28 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/OSPanel/domains/Interactive-monitoring-platform",
+    "last_opened_file_path": "C:/OSPanel/domains/untitled",
+    "list.type.of.created.stylesheet": "CSS",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\templates\default" />
+      <recent name="C:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\templates\default\assets" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="aee93c87-cb44-423b-91fa-972836755d91" name="Changes" comment="" />
-      <created>1683285929795</created>
+      <changelist id="14921338-ddc8-45a6-9827-1ed9beb88538" name="Changes" comment="" />
+      <created>1683790219530</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1683285929795</updated>
-      <workItem from="1683285932265" duration="526000" />
-      <workItem from="1683300394516" duration="15977000" />
-      <workItem from="1683368505633" duration="14187000" />
-      <workItem from="1683457984625" duration="646000" />
-      <workItem from="1683725457190" duration="15314000" />
+      <updated>1683790219530</updated>
+      <workItem from="1683790221413" duration="7834000" />
+      <workItem from="1683812461346" duration="16000" />
+      <workItem from="1683817796265" duration="2325000" />
     </task>
     <servers />
   </component>

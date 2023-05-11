@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="<?=SITE_URL?>templates/default/assets/src/css/modal.css">
 <?php
 require_once "include/head.php";
 ?>
@@ -20,7 +21,6 @@ require_once "include/head.php";
         require_once "include/asider.php";
         ?>
 
-<!--        <a class="first-house a" href="#first-house"></a>-->
 
         <div class="main-content">
             <div class="card-head">
@@ -35,7 +35,6 @@ require_once "include/head.php";
                 <div class="img-rublyovka" style="min-height: 629.438px; display: flex; flex-direction: column; position: relative">
                     <div class="building-selection_wrap" style="position: absolute">
                         <img src="<?=SITE_URL?>templates/default/assets/imgs/main-plan1.jpg" alt=""  class="rublyovka-img">
-<!--                    -848px-->
                     <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="2.0" x="0px" viewBox="0 0 1920 1080" class="building-selection">
 
                     <g class="visual_poly" ><polygon id="first_house" points="647.1,827.9 655.9,811.2 662.7,813.1 668.6,801.3 668.6,786.4 676.2,770.1 761.3,772.7
@@ -48,39 +47,44 @@ require_once "include/head.php";
 		356.6,667.3 443.9,688.2 447.5,717.6 436.6,736.5 416.1,731.4 415.8,726.1 372.5,716 363.8,731.1 392.1,738.1 395,733.8
 		415.4,738.6 	"></g>
 
-                        <g class="visual_poly" ><polygon id="fourth_house" points="286.7,739.5 277.8,755.7 121.3,717.2 115.3,688.3 142.3,646.5 220.3,638 311.7,660
+                        <a href="home/floor"><g class="visual_poly" ><polygon id="fourth_house" points="286.7,739.5 277.8,755.7 121.3,717.2 115.3,688.3 142.3,646.5 220.3,638 311.7,660
 		316.8,688.3 308,703.7 221.3,682.8 180.3,686.7 281.2,711.3"></polygon></g>
-                        <g class="floor_1house" hidden="true" ><polygon points="198.7,794 198.7,732.7 461.8,735.3 499.3,732.7 499.3,722 522,721.3 537.3,721.3
-		537.3,728.7 648,716 648,708.9 665.1,707.8 675,707.8 675,712.7 708.5,709.4 708.5,750.8 705.9,751.5 705.9,752.6 461.3,798.7"></polygon></g>
-                        <g class="floor_1house" hidden="true" ><polygon points="198.7,794 461.3,798.7 705.9,752.6 706,791.1 685.1,798.2 654.7,798.3 654.6,806.7
-		597.3,824 579.3,824 579.3,827.3 462.7,860 198.7,853.3 "></polygon></g>
-<!--                        <g class="floor_1house" hidden="true" ><polygon points="198.7,732.7 198.7,678 461.3,678 557,673.3 557,667 576.3,667 592.3,667 592.3,673.3-->
-<!--		679,670.3 679,664.7 694.3,664.7 705.3,664.7 705.3,669.2  1128.5,665.1 1459,662 1705,667 1705,734 1459.5,734 1128.5,707.1   675,712.7 675,707.8 648,708.9 648,716-->
-<!--		537.3,728.7 537.3,721.3 522,721.3 499.3,722 499.3,732.7 461.8,735.3"></polygon></g>-->
-                        <g class="floor_1house" hidden="true" ><polygon points="201,450 201,380 466,375 729,465 784,465 800,485 800,530 784,512 729,512 466,448 "></polygon></g>
-                        <g class="floor_1house" hidden="true" ><polygon points="201,510 201,450 466,448 729,513 784,513 800,530 800,560 784,552 729,552 466,508 "></polygon></g>
-                        <g class="floor_1house" hidden="true" ><polygon points="201,560 201,510 466,508 729,551 784,551 800,562 800,598 784,592 729,589 466,558 "></polygon></g>
-                        <g class="floor_1house" hidden="true" ><polygon points="201,610 201,560 466,558 729,589 784,592 800,599 800,630 784,626 729,626 466,608 "></polygon></g>
-                        <g class="floor_1house" hidden="true" ><polygon points="201,670 201,610 466,608 729,627 784,626 784,665 729,663 466,668 "></polygon></g>
-                        <g class="floor_1house" hidden="true" ><polygon points="1701,445 1701,380 1456,365 1125,470 1065,473 1053,485 1053,530 1065,520 1125,520 1456,438"></polygon></g>
-                        <g class="floor_1house" hidden="true" ><polygon points="1701,505 1701,445 1456,438 1125,518 1065,521 1053,530 1053,560 1065,560 1125,560 1456,498"></polygon></g>
-                        <g class="floor_1house" hidden="true" ><polygon points="1702,560 1702,506 1456,500 1125,560 1065,562 1053,562 1053,600 1065,595 1125,595 1456,558"></polygon></g>
-                        <g class="floor_1house" hidden="true" ><polygon points="1702,615 1702,560 1456,558 1125,594 1065,595 1053,602 1053,630 1065,625 1125,625 1456,618"></polygon></g>
-                        <g class="floor_1house" hidden="true" ><polygon points="1701,675 1701,614 1456,618 1125,624 1065,625 1065,665 1125,665 1456,678"></polygon></g>
+                        <g class="floor_1house" hidden="true" id="1floor_1house"><polygon points="201,850 201,791 466,791 729,740 784,740 1120,740 1455,790 1705,790 1705,850 1455,850 1120,790 784,790 729,790 466,850 "></polygon></g>
+                        <g class="floor_1house" hidden="true" id="2floor_1house"><polygon points="201,790 201,725 466,725 729,700 784,700 1120,700 1455,730 1705,730 1705,790 1455,790 1120,740 784,740 729,740 466,790 "></polygon></g>
+                        <g class="floor_1house" hidden="true" id="3floor_1house"><polygon points="201,723.9 201,669 466,669 729,662 784,662 1120,662 1455,672 1705,670 1705,730 1455,728 1120,700 784,700 729,700 466,723.9 "></polygon></g>
+                        <g class="floor_1house" hidden="true" id="4floor_1house"><polygon points="201,450 201,380 466,375 729,465 784,465 800,485 800,530 784,512 729,512 466,448 "></polygon></g>
+                        <g class="floor_1house" hidden="true" id="5floor_1house"><polygon points="201,510 201,450 466,448 729,513 784,513 800,530 800,560 784,552 729,552 466,508 "></polygon></g>
+                        <g class="floor_1house" hidden="true" id="6floor_1house"><polygon points="201,560 201,510 466,508 729,551 784,551 800,562 800,598 784,592 729,589 466,558 "></polygon></g>
+                        <g class="floor_1house" hidden="true" id="7floor_1house"><polygon points="201,610 201,560 466,558 729,589 784,592 800,599 800,630 784,626 729,626 466,608 "></polygon></g>
+                        <g class="floor_1house" hidden="true" id="8floor_1house"><polygon points="201,670 201,610 466,608 729,627 784,626 784,665 729,663 466,668 "></polygon></g>
+                        <g class="floor_1house" hidden="true" id="1floor_1house2"><polygon points="1701,445 1701,380 1456,365 1125,470 1065,473 1053,485 1053,530 1065,520 1125,520 1456,438"></polygon></g>
+                        <g class="floor_1house" hidden="true" id="2floor_1house2"><polygon points="1701,505 1701,445 1456,438 1125,518 1065,521 1053,530 1053,560 1065,560 1125,560 1456,498"></polygon></g>
+                        <g class="floor_1house" hidden="true" id="3floor_1house2"><polygon points="1702,560 1702,506 1456,500 1125,560 1065,562 1053,562 1053,600 1065,595 1125,595 1456,558"></polygon></g>
+                        <g class="floor_1house" hidden="true" id="4floor_1house2"><polygon points="1702,615 1702,560 1456,558 1125,594 1065,595 1053,602 1053,630 1065,625 1125,625 1456,618"></polygon></g>
+                        <g class="floor_1house" hidden="true" id="5floor_1house2"><polygon points="1703,670 1703,614 1456,618 1125,624 1065,625 1065,660 1125,660 1456,673"></polygon></g></a>
+
 
                     </div>
                 </div>
             </div>
-                <script>
-                        window.onclick = function (ev){
-                            //x + 45 ; y - 17
-                            console.log('Высота:' + ev.x + ',' + 'Длина:' + ev.y)
-                        }
+<!--            <a class="btn-modal" href="#modal-block" style="position: absolute;top: 1000px"></a>-->
+<!--            <div id="modal-block">-->
+<!--                <a class="close-block" href="#close-block">✕</a>-->
+<!--                <h3>Lorem ipsum</h3>-->
+<!--                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
+<!--            </div>-->
+
+            <script>
+                        // window.onclick = function (ev){
+                        //
+                        //     switch ()
+                        // }
                         const building_selection = document.querySelector(".building-selection_wrap")
                         const first_house = document.getElementById("first_house")
                         const second_house = document.getElementById("second_house")
                         const third_house = document.getElementById("third_house")
                         const fourth_house = document.getElementById("fourth_house")
+                        const floor_house = document.querySelectorAll(".floor_1house")
                         first_house.onclick = function () {
                             document.querySelector(".rublyovka-img").setAttribute("src", "<?=SITE_URL?>templates/default/assets/imgs/first_house.jpg")
                             document.querySelectorAll(".floor_1house").forEach(function (ev) {
@@ -91,7 +95,13 @@ require_once "include/head.php";
                             });
                         }
 
-                            let
+                        floor_house.forEach(function (e){
+                           floor_house.onclick = function (eh){
+                               eh.onclick = window.location.href = 'home/floor'
+                           }
+                        })
+
+
 
                 </script>
                 <style>

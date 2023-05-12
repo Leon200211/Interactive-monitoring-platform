@@ -30,13 +30,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/OSPanel/domains/untitled",
+    "last_opened_file_path": "C:/OSPanel/domains/Interactive-monitoring-platform/website",
     "list.type.of.created.stylesheet": "CSS",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\templates\default\assets\imgs" />
       <recent name="C:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\templates\default" />
       <recent name="C:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\templates\default\assets" />
     </key>
@@ -51,7 +52,8 @@
       <updated>1683790219530</updated>
       <workItem from="1683790221413" duration="7834000" />
       <workItem from="1683812461346" duration="16000" />
-      <workItem from="1683817796265" duration="2325000" />
+      <workItem from="1683817796265" duration="2771000" />
+      <workItem from="1683881558739" duration="11041000" />
     </task>
     <servers />
   </component>

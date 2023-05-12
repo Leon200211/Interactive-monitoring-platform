@@ -34,7 +34,9 @@ require_once "include/head.php";
             <div class="container-fluid" style="position: relative">
                 <div class="img-rublyovka" style="min-height: 629.438px; display: flex; flex-direction: column; position: relative">
                     <div class="building-selection_wrap" style="position: absolute">
+                        <button class="back-btn" type="button" id="back-btn1" hidden="true" onclick="back()"><</button>
                         <img src="<?=SITE_URL?>templates/default/assets/imgs/main-plan1.jpg" alt=""  class="rublyovka-img">
+
                     <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="2.0" x="0px" viewBox="0 0 1920 1080" class="building-selection">
 
                     <g class="visual_poly" ><polygon id="first_house" points="647.1,827.9 655.9,811.2 662.7,813.1 668.6,801.3 668.6,786.4 676.2,770.1 761.3,772.7
@@ -47,8 +49,9 @@ require_once "include/head.php";
 		356.6,667.3 443.9,688.2 447.5,717.6 436.6,736.5 416.1,731.4 415.8,726.1 372.5,716 363.8,731.1 392.1,738.1 395,733.8
 		415.4,738.6 	"></g>
 
-                        <a href="home/floor"><g class="visual_poly" ><polygon id="fourth_house" points="286.7,739.5 277.8,755.7 121.3,717.2 115.3,688.3 142.3,646.5 220.3,638 311.7,660
+                        <g class="visual_poly"><polygon id="fourth_house" points="286.7,739.5 277.8,755.7 121.3,717.2 115.3,688.3 142.3,646.5 220.3,638 311.7,660
 		316.8,688.3 308,703.7 221.3,682.8 180.3,686.7 281.2,711.3"></polygon></g>
+                        <a href="home/floor">
                         <g class="floor_1house" hidden="true" id="1floor_1house"><polygon points="201,850 201,791 466,791 729,740 784,740 1120,740 1455,790 1705,790 1705,850 1455,850 1120,790 784,790 729,790 466,850 "></polygon></g>
                         <g class="floor_1house" hidden="true" id="2floor_1house"><polygon points="201,790 201,725 466,725 729,700 784,700 1120,700 1455,730 1705,730 1705,790 1455,790 1120,740 784,740 729,740 466,790 "></polygon></g>
                         <g class="floor_1house" hidden="true" id="3floor_1house"><polygon points="201,723.9 201,669 466,669 729,662 784,662 1120,662 1455,672 1705,670 1705,730 1455,728 1120,700 784,700 729,700 466,723.9 "></polygon></g>
@@ -67,12 +70,7 @@ require_once "include/head.php";
                     </div>
                 </div>
             </div>
-<!--            <a class="btn-modal" href="#modal-block" style="position: absolute;top: 1000px"></a>-->
-<!--            <div id="modal-block">-->
-<!--                <a class="close-block" href="#close-block">✕</a>-->
-<!--                <h3>Lorem ipsum</h3>-->
-<!--                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
-<!--            </div>-->
+
 
             <script>
                         // window.onclick = function (ev){
@@ -93,8 +91,18 @@ require_once "include/head.php";
                             document.querySelectorAll(".visual_poly").forEach(function (el) {
                                 el.onclick = el.setAttribute("hidden", true);
                             });
+                            document.getElementById("back-btn1").removeAttribute("hidden")
                         }
-
+                        function back(){
+                            document.querySelector(".rublyovka-img").setAttribute("src", "<?=SITE_URL?>templates/default/assets/imgs/main-plan1.jpg")
+                            document.querySelectorAll(".floor_1house").forEach(function (ev) {
+                                ev.setAttribute("hidden", true)
+                            })
+                            document.querySelectorAll(".visual_poly").forEach(function (el) {
+                                el.removeAttribute("hidden");
+                            });
+                            document.getElementById("back-btn1").setAttribute("hidden", true)
+                        }
                         floor_house.forEach(function (e){
                            floor_house.onclick = function (eh){
                                eh.onclick = window.location.href = 'home/floor'
@@ -105,7 +113,22 @@ require_once "include/head.php";
 
                 </script>
                 <style>
-
+                    .back-btn{
+                        position: absolute; z-index: 999; top: 40px; left: 40px; font-size: 24px;
+                        border: none;
+                        background-color: white;
+                        color: #007bfb;
+                        width: 3%;
+                        height: 5%;
+                        border-radius: 35px;
+                        transition: all .3s;
+                    }
+                    .back-btn:hover{
+                        background-color: #007bfb;
+                        color: white;
+                        border-radius: 8px;
+                        transition: all .3s;
+                    }
                     .rublyovka-img{
                         position: relative;
                         width: 100%; border-radius: 50px; border: solid 4px #404E67; z-index: 1;

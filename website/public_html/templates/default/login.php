@@ -20,11 +20,11 @@ require_once "include/head.php";
                     </div>
                     <form method="post" action="/login">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Почта" required="" value="johndoe@admin.com">
+                            <input type="text" name="username" class="form-control" placeholder="Логин" required="">
                             <i class="ik ik-user"></i>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Пароль" required="" value="123456">
+                            <input type="password" name="password" class="form-control" placeholder="Пароль" required="">
                             <i class="ik ik-lock"></i>
                         </div>
                         <div class="row">
@@ -35,9 +35,16 @@ require_once "include/head.php";
                                 </label>
                             </div>
                             <div class="col text-right">
-                                <a href="forgot-password.html">Забыли пароль?</a>
+                                <a href="#">Забыли пароль?</a>
                             </div>
                         </div>
+
+                        <?php if(isset($_GET['error'])): ?>
+                        <div style="color: red">
+                            <?= $_GET['error'] ?>
+                        </div>
+                        <?php endif; ?>
+
                         <div class="sign-btn text-center">
                             <button class="btn btn-primary" style="width: 120px; height: 50px; font-size: 20px; padding-top: 10px">Войти</button>
                         </div>

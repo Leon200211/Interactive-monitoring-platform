@@ -14,3 +14,7 @@ Fault: 05-05-2023 14:27:01 - Ошибка подключение к БД: 1045 A
 fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
  In line 29
 
+Fault: 14-05-2023 18:07:59 - Ошибка в SQL запросе: SELECT user_roles.*,roles.`title` FROM user_roles  INNER JOIN roles ON user_roles.id_role=roles.id WHERE user_roles.id_user='1' - 1146 Table 'interactive-monitoring-platform.user_roles' doesn't exist
+fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
+ In line 57
+

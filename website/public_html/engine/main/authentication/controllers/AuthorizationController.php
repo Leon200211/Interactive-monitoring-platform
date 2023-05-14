@@ -39,8 +39,8 @@ class AuthorizationController extends AuthenticationController
     // создание сессии
     public function login(){
         session_start();
-        $_SESSION['id_user'] = 1;
-        $this->redirect('/');
+//        $_SESSION['id_user'] = 1;
+//        $this->redirect('/');
 
         if(!$this->model) $this->model = MainModel::getInstance();
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3307
--- Время создания: Май 14 2023 г., 17:50
+-- Время создания: Май 14 2023 г., 18:23
 -- Версия сервера: 8.0.19
 -- Версия PHP: 8.0.1
 
@@ -70,6 +70,13 @@ CREATE TABLE `login_history` (
   `date` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='История входов в систему';
 
+--
+-- Дамп данных таблицы `login_history`
+--
+
+INSERT INTO `login_history` (`id`, `id_user`, `ip`, `date`) VALUES
+(1, 1, '127.0.0.1', '2023-05-14 18:20:47');
+
 -- --------------------------------------------------------
 
 --
@@ -82,6 +89,24 @@ CREATE TABLE `projects` (
   `title` int DEFAULT NULL,
   `addres` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='История входов в систему';
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `roles`
+--
+
+CREATE TABLE `roles` (
+  `id` int NOT NULL,
+  `title` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='Должности в компании';
+
+--
+-- Дамп данных таблицы `roles`
+--
+
+INSERT INTO `roles` (`id`, `title`) VALUES
+(1, 'admin');
 
 -- --------------------------------------------------------
 
@@ -109,6 +134,25 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `login`, `password`, `cookie`, `position`, `info`, `role`, `phone`, `email`, `photo`) VALUES
 (1, 'Иванов Иван Иванович', 'root', '$2y$10$mvH.8LM6dtENkJSjVidD6ujovmJbmisTL7p38f1MlchUFsIkD1ksy', '', 'admin', 'Алминистратор', 'admin', '89990000001', 'test@test.ru', '');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user_roles`
+--
+
+CREATE TABLE `user_roles` (
+  `id` int NOT NULL,
+  `id_user` int DEFAULT NULL,
+  `id_role` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='Роль пользователя в системе';
+
+--
+-- Дамп данных таблицы `user_roles`
+--
+
+INSERT INTO `user_roles` (`id`, `id_user`, `id_role`) VALUES
+(1, 1, 1);
 
 --
 -- Индексы сохранённых таблиц
@@ -148,10 +192,24 @@ ALTER TABLE `projects`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Индексы таблицы `roles`
+--
+ALTER TABLE `roles`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Индексы таблицы `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Индексы таблицы `user_roles`
+--
+ALTER TABLE `user_roles`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_role` (`id_role`),
+  ADD KEY `id_user` (`id_user`);
 
 --
 -- AUTO_INCREMENT для сохранённых таблиц
@@ -179,7 +237,7 @@ ALTER TABLE `houses`
 -- AUTO_INCREMENT для таблицы `login_history`
 --
 ALTER TABLE `login_history`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT для таблицы `projects`
@@ -188,10 +246,22 @@ ALTER TABLE `projects`
   MODIFY `id` int NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT для таблицы `roles`
+--
+ALTER TABLE `roles`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT для таблицы `user_roles`
+--
+ALTER TABLE `user_roles`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- Ограничения внешнего ключа сохраненных таблиц

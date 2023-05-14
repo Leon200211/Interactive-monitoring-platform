@@ -18,6 +18,12 @@ require_once "include/head.php";
                     <div class="logo-centered">
                         <a href="index.html"><img src="<?=SITE_URL?>templates/default/assets/imgs/smlt_logo_blue_ru.png" width="250px" style="margin-left: -75px"></a>
                     </div>
+                    <div>
+                        Логин: root
+                        <br>
+                        Пароль: root
+                    </div>
+                    <br>
                     <form method="post" action="/login">
                         <div class="form-group">
                             <input type="text" name="username" class="form-control" placeholder="Логин" required="">

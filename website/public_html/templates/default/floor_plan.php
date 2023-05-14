@@ -26,7 +26,7 @@ require_once "include/head.php";
                     <div class="flat-selection-wrap" style="position: absolute">
                      <img src="<?=SITE_URL?>templates/default/assets/imgs/план проекта.png" alt="план проекта" class="flat-img">
                         <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="2.0" x="0px" viewBox="0 0 1920 1080" class="flat-selection" >
-                            <g class="visual_poly"><polygon points="340,-980  340,-490  900,-490 900,-980 " id="first_flat"></polygon></g>
+                            <g class="visual_poly"><polygon points="340,-980  340,-490  900,-490 900,-980 " id="first_flat_2"></polygon></g>
                             <g class="visual_poly"><polygon points="340,-490  340,0  840,0 840,-490 "></polygon></g>
                             <g class="visual_poly"><polygon points="340,0  340,600  840,600 840,0 "></polygon></g>
                             <g class="visual_poly"><polygon points="340,600  340,1115  840,1115 840,600 "></polygon></g>
@@ -43,11 +43,105 @@ require_once "include/head.php";
         </div>
     </div>
                         <a class="btn-modal" href="#modal-block" id="modal-window" style="position: absolute;top: 1000px" hidden="true"></a>
+
+
+
                         <div id="modal-block">
                             <a class="close-block" href="#close-block">✕</a>
-                            <img src="" alt="план квартиры" id="modal-block-img">
-                            <p id="p-flat">6 млн двушка 60кв.м 5 этаж</p>
+
+                            <div class="modal-block_title">
+                                <div class="modal-block_title_apartment">
+                                    Квартира №222
+                                </div>
+                                <div>
+                                    56.07 м²
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="modal-block_body">
+                                <div class="modal-block_body_img">
+                                    <img src="" alt="план квартиры" id="modal-block-img">
+                                </div>
+                                <button type="button" class="btn btn-dark">Видео</button>
+                                <div class="modal-block_line"></div>
+
+                                <div class="modal-block_body_title">
+                                    Чистовая отделка
+                                </div>
+                                <div class="modal-block_body_checkbox">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Наличие обоев
+                                    </label>
+                                    <br>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Наличие ламината
+                                    </label>
+                                    <br>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Наличие керамической плитки
+                                    </label>
+                                    <br>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Потолок окрашен
+                                    </label>
+
+                                    <br>
+                                    <div class="modal-block_body_subtitle">
+                                        Санузел
+                                    </div>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Ванная
+                                    </label>
+                                    <br>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Унитаз
+                                    </label>
+                                    <br>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Раковина
+                                    </label>
+                                </div>
+
+
+
+                                <div class="modal-block_body_title">
+                                    Черновая отделка
+                                </div>
+
+
+
+
+                                <div class="modal-block_body_title">
+                                    Дополнительно
+                                </div>
+
+
+                                <div class="modal-block_body_checkbox">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Установлены двери
+                                    </label>
+                                    <br>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Установлены розетки
+                                    </label>
+                                </div>
+
+
+                            </div>
+
                         </div>
+
+
         </div>
         <script>
             const modal_block = document.getElementById("modal-window")

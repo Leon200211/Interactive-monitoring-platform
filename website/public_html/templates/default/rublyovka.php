@@ -34,6 +34,7 @@ require_once "include/head.php";
             <div class="container-fluid" style="position: relative">
                 <div class="img-rublyovka" style="min-height: 629.438px; display: flex; flex-direction: column; position: relative">
                     <div class="building-selection_wrap" style="position: absolute">
+                        <button class="back-btn" type="button" id="back-btn2" onclick="back_tomain()"><</button>
                         <button class="back-btn" type="button" id="back-btn1" hidden="true" onclick="back()"><</button>
                         <img src="<?=SITE_URL?>templates/default/assets/imgs/main-plan1.jpg" alt=""  class="rublyovka-img">
 
@@ -73,10 +74,6 @@ require_once "include/head.php";
 
 
             <script>
-                        // window.onclick = function (ev){
-                        //
-                        //     switch ()
-                        // }
                         const building_selection = document.querySelector(".building-selection_wrap")
                         const first_house = document.getElementById("first_house")
                         const second_house = document.getElementById("second_house")
@@ -84,6 +81,7 @@ require_once "include/head.php";
                         const fourth_house = document.getElementById("fourth_house")
                         const floor_house = document.querySelectorAll(".floor_1house")
                         first_house.onclick = function () {
+                            document.querySelector("#back-btn2").setAttribute('hidden', true)
                             document.querySelector(".rublyovka-img").setAttribute("src", "<?=SITE_URL?>templates/default/assets/imgs/first_house.jpg")
                             document.querySelectorAll(".floor_1house").forEach(function (ev) {
                                 ev.onclick = ev.removeAttribute("hidden")
@@ -94,6 +92,7 @@ require_once "include/head.php";
                             document.getElementById("back-btn1").removeAttribute("hidden")
                         }
                         function back(){
+                            document.querySelector("#back-btn2").removeAttribute('hidden')
                             document.querySelector(".rublyovka-img").setAttribute("src", "<?=SITE_URL?>templates/default/assets/imgs/main-plan1.jpg")
                             document.querySelectorAll(".floor_1house").forEach(function (ev) {
                                 ev.setAttribute("hidden", true)
@@ -105,10 +104,12 @@ require_once "include/head.php";
                         }
                         floor_house.forEach(function (e){
                            floor_house.onclick = function (eh){
-                               eh.onclick = window.location.href = 'home/floor'
+                               eh.onclick = window.location.href = 'home/floor'  //подправить на нормальный переход
                            }
                         })
-
+                        function back_tomain(){
+                            window.location.href = '/projects'
+                        }
 
 
                 </script>

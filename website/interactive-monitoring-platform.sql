@@ -31,7 +31,7 @@ CREATE TABLE `apartments` (
   `id` int NOT NULL,
   `id_floor` int DEFAULT NULL,
   `apartment_number` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='История входов в систему';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='История входов в систему';
 
 -- --------------------------------------------------------
 
@@ -43,7 +43,7 @@ CREATE TABLE `floors` (
   `id` int NOT NULL,
   `id_house` int DEFAULT NULL,
   `floor_number` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='История входов в систему';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='История входов в систему';
 
 -- --------------------------------------------------------
 
@@ -55,7 +55,7 @@ CREATE TABLE `houses` (
   `id` int NOT NULL,
   `id_project` int DEFAULT NULL,
   `house_number` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='История входов в систему';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='История входов в систему';
 
 -- --------------------------------------------------------
 
@@ -68,7 +68,7 @@ CREATE TABLE `login_history` (
   `id_user` int DEFAULT NULL,
   `ip` varchar(255) DEFAULT NULL,
   `date` datetime DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='История входов в систему';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='История входов в систему';
 
 --
 -- Дамп данных таблицы `login_history`
@@ -88,7 +88,7 @@ CREATE TABLE `projects` (
   `project_number` int DEFAULT NULL,
   `title` int DEFAULT NULL,
   `addres` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='История входов в систему';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='История входов в систему';
 
 -- --------------------------------------------------------
 
@@ -99,7 +99,7 @@ CREATE TABLE `projects` (
 CREATE TABLE `roles` (
   `id` int NOT NULL,
   `title` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='Должности в компании';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Должности в компании';
 
 --
 -- Дамп данных таблицы `roles`
@@ -126,7 +126,7 @@ CREATE TABLE `users` (
   `phone` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `photo` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='Пользователи';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Пользователи';
 
 --
 -- Дамп данных таблицы `users`
@@ -145,7 +145,7 @@ CREATE TABLE `user_roles` (
   `id` int NOT NULL,
   `id_user` int DEFAULT NULL,
   `id_role` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='Роль пользователя в системе';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Роль пользователя в системе';
 
 --
 -- Дамп данных таблицы `user_roles`

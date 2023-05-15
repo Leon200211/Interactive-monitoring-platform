@@ -24,9 +24,9 @@ require_once "include/head.php";
         <div class="container" style="position: relative">
                 <div class="img-plan" style="position: relative;">
                     <div class="flat-selection-wrap" style="position: absolute">
-                     <img src="<?=SITE_URL?>templates/default/assets/imgs/план проекта.png" alt="план проекта" class="flat-img">
+                     <img src="<?=SITE_URL?>templates/default/assets/imgs/floor-5.png" alt="план проекта" class="flat-img" id="floor-img">
                         <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="2.0" x="0px" viewBox="0 0 1920 1080" class="flat-selection" >
-                            <g class="visual_poly"><polygon points="340,-980  340,-490  900,-490 900,-980 " id="first_flat_2"></polygon></g>
+                            <g class="visual_poly"><polygon id="first_flat_2" points="340,-980  340,-490  900,-490 900,-980 "></polygon></g>
                             <g class="visual_poly"><polygon points="340,-490  340,0  840,0 840,-490 "></polygon></g>
                             <g class="visual_poly"><polygon points="340,0  340,600  840,600 840,0 "></polygon></g>
                             <g class="visual_poly"><polygon points="340,600  340,1115  840,1115 840,600 "></polygon></g>
@@ -140,19 +140,83 @@ require_once "include/head.php";
                             </div>
 
                         </div>
-
+                        <div class="floor_selector">
+                            <div id="iter-plus" class="floor-selector">+</div>
+                            <div id="floor-5" class="floor-selector">5</div>
+                            <div id="floor-4" class="floor-selector">4</div>
+                            <div id="floor-3" class="floor-selector">3</div>
+                            <div id="floor-2" class="floor-selector">2</div>
+                            <div id="floor-1" class="floor-selector">1</div>
+                            <div id="back-btn" class="floor-selector"><</div>
+                            <div id="iter-minus" class="floor-selector">-</div>
+                        </div>
 
         </div>
         <script>
+            const clickable_block = document.getElementById("first_flat_2")
             const modal_block = document.getElementById("modal-window")
             const modal_img = document.getElementById("modal-block-img")
-            window.onclick = function (e){
+            clickable_block.onclick = function (e){
                 modal_block.click()
                 modal_img.setAttribute("src", "<?=SITE_URL?>templates/default/assets/imgs/"+e.target.id+".png")
             }
+            const floor_img = document.getElementById('floor-img')
+            const floor_selector = document.querySelectorAll(".floor-selector")
+            let iter = 0;
+            for(let i = 0; i < floor_selector.length; i++)
+                floor_selector[i].addEventListener('click', function (event){
+                    if(event.target.id == 'iter-plus'){
+                        if(iter >= 5){
+                            iter = 5
+                            console.log(iter)
+                            floor_img.setAttribute('src', '<?=SITE_URL?>templates/default/assets/imgs/floor-' + iter + '.png')
+                        }else {
+                            iter += 1
+                            console.log(iter)
+                            floor_img.setAttribute('src', '<?=SITE_URL?>templates/default/assets/imgs/floor-' + iter + '.png')
+                        }
+                    } else if(event.target.id == 'iter-minus') {
+                        if (iter <= 1) {
+                            iter = 1
+                            console.log(iter)
+                            floor_img.setAttribute('src', '<?=SITE_URL?>templates/default/assets/imgs/floor-' + iter + '.png')
+                        } else {
+                            iter -= 1
+                            console.log(iter)
+                            floor_img.setAttribute('src', '<?=SITE_URL?>templates/default/assets/imgs/floor-' + iter + '.png')
+                        }
+                    }
+                    else if(event.target.id == 'back-btn'){
+                        window.location.href = "/project"
+                        }
+                    else {
+                        console.log(event.target.textContent)
+                        iter = event.target.textContent
+                        floor_img.setAttribute('src', '<?=SITE_URL?>templates/default/assets/imgs/floor-' + iter + '.png')
+                    }
+                })
         </script>
         <style>
-
+            .floor_selector{
+                position: relative;
+                z-index: 999;
+            }
+            .floor-selector{
+                padding: 8px 8px;
+                margin-top: 10px;
+                border: 1px solid #ddd;
+                width: 35px;
+                text-align: center;
+                border-radius: 30px;
+                background-color: white;
+                transition: .5s;
+                cursor: pointer;
+            }
+            .floor-selector:hover{
+                background-color: #0066cc;
+                color: white;
+                transition: .5s;
+            }
             .flat-img{
                 position: relative;
                 width: 100%; z-index: 1;

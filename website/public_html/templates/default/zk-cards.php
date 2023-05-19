@@ -27,24 +27,36 @@ require_once "include/head.php";
                     <div class="col-md-4">
                         <div class="card" style="min-height: 422px;" id="card_1">
                             <div class="card-header">
-                                <h3 style="font-weight: 700">Квартал жулебино</h3>
+                                <h3 style="font-weight: 700">Квартал Мытищи</h3>
                             </div>
                             <div class="card-body timeline" >
-                                <div class="header bg-theme" style="background-image: url('<?=SITE_URL?>templates/default/assets/imgs/first-zk.jpg'); object-position: 50% 50%; height: 450px; width: auto; background-size: cover">
+                                <div class="header bg-theme" style="background-image: url('<?=SITE_URL?>templates/default/assets/imgs/mytishi.png'); object-position: 50% 50%; height: 550px; width: auto; background-size: cover">
                                 </div>
-                                <div class="card-text">станция Жулебино <i class="ik ik-user"></i>5 мин</div>
+                                <div class="card-text">станция Мытищи <i class="ik ik-user"></i>5 мин</div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card" style="min-height: 422px;" id="card_2">
                             <div class="card-header">
-                                <h3 style="font-weight: 700">Квартал жулебино</h3>
+                                <h3 style="font-weight: 700">Квартал Остафьево</h3>
                             </div>
                             <div class="card-body timeline">
-                                <div class="header bg-theme" style="background-image: url('<?=SITE_URL?>templates/default/assets/imgs/second-zk.jpg'); object-position: 100% 100%; height: 450px; width: auto; background-size: cover">
+                                <div class="header bg-theme" style="background-image: url('<?=SITE_URL?>templates/default/assets/imgs/ostafevo.png'); object-position: 100% 100%; height: 550px; width: auto; background-size: cover">
                                 </div>
-                                <div class="card-text">станция Жулебино <i class="ik ik-user"></i>5 мин</div>
+                                <div class="card-text">станция Остафьево <i class="ik ik-user"></i>5 мин</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="min-height: 422px;" id="card_3">
+                            <div class="card-header">
+                                <h3 style="font-weight: 700">Квартал Рублёвка</h3>
+                            </div>
+                            <div class="card-body timeline">
+                                <div class="header bg-theme" style="background-image: url('<?=SITE_URL?>templates/default/assets/imgs/second-zk.jpg'); object-position: 100% 100%; height: 550px; width: auto; background-size: cover">
+                                </div>
+                                <div class="card-text">станция Рублёвка <i class="ik ik-user"></i>5 мин</div>
                             </div>
                         </div>
                     </div>
@@ -315,6 +327,10 @@ require_once "include/head.php";
 <script>
     const asdasd = document.getElementById('card_2');
     asdasd.onclick = function (){
+        window.location.href = "/project"
+    }
+    const mytishi = document.getElementById('card_1')
+    mytishi.onclick = function (){
         window.location.href = "/project"
     }
 </script>

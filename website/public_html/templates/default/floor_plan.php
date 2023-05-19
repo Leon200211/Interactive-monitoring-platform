@@ -200,6 +200,7 @@ require_once "include/head.php";
             .floor_selector{
                 position: relative;
                 z-index: 999;
+                width: 3%;
             }
             .floor-selector{
                 padding: 8px 8px;

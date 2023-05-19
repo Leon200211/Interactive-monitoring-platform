@@ -33,7 +33,7 @@ class ProjectController extends BaseController
 
     public function outputData()
     {
-        return $this->render($_SERVER['DOCUMENT_ROOT'] . '/templates/default/rublyovka');
+        return $this->render($_SERVER['DOCUMENT_ROOT'] . '/templates/default/mytishi');
     }
 
 }

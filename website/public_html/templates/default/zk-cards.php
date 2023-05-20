@@ -24,45 +24,22 @@ require_once "include/head.php";
         <div class="main-content">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="card" style="min-height: 422px;" id="card_1">
-                            <div class="card-header">
-                                <h3 style="font-weight: 700">Квартал Мытищи</h3>
-                            </div>
-                            <div class="card-body timeline" >
-                                <div class="header bg-theme" style="background-image: url('<?=SITE_URL?>templates/default/assets/imgs/mytishi.png'); object-position: 50% 50%; height: 550px; width: auto; background-size: cover">
+
+                    <?php foreach ($this->projects as $key => $project): ?>
+                        <div class="col-md-4">
+                            <div class="card" style="min-height: 422px;" id="card_<?=++$key?>">
+                                <div class="card-header">
+                                    <h3 style="font-weight: 700"><?=$project['title']?></h3>
                                 </div>
-                                <div class="card-text">станция Мытищи <i class="ik ik-user"></i>5 мин</div>
+                                <div class="card-body timeline" >
+                                    <div class="header bg-theme" style="background-image: url('<?=SITE_URL?>templates/default/assets/imgs/projects/<?=$project['img']?>'); object-position: 50% 50%; height: 550px; width: auto; background-size: cover"></div>
+                                    <div class="card-text"><?=$project['address']?></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" style="min-height: 422px;" id="card_2">
-                            <div class="card-header">
-                                <h3 style="font-weight: 700">Квартал Остафьево</h3>
-                            </div>
-                            <div class="card-body timeline">
-                                <div class="header bg-theme" style="background-image: url('<?=SITE_URL?>templates/default/assets/imgs/ostafevo.png'); object-position: 100% 100%; height: 550px; width: auto; background-size: cover">
-                                </div>
-                                <div class="card-text">станция Остафьево <i class="ik ik-user"></i>5 мин</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" style="min-height: 422px;" id="card_3">
-                            <div class="card-header">
-                                <h3 style="font-weight: 700">Квартал Рублёвка</h3>
-                            </div>
-                            <div class="card-body timeline">
-                                <div class="header bg-theme" style="background-image: url('<?=SITE_URL?>templates/default/assets/imgs/second-zk.jpg'); object-position: 100% 100%; height: 550px; width: auto; background-size: cover">
-                                </div>
-                                <div class="card-text">станция Рублёвка <i class="ik ik-user"></i>5 мин</div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endforeach ?>
+
                 </div>
-
-
             </div>
         </div>
 
@@ -325,14 +302,13 @@ require_once "include/head.php";
     }
 </style>
 <script>
-    const asdasd = document.getElementById('card_2');
-    asdasd.onclick = function (){
-        window.location.href = "/project"
-    }
-    const mytishi = document.getElementById('card_1')
-    mytishi.onclick = function (){
-        window.location.href = "/project"
-    }
+
+    <?php foreach ($this->projects as $key => $project): ?>
+        var project = document.getElementById('card_<?=++$key?>')
+        project.onclick = function (){
+            window.location.href = "/project?id_project=<?=$project['project_number']?>"
+        }
+    <?php endforeach ?>
 </script>
 <?php
 require_once "include/footer.php";

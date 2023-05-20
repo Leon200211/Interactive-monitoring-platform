@@ -16,6 +16,8 @@ use engine\main\authentication\models\MainModel;
 class ProjectsController extends BaseController
 {
 
+    protected $projects = [];
+
     public function index()
     {
         if(!$this->model) $this->model = MainModel::getInstance();
@@ -29,6 +31,9 @@ class ProjectsController extends BaseController
 
         // метод для проверки доступа
         //$this->allAccessCheck();
+
+        $this->projects = $this->model->read('projects');
+
     }
 
     public function outputData()

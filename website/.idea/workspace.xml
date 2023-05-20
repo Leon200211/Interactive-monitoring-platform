@@ -13,23 +13,31 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="interactive-monitoring-platform" id="7167b561-1fb3-47e4-8c78-5621e71ea59f" name="interactive-monitoring-platform" />
+      <server host="127.0.0.1" id="2940aec3-1305-44cf-a103-d8298bec3e57" name="127.0.0.1" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$/public_html" remote-root="C:/OpenServer/modules/system/html/openserver/phpmyadmin" />
+        </path_mappings>
+      </server>
+    </servers>
+  </component>
   <component name="ProjectId" id="2Pq2tPCndGd1DmCaCSlKF2NFDaG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/OSPanel/domains/online-shop/notebook&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\templates\default\assets\imgs\projects" />
       <recent name="C:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\templates\default\assets\imgs" />
     </key>
   </component>
@@ -45,6 +53,8 @@
       <workItem from="1684237977309" duration="1099000" />
       <workItem from="1684246979887" duration="42000" />
       <workItem from="1684512286404" duration="14285000" />
+      <workItem from="1684588136312" duration="306000" />
+      <workItem from="1684588446452" duration="5355000" />
     </task>
     <servers />
   </component>

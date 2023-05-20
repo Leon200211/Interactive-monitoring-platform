@@ -17,9 +17,9 @@ class ProjectController extends BaseController
 {
 
     protected int $id_project;
-    protected string $fileName;
 
     protected array $projectData;
+    protected array $projectGlobalInfo;
 
     /**
      * Формирование данных
@@ -38,44 +38,40 @@ class ProjectController extends BaseController
         // метод для проверки доступа
         //$this->allAccessCheck();
 
-
         $this->id_project = $_GET['id_project'];
-        switch ($this->id_project)
-        {
-            case 100:
-                $this->fileName = 'mytishi';
-                break;
-            case 101:
-                $this->fileName = '';
-                break;
-            case 102:
-                $this->fileName = 'rublyovka';
-                break;
-        }
 
-        $idProjectInDB = $this->model->read('projects', [
-           'fields' => ['id'],
+        $this->projectGlobalInfo = $this->model->read('projects', [
+            'fields' => ['id', 'project_img'],
             'where' => ['project_number' => $this->id_project]
-        ])[0]['id'];
+        ])[0];
 
-        $projectData = $this->model->read('houses', [
-            'fields' => ['id as houses_id_db', 'id_project', 'house_number', 'title', 'address', 'coordinates', 'area_coordinates'],
-            'where' => ['id_project' => $idProjectInDB],
+
+
+        //var_dump(json_decode(json_encode(json_decode($this->projectGlobalInfo['area_coordinates'])), true));
+
+
+
+        $this->projectData = $this->model->read('houses', [
+            'fields' => ['id as houses_id_db', 'id_project', 'house_number', 'title', 'address', 'coordinates', 'area_coordinates', 'polygon_points'],
+            'where' => ['id_project' => $this->projectGlobalInfo['id']],
         ]);
 
-//        foreach ($projectData as $house){
-//            $this->projectData['houses_id_db'] = [
-//
-//            ];
-//        }
-//
-//        exit();
+
+
+
+        foreach ($this->projectData as $key => $house){
+            $this->projectData[$key]['polygon_points'] = json_decode(json_encode(json_decode($house['polygon_points'])), true);
+            $this->projectData[$key]['sections'] = $this->model->read('sections', [
+               'fields' => ['id as section_db_id', 'section_number'],
+                'where' => ['id_house' => $house['houses_id_db']]
+            ]);
+        }
 
     }
 
     public function outputData()
     {
-        return $this->render($_SERVER['DOCUMENT_ROOT'] . "/templates/default/$this->fileName");
+        return $this->render($_SERVER['DOCUMENT_ROOT'] . "/templates/default/project");
     }
 
 }

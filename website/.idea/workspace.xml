@@ -13,6 +13,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="interactive-monitoring-platform" id="7167b561-1fb3-47e4-8c78-5621e71ea59f" name="interactive-monitoring-platform" />
@@ -37,6 +38,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\templates\default\assets\imgs\houses" />
+      <recent name="C:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\templates\default\assets\imgs\houses_page" />
       <recent name="C:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\templates\default\assets\imgs\projects" />
       <recent name="C:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\templates\default\assets\imgs" />
     </key>
@@ -54,7 +57,7 @@
       <workItem from="1684246979887" duration="42000" />
       <workItem from="1684512286404" duration="14285000" />
       <workItem from="1684588136312" duration="306000" />
-      <workItem from="1684588446452" duration="5355000" />
+      <workItem from="1684588446452" duration="12674000" />
     </task>
     <servers />
   </component>

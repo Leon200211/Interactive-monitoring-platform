@@ -8,7 +8,7 @@
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" href="<?=SITE_URL?>templates/default/assets/imgs/samolet_logo_sign_blue.png" type="image/x-icon" />
+    <link rel="icon" href="<?=SITE_URL?>templates/default/assets/imgs/favicon-32x32.422fe5d794a2.png" type="image/x-icon" />
 
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800" rel="stylesheet">
 

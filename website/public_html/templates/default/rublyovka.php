@@ -52,6 +52,12 @@ require_once "include/head.php";
 
                         <g class="visual_poly"><polygon id="fourth_house" points="286.7,739.5 277.8,755.7 121.3,717.2 115.3,688.3 142.3,646.5 220.3,638 311.7,660
 		316.8,688.3 308,703.7 221.3,682.8 180.3,686.7 281.2,711.3"></polygon></g>
+
+
+
+
+
+
                         <a href="home/floor">
                         <g class="floor_1house" hidden="true" id="1floor_1house"><polygon points="201,850 201,791 466,791 729,740 784,740 1120,740 1455,790 1705,790 1705,850 1455,850 1120,790 784,790 729,790 466,850 "></polygon></g>
                         <g class="floor_1house" hidden="true" id="2floor_1house"><polygon points="201,790 201,725 466,725 729,700 784,700 1120,700 1455,730 1705,730 1705,790 1455,790 1120,740 784,740 729,740 466,790 "></polygon></g>

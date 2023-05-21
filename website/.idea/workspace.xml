@@ -13,7 +13,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="interactive-monitoring-platform" id="7167b561-1fb3-47e4-8c78-5621e71ea59f" name="interactive-monitoring-platform" />
@@ -58,6 +57,7 @@
       <workItem from="1684512286404" duration="14285000" />
       <workItem from="1684588136312" duration="306000" />
       <workItem from="1684588446452" duration="12674000" />
+      <workItem from="1684651790349" duration="7423000" />
     </task>
     <servers />
   </component>

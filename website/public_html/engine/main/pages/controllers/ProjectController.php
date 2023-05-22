@@ -36,9 +36,15 @@ class ProjectController extends BaseController
         }
 
         // метод для проверки доступа
+<<<<<<< HEAD
         // $this->allAccessCheck();
 
         $this->id_project = $_GET['id_project']; // Кнопка назад из этажей отправляет на несуществующий контроллер
+=======
+        //$this->allAccessCheck();
+
+        $this->id_project = $_GET['id_project'];
+>>>>>>> f157e1307611374c45eba9a822632b4f9a6eff29
 
         $this->projectGlobalInfo = $this->model->read('projects', [
             'fields' => ['id', 'project_img', 'title'],

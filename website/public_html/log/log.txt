@@ -17854,6 +17854,7 @@ Fault: 21-05-2023 11:59:31 - Не найден контроллер
 fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
  In line 62
 
+<<<<<<< HEAD
 Fault: 21-05-2023 14:53:49 - Не найден контроллер
 fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
  In line 62
@@ -19410,3 +19411,5 @@ Fault: 22-05-2023 11:55:04 - Не найден контроллер
 fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\controllers\RouteController.php
  In line 62
 
+=======
+>>>>>>> f157e1307611374c45eba9a822632b4f9a6eff29

@@ -18,3 +18,19 @@ Fault: 14-05-2023 18:07:59 - Ошибка в SQL запросе: SELECT user_rol
 fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
  In line 57
 
+Fault: 20-05-2023 17:13:18 - Ошибка в SQL запросе: SELECT houses.`id` as houses_id_db,houses.`id_project`,houses.`house_number`,houses.`title`,houses.`address`,houses.`coordinates`,houses.`area_coordinates`,sections.* FROM houses  LEFT JOIN sections ON houses.id_house=sections.houses_id_db WHERE houses.id_project='1' - 1054 Unknown column 'houses.id_house' in 'on clause'
+fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-05-2023 17:13:39 - Ошибка в SQL запросе: SELECT houses.`id` as houses_id_db,houses.`id_project`,houses.`house_number`,houses.`title`,houses.`address`,houses.`coordinates`,houses.`area_coordinates`,sections.* FROM houses  LEFT JOIN sections ON houses.houses_id_db=sections.id_house WHERE houses.id_project='1' - 1054 Unknown column 'houses.houses_id_db' in 'on clause'
+fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 21-05-2023 11:10:34 - Ошибка в SQL запросе: SELECT sections.`id` as section_db_id,sections.`house_number`,sections.`section_number`,sections.`polygon_points` FROM sections  WHERE sections.id_house='1' - 1054 Unknown column 'sections.house_number' in 'field list'
+fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 21-05-2023 15:09:10 - Ошибка подключение к БД: 1045 Access denied for user 'root'@'localhost' (using password: YES)
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
+ In line 29
+

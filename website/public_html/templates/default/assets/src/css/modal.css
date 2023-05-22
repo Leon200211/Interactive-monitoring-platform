@@ -14,8 +14,8 @@
 
 /* Модальное окно */
 #modal-block {
-    background-color:#527c82;
-    color: #fff;
+    background-color: #ffffff;
+    color: black;
     position: fixed;
     top:0;
     left: 100vw;
@@ -47,7 +47,7 @@
     top: 7%;
     right: 5%;
     padding: .5em;
-    color: #ffffff;
+    color: #020202;
     text-decoration: none;
     font-size: 1em;
     box-sizing: border-box;
@@ -81,7 +81,7 @@
 }
 .modal-block_line{
     margin-top: 10px;
-    border-bottom: 2px solid #ffffff; /* Параметры линии */
+    border-bottom: 2px solid #000000; /* Параметры линии */
 }
 .modal-block_body_title{
     font-size: 20px;

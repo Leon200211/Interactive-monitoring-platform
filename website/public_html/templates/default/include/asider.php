@@ -1,6 +1,6 @@
 <div class="app-sidebar colored">
     <div class="sidebar-header">
-        <a class="header-brand" href="index.html">
+        <a class="header-brand" href="/">
             <div class="logo-img">
                 <img src="<?=SITE_URL?>templates/default/assets/imgs/smlt_logo_white_ru.png" class="header-brand-img" alt="lavalite" width="125px">
             </div>

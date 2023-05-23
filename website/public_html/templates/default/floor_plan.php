@@ -23,23 +23,110 @@ require_once "include/head.php";
         <div class="main-content">
         <div class="container" style="position: relative">
                 <div class="img-plan" style="position: relative;">
-                    <div class="flat-selection-wrap" style="position: absolute">
-                     <img src="<?=SITE_URL?>templates/default/assets/imgs/floor-5.png" alt="план проекта" class="flat-img" id="floor-img">
-                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="2.0" x="0px" viewBox="0 0 1920 1080" class="flat-selection" >
-                            <g class="visual_poly"><polygon id="first_flat_2" points="340,-980  340,-490  900,-490 900,-980 "></polygon></g>
-                            <g class="visual_poly"><polygon points="340,-490  340,0  840,0 840,-490 "></polygon></g>
-                            <g class="visual_poly"><polygon points="340,0  340,600  840,600 840,0 "></polygon></g>
-                            <g class="visual_poly"><polygon points="340,600  340,1115  840,1115 840,600 "></polygon></g>
-                            <g class="visual_poly"><polygon points="340,1115  340,1440  840,1440 840,1115 "></polygon></g>
-                            <g class="visual_poly"><polygon points="340,1440  340,1945  900,1945 900,1440 "></polygon></g>
-                            <g class="visual_poly"><polygon points="899,-980  899,-490  1465,-490 1465,-980 "></polygon></g>
-                            <g class="visual_poly"><polygon points="965,-490  965,0  1465,0 1465,-490 "></polygon></g>
-                            <g class="visual_poly"><polygon points="965,0  965,600  1465,600 1465,0 "></polygon></g>
-                            <g class="visual_poly"><polygon points="965,600  965,1115  1465,1115 1465,600 "></polygon></g>
-                            <g class="visual_poly"><polygon points="965,1115  965,1440  1465,1440 1465,1115 "></polygon></g>
-                            <g class="visual_poly"><polygon points="899,1440  899,1945  1465,1945 1465,1440 "></polygon></g>
-                </svg>
-            </div>
+                    <div class="flat-selection-wrap" style="position: absolute; display: flex">
+                     <img src="<?=SITE_URL?>templates/default/assets/imgs/floor-5.png" alt="план проекта" class="flat-img" id="floor-img" style="width: 50%; margin-right: 80px; height: 700px;">
+                        <div class="flat-cards" style=" width: 1200px; height: 700px">
+                            <div class="row ">
+                                <div class="col-sm-4">
+                                    <div class="card flat-card">
+                                        <div class="card-body ">
+                                            <h5 class="card-title">Квартира номер $nomer</h5>
+                                            <p class="card-text">Её свойства</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card flat-card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Квартира номер $nomer</h5>
+                                            <p class="card-text">Её свойства</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card flat-card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Квартира номер $nomer</h5>
+                                            <p class="card-text">Её свойства</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card flat-card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Квартира номер $nomer</h5>
+                                            <p class="card-text">Её свойства</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card flat-card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Квартира номер $nomer</h5>
+                                            <p class="card-text">Её свойства</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card flat-card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Квартира номер $nomer</h5>
+                                            <p class="card-text">Её свойства</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card flat-card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Квартира номер $nomer</h5>
+                                            <p class="card-text">Её свойства</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card flat-card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Квартира номер $nomer</h5>
+                                            <p class="card-text">Её свойства</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card flat-card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Квартира номер $nomer</h5>
+                                            <p class="card-text">Её свойства</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card flat-card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Квартира номер $nomer</h5>
+                                            <p class="card-text">Её свойства</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card flat-card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Квартира номер $nomer</h5>
+                                            <p class="card-text">Её свойства</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card flat-card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Квартира номер $nomer</h5>
+                                            <p class="card-text">Её свойства</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
         </div>
     </div>
                         <a class="btn-modal" href="#modal-block" id="modal-window" style="position: absolute;top: 1000px" hidden="true"></a>
@@ -153,12 +240,14 @@ require_once "include/head.php";
 
         </div>
         <script>
-            const clickable_block = document.getElementById("first_flat_2")
+            const clickable_block = document.querySelectorAll('.flat-card')
             const modal_block = document.getElementById("modal-window")
             const modal_img = document.getElementById("modal-block-img")
-            clickable_block.onclick = function (e){
-                modal_block.click()
-                modal_img.setAttribute("src", "<?=SITE_URL?>templates/default/assets/imgs/"+e.target.id+".png")
+            for (let i = 0; i < clickable_block.length; i++) {
+                clickable_block[i].onclick = function (e) {
+                    modal_block.click()
+                    modal_img.setAttribute("src", "<?=SITE_URL?>templates/default/assets/imgs/" + e.target.id + ".png")
+                }
             }
             const floor_img = document.getElementById('floor-img')
             const floor_selector = document.querySelectorAll(".floor-selector")
@@ -197,6 +286,16 @@ require_once "include/head.php";
                 })
         </script>
         <style>
+            .flat-card{
+                cursor: pointer;
+                transition: all .2s;
+            }
+            .flat-card:hover{
+                transiton: all .2s;
+                margin: -10px 0 0 10px;
+                box-shadow: -10px 10px 20px #bdbdbd;
+
+            }
             .floor_selector{
                 position: relative;
                 z-index: 999;

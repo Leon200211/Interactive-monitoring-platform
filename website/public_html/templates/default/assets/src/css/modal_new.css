@@ -1,0 +1,16 @@
+/*.visual_poly:hover .modal-focus {*/
+/*    visibility: visible;*/
+/*}*/
+.modal-focus {
+    transition: all .5s;
+    display: none;
+    background: white;
+    border: 1px solid rgba(1,1,1,0.1);
+    padding: 10px;
+    position: absolute;
+    z-index: 1000;
+    width: 200px;
+    height: 100px;
+    border-radius: 15px;
+
+}

@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="<?=SITE_URL?>templates/default/assets/src/css/modal.css">
+
 <?php
 require_once "include/head.php";
 ?>

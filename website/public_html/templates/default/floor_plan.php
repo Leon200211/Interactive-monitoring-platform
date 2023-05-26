@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="<?=SITE_URL?>templates/default/assets/src/css/modal.css">
+<link rel="stylesheet" href="<?=SITE_URL?>templates/default/assets/src/css/modal_new.css">
 <?php
 require_once "include/head.php";
 ?>
@@ -24,111 +25,44 @@ require_once "include/head.php";
         <div class="container" style="position: relative">
                 <div class="img-plan" style="position: relative;">
                     <div class="flat-selection-wrap" style="position: absolute; display: flex">
-                     <img src="<?=SITE_URL?>templates/default/assets/imgs/floor-5.png" alt="план проекта" class="flat-img" id="floor-img" style="width: 50%; margin-right: 80px; height: 700px;">
-                        <div class="flat-cards" style=" width: 1200px; height: 700px">
-                            <div class="row ">
-                                <div class="col-sm-4">
-                                    <div class="card flat-card">
-                                        <div class="card-body ">
-                                            <h5 class="card-title">Квартира номер $nomer</h5>
-                                            <p class="card-text">Её свойства</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="card flat-card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Квартира номер $nomer</h5>
-                                            <p class="card-text">Её свойства</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="card flat-card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Квартира номер $nomer</h5>
-                                            <p class="card-text">Её свойства</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="card flat-card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Квартира номер $nomer</h5>
-                                            <p class="card-text">Её свойства</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="card flat-card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Квартира номер $nomer</h5>
-                                            <p class="card-text">Её свойства</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="card flat-card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Квартира номер $nomer</h5>
-                                            <p class="card-text">Её свойства</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="card flat-card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Квартира номер $nomer</h5>
-                                            <p class="card-text">Её свойства</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="card flat-card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Квартира номер $nomer</h5>
-                                            <p class="card-text">Её свойства</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="card flat-card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Квартира номер $nomer</h5>
-                                            <p class="card-text">Её свойства</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="card flat-card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Квартира номер $nomer</h5>
-                                            <p class="card-text">Её свойства</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="card flat-card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Квартира номер $nomer</h5>
-                                            <p class="card-text">Её свойства</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="card flat-card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Квартира номер $nomer</h5>
-                                            <p class="card-text">Её свойства</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                     <img src="<?=SITE_URL?>templates/default/assets/imgs/floor-5.png" alt="план проекта" class="flat-img" id="floor-img" style="">
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="2.0" x="0px" viewBox="0 0 1920 1080" class="flat-selection">
 
+                            <g class="visual_poly"><polygon onmouseover="show()" onmouseout="hide()" class="hover cursor" points="340,-980  340,-490  900,-490 900,-980 " id="first_flat_2"></polygon></g>
+                            <g class="visual_poly"><polygon  class="hover cursor" points="340,-490  340,0  840,0 840,-490 "></polygon></g>
+                            <g class="visual_poly"><polygon  class="hover cursor" points="340,0  340,600  840,600 840,0 "></polygon></g>
+                            <g class="visual_poly"><polygon  class="hover cursor" points="340,600  340,1115  840,1115 840,600 "></polygon></g>
+                        </svg>
+<!--                        <div class="modal-focus" id="tooltip1">-->
+<!--                            <div class="modalcard-body">-->
+<!--                                <img src="templates/default/assets/imgs/first_flat_2.png" style="width: 80%; height: 50%" alt="">-->
+<!--                            </div>-->
+<!--                        </div>-->
+                    </div>
         </div>
     </div>
+            <script>
+                // const modal = document.querySelector('.modal-focus')
+                const vp = document.querySelector('.hover')
+                const fsw = document.querySelector('.flat-selection-wrap')
+                const modal = document.createElement('div')
+                function show() {
+                    // const modal = document.createElement('div')
+                    modal.className = 'modal-focus';
+                    modal.id = 'tooltip1';
+                    modal.style.display = "flex";
+                    modal.innerHTML = '<div class="modalcard-body"><img src="<?=SITE_URL?>templates/default/assets/imgs/first_flat_2.png" style="width: 80%; height: 50%" alt=""></div>'
+                    fsw.appendChild(modal)
+                        // vp.onmousemove = function move_elem(ev){
+                        //     modal.style.left = ev.offsetX + 'px';
+                        //     modal.style.top = ev.offsetY + 'px';
+                        // }
+                    }
+
+                    function hide() {
+                        modal.style.display = 'none'
+                    }
+            </script>
                         <a class="btn-modal" href="#modal-block" id="modal-window" style="position: absolute;top: 1000px" hidden="true"></a>
 
 
@@ -240,7 +174,7 @@ require_once "include/head.php";
 
         </div>
         <script>
-            const clickable_block = document.querySelectorAll('.flat-card')
+            const clickable_block = document.querySelectorAll('.visual_poly')
             const modal_block = document.getElementById("modal-window")
             const modal_img = document.getElementById("modal-block-img")
             for (let i = 0; i < clickable_block.length; i++) {
@@ -286,16 +220,6 @@ require_once "include/head.php";
                 })
         </script>
         <style>
-            .flat-card{
-                cursor: pointer;
-                transition: all .2s;
-            }
-            .flat-card:hover{
-                transiton: all .2s;
-                margin: -10px 0 0 10px;
-                box-shadow: -10px 10px 20px #bdbdbd;
-
-            }
             .floor_selector{
                 position: relative;
                 z-index: 999;
@@ -336,10 +260,10 @@ require_once "include/head.php";
                 cursor: pointer;
                 transition: .3s;
             }
-            .visual_poly:hover{
-                fill: rgba(0, 123, 251, .07);
-                transition: .3s;
-            }
+            /*.visual_poly:hover{*/
+            /*    fill: rgba(0, 123, 251, .07);*/
+            /*    transition: .3s;*/
+            /*}*/
         </style>
         <aside class="right-sidebar">
             <div class="sidebar-chat" data-plugin="chat-sidebar">

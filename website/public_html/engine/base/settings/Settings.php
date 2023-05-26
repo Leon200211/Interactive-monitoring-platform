@@ -60,6 +60,13 @@ class Settings
         ],
 
 
+        '/test' => [
+            'controller' => 'Test',
+            'controllerPath' => '\engine\main\pages\controllers\\',
+            'action' => 'index'
+        ]
+
+
     ];
 
 

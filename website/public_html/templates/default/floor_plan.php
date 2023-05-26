@@ -43,25 +43,25 @@ require_once "include/head.php";
     </div>
             <script>
                 // const modal = document.querySelector('.modal-focus')
-                const vp = document.querySelector('.hover')
-                const fsw = document.querySelector('.flat-selection-wrap')
-                const modal = document.createElement('div')
-                function show() {
-                    // const modal = document.createElement('div')
-                    modal.className = 'modal-focus';
-                    modal.id = 'tooltip1';
-                    modal.style.display = "flex";
-                    modal.innerHTML = '<div class="modalcard-body"><img src="<?=SITE_URL?>templates/default/assets/imgs/first_flat_2.png" style="width: 80%; height: 50%" alt=""></div>'
-                    fsw.appendChild(modal)
-                        // vp.onmousemove = function move_elem(ev){
-                        //     modal.style.left = ev.offsetX + 'px';
-                        //     modal.style.top = ev.offsetY + 'px';
-                        // }
-                    }
-
-                    function hide() {
-                        modal.style.display = 'none'
-                    }
+                //const vp = document.querySelector('.hover')
+                //const fsw = document.querySelector('.flat-selection-wrap')
+                //const modal = document.createElement('div')
+                //function show() {
+                //    // const modal = document.createElement('div')
+                //    modal.className = 'modal-focus';
+                //    modal.id = 'tooltip1';
+                //    modal.style.display = "flex";
+                //    modal.innerHTML = '<div class="modalcard-body"><img src="<?//=SITE_URL?>//templates/default/assets/imgs/first_flat_2.png" style="width: 80%; height: 50%" alt=""></div>'
+                //    fsw.appendChild(modal)
+                //        // vp.onmousemove = function move_elem(ev){
+                //        //     modal.style.left = ev.offsetX + 'px';
+                //        //     modal.style.top = ev.offsetY + 'px';
+                //        // }
+                //    }
+                //
+                //    function hide() {
+                //        modal.style.display = 'none'
+                //    }
             </script>
                         <a class="btn-modal" href="#modal-block" id="modal-window" style="position: absolute;top: 1000px" hidden="true"></a>
 

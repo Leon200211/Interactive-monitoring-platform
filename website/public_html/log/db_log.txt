@@ -30,10 +30,4 @@ Fault: 21-05-2023 11:10:34 - Ошибка в SQL запросе: SELECT sections
 fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
  In line 57
 
-<<<<<<< HEAD
-Fault: 21-05-2023 15:09:10 - Ошибка подключение к БД: 1045 Access denied for user 'root'@'localhost' (using password: YES)
-fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
- In line 29
 
-=======
->>>>>>> f157e1307611374c45eba9a822632b4f9a6eff29

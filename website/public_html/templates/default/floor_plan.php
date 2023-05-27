@@ -25,13 +25,13 @@ require_once "include/head.php";
         <div class="container" style="position: relative">
                 <div class="img-plan" style="position: relative;">
                     <div class="flat-selection-wrap" style="position: absolute; display: flex">
-                     <img src="<?=SITE_URL?>templates/default/assets/imgs/floor-5.png" alt="план проекта" class="flat-img" id="floor-img" style="">
-                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="2.0" x="0px" viewBox="0 0 1920 1080" class="flat-selection">
+                     <img src="<?=SITE_URL?>/templates/default/assets/imgs/floor_imgs/<?=$this->section_img?>" alt="план проекта" class="flat-img" id="floor-img" style="">
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="2.0" x="0px" viewBox="<?=$this->viewBox?>" class="flat-selection">
 
-                            <g class="visual_poly"><polygon onmouseover="show()" onmouseout="hide()" class="hover cursor" points="340,-980  340,-490  900,-490 900,-980 " id="first_flat_2"></polygon></g>
-                            <g class="visual_poly"><polygon  class="hover cursor" points="340,-490  340,0  840,0 840,-490 "></polygon></g>
-                            <g class="visual_poly"><polygon  class="hover cursor" points="340,0  340,600  840,600 840,0 "></polygon></g>
-                            <g class="visual_poly"><polygon  class="hover cursor" points="340,600  340,1115  840,1115 840,600 "></polygon></g>
+                            <?php foreach ($this->sectionData as $key => $apartment): ?>
+                                    <g class="visual_poly" id="<?=$apartment['id_apartments']?>"><path d="<?=$apartment['polygon_points']?>"></path></g>
+                            <?php endforeach; ?>
+
                         </svg>
 <!--                        <div class="modal-focus" id="tooltip1">-->
 <!--                            <div class="modalcard-body">-->
@@ -63,161 +63,206 @@ require_once "include/head.php";
                 //        modal.style.display = 'none'
                 //    }
             </script>
-                        <a class="btn-modal" href="#modal-block" id="modal-window" style="position: absolute;top: 1000px" hidden="true"></a>
 
 
 
-                        <div id="modal-block">
-                            <a class="close-block" href="#close-block">✕</a>
+                        <?php foreach ($this->sectionData as $key => $apartment): ?>
+                            <a class="btn-modal" href="#modal-block_<?=$apartment['id_apartments']?>" id="modal-window_<?=$apartment['id_apartments']?>" style="position: absolute;top: 1000px" hidden="true"></a>
+                            <div class="modal-block" id="modal-block_<?=$apartment['id_apartments']?>">
+                                <a class="close-block" href="#close-block">✕</a>
 
-                            <div class="modal-block_title">
-                                <div class="modal-block_title_apartment">
-                                    Квартира №222
-                                </div>
-                                <div>
-                                    56.07 м²
-                                </div>
-                            </div>
-                            <br>
-
-                            <div class="modal-block_body">
-                                <div class="modal-block_body_img">
-                                    <img src="" alt="план квартиры" id="modal-block-img">
-                                </div>
-                                <button type="button" class="btn btn-dark">Видео</button>
-                                <div class="modal-block_line"></div>
-
-                                <div class="modal-block_body_title">
-                                    Чистовая отделка
-                                </div>
-                                <div class="modal-block_body_checkbox">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Наличие обоев
-                                    </label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Наличие ламината
-                                    </label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Наличие керамической плитки
-                                    </label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Потолок окрашен
-                                    </label>
-
-                                    <br>
-                                    <div class="modal-block_body_subtitle">
-                                        Санузел
+                                <div class="modal-block_title">
+                                    <div class="modal-block_title_apartment">
+                                        Квартира №<?=$apartment['apartment_number']?>
                                     </div>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Ванная
-                                    </label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Унитаз
-                                    </label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Раковина
-                                    </label>
+                                    <div>
+                                        56.07 м²
+                                    </div>
                                 </div>
+                                <br>
 
+                                <form action="#" method="post">
 
+                                    <input name="id_apartment" hidden value="<?=$apartment['id_apartments']?>">
+                                    <input name="id_section" hidden value="<?=$_GET['id_section']?>">
+                                    <input name="floor" hidden value="<?=$_GET['floor']?>">
 
-                                <div class="modal-block_body_title">
-                                    Черновая отделка
+                                <div class="modal-block_body">
+                                    <div class="modal-block_body_img">
+<!--                                        <img src="" alt="план квартиры" id="modal-block-img">-->
+                                    </div>
+                                    <button type="button" class="btn btn-dark">Видео</button>
+                                    <div class="modal-block_line"></div>
+
+                                    <div class="modal-block_body_title">
+                                        Отчет
+                                    </div>
+                                    <div class="modal-block_body_checkbox">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['sockets'] == 1) echo "checked"?> name="sockets">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Розетки
+                                        </label>
+                                        <br>
+
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['switches'] == 1) echo "checked"?> name="switches">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Выключатели
+                                        </label>
+                                        <br>
+
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['toilet'] == 1) echo "checked"?> name="toilet">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Унитаз
+                                        </label>
+                                        <br>
+
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['sink'] == 1) echo "checked"?> name="sink">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Раковина
+                                        </label>
+                                        <br>
+
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['bath'] == 1) echo "checked"?> name="bath">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Ванна
+                                        </label>
+                                        <br>
+
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['floor_finishing'] == 1) echo "checked"?> name="floor_finishing">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Чистовая отделка пола
+                                        </label>
+                                        <br>
+
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['draft_floor_department'] == 1) echo "checked"?> name="draft_floor_department">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Чернова отдела пола
+                                        </label>
+                                        <br>
+
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['ceiling_finishing'] == 1) echo "checked"?> name="ceiling_finishing">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Чистовая отделе потолка
+                                        </label>
+                                        <br>
+
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['draft_ceiling_finish'] == 1) echo "checked"?> name="draft_ceiling_finish">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Черновая отделка потолка
+                                        </label>
+                                        <br>
+
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['wall_finishing'] == 1) echo "checked"?> name="wall_finishing">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Чистовая отделка стен
+                                        </label>
+                                        <br>
+
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['draft_wall_finish'] == 1) echo "checked"?> name="draft_wall_finish">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Черновая отделка стен
+                                        </label>
+                                        <br>
+
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['windowsill'] == 1) echo "checked"?> name="windowsill">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Подоконник
+                                        </label>
+                                        <br>
+
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['kitchen'] == 1) echo "checked"?> name="kitchen">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Кухня
+                                        </label>
+                                        <br>
+
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['slopes'] == 1) echo "checked"?> name="slopes">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Откосы
+                                        </label>
+                                        <br>
+
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['doors'] == 1) echo "checked"?> name="doors">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Двери
+                                        </label>
+                                        <br>
+                                    </div>
+
+                                    <br><br>
+                                    <button type="submit" class="btn btn-primary">Сохранить</button>
                                 </div>
-
-
-
-
-                                <div class="modal-block_body_title">
-                                    Дополнительно
-                                </div>
-
-
-                                <div class="modal-block_body_checkbox">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Установлены двери
-                                    </label>
-                                    <br>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Установлены розетки
-                                    </label>
-                                </div>
-
+                                </form>
 
                             </div>
+                        <?php endforeach; ?>
 
-                        </div>
+
+
                         <div class="floor_selector">
-                            <div id="iter-plus" class="floor-selector">+</div>
-                            <div id="floor-5" class="floor-selector">5</div>
-                            <div id="floor-4" class="floor-selector">4</div>
-                            <div id="floor-3" class="floor-selector">3</div>
-                            <div id="floor-2" class="floor-selector">2</div>
-                            <div id="floor-1" class="floor-selector">1</div>
-                            <div id="back-btn" class="floor-selector"><</div>
-                            <div id="iter-minus" class="floor-selector">-</div>
+<!--                            <div id="iter-plus" class="floor-selector">+</div>-->
+
+                            <?php for ($i = ++$this->floor_count; $i != 1; $i--): ?>
+                                <a href="<?=SITE_URL?>home/floor?id_section=<?=$this->id_section?>&floor=<?=$i?>"><div id="floor-<?=$i?>" class="floor-selector"><?=$i?></div></a>
+                            <?php endfor; ?>
+<!--                            <div id="floor-5" class="floor-selector">5</div>-->
+<!--                            <div id="floor-4" class="floor-selector">4</div>-->
+<!--                            <div id="floor-3" class="floor-selector">3</div>-->
+<!--                            <div id="floor-2" class="floor-selector">2</div>-->
+<!--                            <div id="floor-1" class="floor-selector">1</div>-->
+<!--                            <div id="back-btn" class="floor-selector"><</div>-->
+
+<!--                            <div id="iter-minus" class="floor-selector">-</div>-->
                         </div>
 
         </div>
         <script>
             const clickable_block = document.querySelectorAll('.visual_poly')
-            const modal_block = document.getElementById("modal-window")
+            //const modal_block = document.getElementById("modal-window")
             const modal_img = document.getElementById("modal-block-img")
             for (let i = 0; i < clickable_block.length; i++) {
                 clickable_block[i].onclick = function (e) {
+                    console.log("modal-window_" + clickable_block[i].id);
+                    var modal_block = document.getElementById("modal-window_" + clickable_block[i].id)
                     modal_block.click()
                     modal_img.setAttribute("src", "<?=SITE_URL?>templates/default/assets/imgs/" + e.target.id + ".png")
                 }
             }
-            const floor_img = document.getElementById('floor-img')
-            const floor_selector = document.querySelectorAll(".floor-selector")
-            let iter = 0;
-            for(let i = 0; i < floor_selector.length; i++)
-                floor_selector[i].addEventListener('click', function (event){
-                    if(event.target.id == 'iter-plus'){
-                        if(iter >= 5){
-                            iter = 5
-                            console.log(iter)
-                            floor_img.setAttribute('src', '<?=SITE_URL?>templates/default/assets/imgs/floor-' + iter + '.png')
-                        }else {
-                            iter += 1
-                            console.log(iter)
-                            floor_img.setAttribute('src', '<?=SITE_URL?>templates/default/assets/imgs/floor-' + iter + '.png')
-                        }
-                    } else if(event.target.id == 'iter-minus') {
-                        if (iter <= 1) {
-                            iter = 1
-                            console.log(iter)
-                            floor_img.setAttribute('src', '<?=SITE_URL?>templates/default/assets/imgs/floor-' + iter + '.png')
-                        } else {
-                            iter -= 1
-                            console.log(iter)
-                            floor_img.setAttribute('src', '<?=SITE_URL?>templates/default/assets/imgs/floor-' + iter + '.png')
-                        }
-                    }
-                    else if(event.target.id == 'back-btn'){
-                        window.location.href = "/project"
-                        }
-                    else {
-                        console.log(event.target.textContent)
-                        iter = event.target.textContent
-                        floor_img.setAttribute('src', '<?=SITE_URL?>templates/default/assets/imgs/floor-' + iter + '.png')
-                    }
-                })
+            //const floor_img = document.getElementById('floor-img')
+            //const floor_selector = document.querySelectorAll(".floor-selector")
+            //let iter = 0;
+            //for(let i = 0; i < floor_selector.length; i++)
+            //    floor_selector[i].addEventListener('click', function (event){
+            //        if(event.target.id == 'iter-plus'){
+            //            if(iter >= 5){
+            //                iter = 5
+            //                console.log(iter)
+            //                floor_img.setAttribute('src', '<?//=SITE_URL?>//templates/default/assets/imgs/floor-' + iter + '.png')
+            //            }else {
+            //                iter += 1
+            //                console.log(iter)
+            //                floor_img.setAttribute('src', '<?//=SITE_URL?>//templates/default/assets/imgs/floor-' + iter + '.png')
+            //            }
+            //        } else if(event.target.id == 'iter-minus') {
+            //            if (iter <= 1) {
+            //                iter = 1
+            //                console.log(iter)
+            //                floor_img.setAttribute('src', '<?//=SITE_URL?>//templates/default/assets/imgs/floor-' + iter + '.png')
+            //            } else {
+            //                iter -= 1
+            //                console.log(iter)
+            //                floor_img.setAttribute('src', '<?//=SITE_URL?>//templates/default/assets/imgs/floor-' + iter + '.png')
+            //            }
+            //        }
+            //        else if(event.target.id == 'back-btn'){
+            //            window.location.href = "/project"
+            //            }
+            //        else {
+            //            console.log(event.target.textContent)
+            //            iter = event.target.textContent
+            //            floor_img.setAttribute('src', '<?//=SITE_URL?>//templates/default/assets/imgs/floor-' + iter + '.png')
+            //        }
+            //    })
         </script>
         <style>
             .floor_selector{

@@ -118,7 +118,7 @@ abstract class BaseModel extends BaseModelMethods
             'operand' => ['='],
             'condition' => ['OR'],
             'on' => ['id', 'namessea']
-        ],
+            ],
         'join_table2' => [
             'table' => 'join_table1',
             'fields' => ['id as j2_id', 'name as j2_name'],

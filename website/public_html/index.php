@@ -6,14 +6,17 @@
 
 // константа безопасности
 define('VG_ACCESS', true);
-//error_reporting(0);
+
 
 header('Content-Type:text/html;charset=utf-8'); // в какой кодировки пользователь обрабатывает данные (первый заголовок)
-session_start(); //стартуем сессию
+if(!isset($_SESSION)){
+    session_start(); //стартуем сессию
+}
+
 
 
 // отключаем сообщение о предупреждениях
-//error_reporting(0);
+error_reporting(0);
 
 
 require_once 'config.php';  // базовые настройки для хостинга

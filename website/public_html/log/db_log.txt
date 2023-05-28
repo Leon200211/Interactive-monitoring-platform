@@ -31,3 +31,7 @@ fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring
  In line 57
 
 
+Fault: 28-05-2023 12:39:29 - Ошибка подключение к БД: 2002 Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
+ In line 29
+

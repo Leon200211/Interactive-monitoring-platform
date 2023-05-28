@@ -41,6 +41,9 @@ class AccessRightsController extends AuthenticationController
         '/home/floor' => [
             'admin', 'ceo', 'manager'
         ],
+        '/home/apartment/update' => [
+            'admin', 'ceo', 'manager'
+        ],
 
     ];
 

@@ -58,6 +58,11 @@ class Settings
             'controllerPath' => '\engine\main\pages\controllers\\',
             'action' => 'index'
         ],
+        '/home/apartment/update' => [
+            'controller' => 'FloorPlan',
+            'controllerPath' => '\engine\main\pages\controllers\\',
+            'action' => 'updateData'
+        ],
 
 
         '/test' => [

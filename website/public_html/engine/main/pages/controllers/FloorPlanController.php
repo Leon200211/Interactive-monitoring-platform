@@ -2,9 +2,11 @@
 
 namespace engine\main\pages\controllers;
 
+
 use engine\base\controllers\BaseController;
 use engine\main\authentication\controllers\AccessRightsController;
 use engine\main\authentication\models\MainModel;
+use mysqli_sql_exception;
 
 
 /**
@@ -78,6 +80,63 @@ class FloorPlanController extends BaseController
     public function outputData()
     {
         return $this->render($_SERVER['DOCUMENT_ROOT'] . '/templates/default/floor_plan');
+    }
+
+
+    /**
+     * @return void
+     */
+    public function updateData()
+    {
+        if(!$this->model) $this->model = MainModel::getInstance();
+        if(!$this->accessRightsChecker) $this->accessRightsChecker = AccessRightsController::getInstance();
+
+
+        $id_apartment = $_POST['id_apartment'];
+        $id_section = $_POST['id_section'];
+        $floor = !empty($_POST['floor']) ? $_POST['floor'] : 2;
+
+
+        // Начало транзакции
+        mysqli_begin_transaction($this->model->getDbConnection());
+        try {
+
+            // Обновляем данные
+            $this->model->update('apartments', [
+               'fields' => [
+                   'sockets' => isset($_POST['sockets']) ? 1 : 0,
+                   'switches' => isset($_POST['switches']) ? 1 : 0,
+                   'toilet' => isset($_POST['toilet']) ? 1 : 0,
+                   'sink' => isset($_POST['sink']) ? 1 : 0,
+                   'bath' => isset($_POST['bath']) ? 1 : 0,
+                   'floor_finishing' => isset($_POST['floor_finishing']) ? 1 : 0,
+                   'draft_floor_department' => isset($_POST['draft_floor_department']) ? 1 : 0,
+                   'ceiling_finishing' => isset($_POST['ceiling_finishing']) ? 1 : 0,
+                   'draft_ceiling_finish' => isset($_POST['draft_ceiling_finish']) ? 1 : 0,
+                   'wall_finishing' => isset($_POST['wall_finishing']) ? 1 : 0,
+                   'draft_wall_finish' => isset($_POST['draft_wall_finish']) ? 1 : 0,
+                   'windowsill' => isset($_POST['windowsill']) ? 1 : 0,
+                   'slopes' => isset($_POST['slopes']) ? 1 : 0,
+                   'doors' => isset($_POST['doors']) ? 1 : 0,
+               ],
+                'where' => [
+                    'id' => $id_apartment
+                ]
+            ]);
+
+            // Если код достигает этой точки без ошибок, фиксируем данные в базе данных.
+            mysqli_commit($this->model->getDbConnection());
+
+            // Добавляем уведомление
+
+        } catch (mysqli_sql_exception $exception) {
+            mysqli_rollback($this->model->getDbConnection());
+
+            throw $exception;
+        }
+
+        $this->redirect("/home/floor?id_section=$id_section&floor=$floor");
+
     }
 
 }

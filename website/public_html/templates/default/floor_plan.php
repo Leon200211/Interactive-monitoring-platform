@@ -81,7 +81,7 @@ require_once "include/head.php";
                                 </div>
                                 <br>
 
-                                <form action="#" method="post">
+                                <form action="/home/apartment/update" method="POST">
 
                                     <input name="id_apartment" hidden value="<?=$apartment['id_apartments']?>">
                                     <input name="id_section" hidden value="<?=$_GET['id_section']?>">

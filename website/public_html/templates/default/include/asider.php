@@ -11,29 +11,29 @@
         <div class="nav-container">
             <nav id="main-menu-navigation" class="navigation-main">
                 <div class="nav-lavel">Навигация</div>
-                <div class="nav-item active">
-                    <a href="/"><i class="ik ik-home"></i><span>Главная</span></a>
-                </div>
                 <div class="nav-item">
+                    <a href="/" onclick="return false;"><i class="ik ik-home"></i><span>Главная</span></a>
+                </div>
+                <div class="nav-item active">
                     <a href="/projects"><i class="ik ik-menu"></i><span>Проекты</span></a>
                 </div>
 
 
                 <div class="nav-lavel">Приложения</div>
                 <div class="nav-item">
-                    <a href="pages/calendar.html"><i class="ik ik-calendar"></i><span>Календарь</span></a>
+                    <a href="pages/calendar.html" onclick="return false;"><i class="ik ik-calendar"></i><span>Календарь</span></a>
                 </div>
                 <div class="nav-item">
-                    <a href="pages/taskboard.html"><i class="ik ik-server"></i><span>Панель задач</span></a>
+                    <a href="pages/taskboard.html" onclick="return false;"><i class="ik ik-server"></i><span>Панель задач</span></a>
                 </div>
 
 
                 <div class="nav-lavel">Поддержка</div>
                 <div class="nav-item">
-                    <a href="javascript:void(0)"><i class="ik ik-monitor"></i><span>Документация</span></a>
+                    <a href="javascript:void(0)" onclick="return false;"><i class="ik ik-monitor"></i><span>Документация</span></a>
                 </div>
                 <div class="nav-item">
-                    <a href="javascript:void(0)"><i class="ik ik-help-circle"></i><span>Задать вопрос</span></a>
+                    <a href="javascript:void(0)" onclick="return false;"><i class="ik ik-help-circle"></i><span>Задать вопрос</span></a>
                 </div>
             </nav>
         </div>

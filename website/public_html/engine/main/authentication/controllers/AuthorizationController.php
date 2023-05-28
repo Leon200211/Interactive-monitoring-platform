@@ -95,7 +95,7 @@ class AuthorizationController extends AuthenticationController
             ]);
 
 
-            $this->redirect('/');
+            $this->redirect('/projects');
         }else{
             $this->redirect('/login?error=Неверный логин или пароль');
         }

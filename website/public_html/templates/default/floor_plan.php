@@ -102,91 +102,128 @@ require_once "include/head.php";
                                         Отчет
                                     </div>
                                     <div class="modal-block_body_checkbox">
-                                        Розетки
-                                        <input class="form-check-input" type="number" value="<?=$apartment['sockets']?>" id="flexCheckDefault" name="sockets">
-                                        <br>
-                                        <br>
+                                        <div class="modal-bloc-content">
+                                            <span>Розетки</span>
+                                            <input class="form-check-input" type="number" value="<?=$apartment['sockets']?>" id="flexCheckDefault" name="sockets">
+                                        </div>
 
-                                        Выключатели
-                                        <input class="form-check-input" type="number" value="<?=$apartment['switches']?>" id="flexCheckDefault" name="switches">
-                                        <br>
+                                        <div class="modal-bloc-content">
+                                            <label for="flexCheckDefault">Выключатели</label>
+                                            <input class="form-check-input" type="number" value="<?=$apartment['switches']?>" id="flexCheckDefault" name="switches">
+                                        </div>
 
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['toilet'] == 1) echo "checked"?> name="toilet">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Унитаз
-                                        </label>
-                                        <br>
+                                        <div class="modal-bloc-content">
+                                            <label class="form-check-label" for="flexCheckDefault">Унитаз</label>
+                                            <input class="form-check-box" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['toilet'] == 1) echo "checked"?> name="toilet">
 
-                                        <input class="form-check-input" value="<?=$apartment['sink']?>" id="flexCheckDefault" name="sink">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Раковина
-                                        </label>
-                                        <br>
+                                        </div>
 
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['bath'] == 1) echo "checked"?> name="bath">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Ванна
-                                        </label>
-                                        <br>
+                                        <div class="modal-bloc-content">
+                                            <span>Раковина</span>
+                                            <input type="number" class="form-check-input" value="<?=$apartment['sink']?>" id="flexCheckDefault" name="sink">
+                                        </div>
 
-                                        Чистовая отделка пола
-                                        <input class="form-check-input" type="number" value="<?=$apartment['floor_finishing']?>" id="flexCheckDefault" name="floor_finishing">
-                                        <br>
+                                        <div class="modal-bloc-content">
+                                            <label class="form-check-label" for="flexCheckDefault">Ванна</label>
+                                            <input class="form-check-box" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['bath'] == 1) echo "checked"?> name="bath">
 
-                                        Чернова отдела пола
-                                        <input class="form-check-input" type="number" value="<?=$apartment['draft_floor_department']?>" id="flexCheckDefault" name="draft_floor_department">
-                                        <br>
+                                        </div>
 
-                                        Чистовая отделе потолка
-                                        <input class="form-check-input" type="number" value="<?=$apartment['ceiling_finishing']?>" id="flexCheckDefault" name="ceiling_finishing">
-                                        <br>
+                                        <div class="modal-bloc-content">
+                                            <span>Чистовая отделка пола</span>
+                                            <input class="form-check-input" type="number" value="<?=$apartment['floor_finishing']?>" id="flexCheckDefault" name="floor_finishing">
+                                        </div>
 
-                                        Черновая отделка потолка
-                                        <input class="form-check-input" type="number" value="<?=$apartment['draft_ceiling_finish']?>" id="flexCheckDefault" name="draft_ceiling_finish">
-                                        <br>
+                                        <div class="modal-bloc-content">
+                                            <span>Чернова отдела пола</span>
+                                            <input class="form-check-input" type="number" value="<?=$apartment['draft_floor_department']?>" id="flexCheckDefault" name="draft_floor_department">
+                                        </div>
 
-                                        Чистовая отделка стен
-                                        <input class="form-check-input" type="number" value="<?=$apartment['wall_finishing']?>" id="flexCheckDefault" name="wall_finishing">
-                                        <br>
+                                        <div class="modal-bloc-content">
+                                            <span>Чистовая отделе потолка</span>
+                                            <input class="form-check-input" type="number" value="<?=$apartment['ceiling_finishing']?>" id="flexCheckDefault" name="ceiling_finishing">
+                                        </div>
 
-                                        Черновая отделка стен
-                                        <input class="form-check-input" type="number" value="<?=$apartment['draft_wall_finish']?>" id="flexCheckDefault" name="draft_wall_finish">
-                                        <br>
+                                        <div class="modal-bloc-content">
+                                            <span>Черновая отделка потолка</span>
+                                            <input class="form-check-input" type="number" value="<?=$apartment['draft_ceiling_finish']?>" id="flexCheckDefault" name="draft_ceiling_finish">
+                                        </div>
 
-                                        Подоконник
-                                        <input class="form-check-input" type="number" value="<?=$apartment['windowsill']?>" id="flexCheckDefault" name="windowsill">
-                                        <br>
+                                        <div class="modal-bloc-content">
+                                            <span>Чистовая отделка стен</span>
+                                            <input class="form-check-input" type="number" value="<?=$apartment['wall_finishing']?>" id="flexCheckDefault" name="wall_finishing">
+                                        </div>
 
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['kitchen'] == 1) echo "checked"?> name="kitchen">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Кухня
-                                        </label>
-                                        <br>
+                                        <div class="modal-bloc-content">
+                                            <span>Черновая отделка стен</span>
+                                            <input class="form-check-input" type="number" value="<?=$apartment['draft_wall_finish']?>" id="flexCheckDefault" name="draft_wall_finish">
+                                        </div>
 
-                                        Откосы
-                                        <input class="form-check-input" type="number" value="<?=$apartment['slopes']?>" id="flexCheckDefault" name="slopes">
-                                        <br>
+                                        <div class="modal-bloc-content">
+                                            <span>Подоконник</span>
+                                            <input class="form-check-input" type="number" value="<?=$apartment['windowsill']?>" id="flexCheckDefault" name="windowsill">
+                                        </div>
 
-                                        Двери
-                                        <input class="form-check-input" type="number" value="<?=$apartment['doors']?>" id="flexCheckDefault" name="doors">
-                                        <br>
+                                        <div class="modal-bloc-content">
+                                            <label class="form-check-label" for="flexCheckDefault">Кухня</label>
+                                            <input class="form-check-box" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['kitchen'] == 1) echo "checked"?> name="kitchen">
 
-                                        Штукатуренные стены
-                                        <input class="form-check-input" type="number" value="<?=$apartment['wall_plaster']?>" id="flexCheckDefault" name="wall_plaster">
-                                        <br>
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['trash'] == 1) echo "checked"?> name="trash">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Мусор
-                                        </label>
-                                        <br>
-                                        Радиаторы
-                                        <input class="form-check-input" type="number" value="<?=$apartment['radiator']?>" id="flexCheckDefault" name="radiator">
-                                        <br>
+                                        </div>
+
+                                        <div class="modal-bloc-content">
+                                            <span>Откосы</span>
+                                            <input class="form-check-input" type="number" value="<?=$apartment['slopes']?>" id="flexCheckDefault" name="slopes">
+                                        </div>
+
+                                        <div class="modal-bloc-content">
+                                            <span>Двери</span>
+                                            <input class="form-check-input" type="number" value="<?=$apartment['doors']?>" id="flexCheckDefault" name="doors">
+                                        </div>
+
+                                        <div class="modal-bloc-content">
+                                            <span>Штукатуренные стены</span>
+                                            <input class="form-check-input" type="number" value="<?=$apartment['wall_plaster']?>" id="flexCheckDefault" name="wall_plaster">
+                                        </div>
+
+                                        <div class="modal-bloc-content">
+                                            <label class="form-check-label" for="flexCheckDefault">Мусор</label>
+                                            <input class="form-check-box" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['trash'] == 1) echo "checked"?> name="trash">
+                                        </div>
+                                        <div class="modal-bloc-content">
+                                            <span>Радиаторы</span>
+                                            <input class="form-check-input" type="number" value="<?=$apartment['radiator']?>" id="flexCheckDefault" name="radiator">
+                                        </div>
                                     </div>
 
-                                    <br><br>
+
                                     <button type="submit" class="btn btn-primary">Сохранить</button>
+
                                 </div>
+                                    <style>
+                                        .form-check-box{
+                                            gap: 10px;
+                                            margin-left: 5px;
+                                            position: absolute;
+                                        }
+                                        .modal-bloc-content{
+                                            position: relative;
+                                            /*display: flex;*/
+                                            padding: 5px 10px;
+                                        }
+                                        .form-check-input{
+                                            position: absolute;
+                                            margin-left: 10px;
+                                            border: 1px solid blue;
+                                            width: 50px;
+                                            border-radius: 20px;
+                                            text-align: center;
+                                        }
+                                        .modal-block_body_checkbox{
+                                            position: relative;
+                                            display: block;
+                                        }
+
+                                    </style>
                                 </form>
 
                             </div>

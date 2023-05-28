@@ -19,7 +19,7 @@ class FloorPlanController extends BaseController
     protected $floor_number;
     protected $floor_count;
     protected $section_img;
-    protected $veiwBox;
+    protected $viewBox;
 
     public function index ()
     {
@@ -73,7 +73,7 @@ class FloorPlanController extends BaseController
         ]));
 
         $this->section_img = $this->sectionData[0]['floor_plan_img'];
-        $this->veiwBox = $this->sectionData[0]['viewBox'];
+        $this->viewBox = $this->sectionData[0]['viewBox'];
 
     }
 

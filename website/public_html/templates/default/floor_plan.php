@@ -29,39 +29,39 @@ require_once "include/head.php";
                         <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="2.0" x="0px" viewBox="<?=$this->viewBox?>" class="flat-selection">
 
                             <?php foreach ($this->sectionData as $key => $apartment): ?>
-                                    <g class="visual_poly" id="<?=$apartment['id_apartments']?>"><path d="<?=$apartment['polygon_points']?>"></path></g>
+                                    <g onmouseout="hide()"  class="visual_poly" id="<?=$apartment['id_apartments']?>"><path  d="<?=$apartment['polygon_points']?>" id="<?=$apartment['id_apartments']?>"></path></g>
                             <?php endforeach; ?>
 
                         </svg>
-<!--                        <div class="modal-focus" id="tooltip1">-->
-<!--                            <div class="modalcard-body">-->
-<!--                                <img src="templates/default/assets/imgs/first_flat_2.png" style="width: 80%; height: 50%" alt="">-->
-<!--                            </div>-->
-<!--                        </div>-->
+                        <div class="modal-focus" id="tooltip1">
+                            <div class="modalcard-body">
+                                123
+                            </div>
+                        </div>
                     </div>
         </div>
     </div>
             <script>
-                // const modal = document.querySelector('.modal-focus')
-                //const vp = document.querySelector('.hover')
-                //const fsw = document.querySelector('.flat-selection-wrap')
-                //const modal = document.createElement('div')
-                //function show() {
-                //    // const modal = document.createElement('div')
-                //    modal.className = 'modal-focus';
-                //    modal.id = 'tooltip1';
-                //    modal.style.display = "flex";
-                //    modal.innerHTML = '<div class="modalcard-body"><img src="<?//=SITE_URL?>//templates/default/assets/imgs/first_flat_2.png" style="width: 80%; height: 50%" alt=""></div>'
-                //    fsw.appendChild(modal)
-                //        // vp.onmousemove = function move_elem(ev){
-                //        //     modal.style.left = ev.offsetX + 'px';
-                //        //     modal.style.top = ev.offsetY + 'px';
-                //        // }
-                //    }
-                //
-                //    function hide() {
-                //        modal.style.display = 'none'
-                //    }
+                 const modal = document.querySelector('.modal-focus')
+                const vp = document.querySelectorAll('.visual_poly')
+                 const pd = document.querySelectorAll('path')
+                const fsw = document.querySelector('.flat-selection-wrap')
+                 const modal_body = document.querySelector('.modalcard-body')
+                // const modal = document.createElement('div')
+                 for (let i = 0; i < vp.length; i++) {
+                     vp[i].onmouseover =  function (){
+                         modal_body.innerHTML = ''
+                         console.log('123')
+                         modal.style.display = "flex";
+                         let rect = vp[i].getBoundingClientRect()
+                         modal.style.top = rect.top + 'px'
+                         modal.style.left = rect.left -100 + 'px'
+                     }
+                 }
+
+                    function hide() {
+                        modal.style.display = 'none'
+                            }
             </script>
 
 
@@ -201,7 +201,7 @@ require_once "include/head.php";
 
                         <div class="floor_selector">
 <!--                            <div id="iter-plus" class="floor-selector">+</div>-->
-
+                            <a href="<?=SITE_URL?>project?id_project=100"><div class="floor-selector"><</div></a>
                             <?php for ($i = ++$this->floor_count; $i != 1; $i--): ?>
                                 <a href="<?=SITE_URL?>home/floor?id_section=<?=$this->id_section?>&floor=<?=$i?>"><div id="floor-<?=$i?>" class="floor-selector"><?=$i?></div></a>
                             <?php endfor; ?>
@@ -228,41 +228,6 @@ require_once "include/head.php";
                     modal_img.setAttribute("src", "<?=SITE_URL?>templates/default/assets/imgs/" + e.target.id + ".png")
                 }
             }
-            //const floor_img = document.getElementById('floor-img')
-            //const floor_selector = document.querySelectorAll(".floor-selector")
-            //let iter = 0;
-            //for(let i = 0; i < floor_selector.length; i++)
-            //    floor_selector[i].addEventListener('click', function (event){
-            //        if(event.target.id == 'iter-plus'){
-            //            if(iter >= 5){
-            //                iter = 5
-            //                console.log(iter)
-            //                floor_img.setAttribute('src', '<?//=SITE_URL?>//templates/default/assets/imgs/floor-' + iter + '.png')
-            //            }else {
-            //                iter += 1
-            //                console.log(iter)
-            //                floor_img.setAttribute('src', '<?//=SITE_URL?>//templates/default/assets/imgs/floor-' + iter + '.png')
-            //            }
-            //        } else if(event.target.id == 'iter-minus') {
-            //            if (iter <= 1) {
-            //                iter = 1
-            //                console.log(iter)
-            //                floor_img.setAttribute('src', '<?//=SITE_URL?>//templates/default/assets/imgs/floor-' + iter + '.png')
-            //            } else {
-            //                iter -= 1
-            //                console.log(iter)
-            //                floor_img.setAttribute('src', '<?//=SITE_URL?>//templates/default/assets/imgs/floor-' + iter + '.png')
-            //            }
-            //        }
-            //        else if(event.target.id == 'back-btn'){
-            //            window.location.href = "/project"
-            //            }
-            //        else {
-            //            console.log(event.target.textContent)
-            //            iter = event.target.textContent
-            //            floor_img.setAttribute('src', '<?//=SITE_URL?>//templates/default/assets/imgs/floor-' + iter + '.png')
-            //        }
-            //    })
         </script>
         <style>
             .floor_selector{
@@ -305,10 +270,10 @@ require_once "include/head.php";
                 cursor: pointer;
                 transition: .3s;
             }
-            /*.visual_poly:hover{*/
-            /*    fill: rgba(0, 123, 251, .07);*/
-            /*    transition: .3s;*/
-            /*}*/
+            .visual_poly:hover{
+                fill: rgba(0, 123, 251, .07);
+                transition: .3s;
+            }
         </style>
         <aside class="right-sidebar">
             <div class="sidebar-chat" data-plugin="chat-sidebar">
@@ -500,5 +465,6 @@ require_once "include/head.php";
         </div>
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </body>
 

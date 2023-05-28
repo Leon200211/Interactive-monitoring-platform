@@ -1,0 +1,152 @@
+{
+  "name": "info_field",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "jzuwoTvIOeRK3P1G8NpduC",
+    "node": "79:137",
+    "version": "3560711079",
+    "component-id": "844ef603d5ee4b3cb58354b32d03da6d4c213cfe"
+  },
+  "default": "Info_Field",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "InfoLabel"
+      },
+      {
+        "type": "text",
+        "id": "LabelValue"
+      }
+    ],
+    "modes": {
+      "Info_Field": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "6.0",
+              "top": "2.0",
+              "right": "6.0",
+              "bottom": "2.0"
+            },
+            "border-radius": "20.0",
+            "tap-handler": "$onItemClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "InfoLabel",
+              "LabelValue"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "222.85714285714286",
+              "saturation": "0.027888446215139345",
+              "value": "0.984313725490196"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "InfoLabel",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "49.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "240.0",
+              "saturation": "0.125",
+              "value": "0.18823529411764706"
+            },
+            "text-content": "$labelText",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "line-height": "1.2599999564034599",
+            "typeface": "CoFo Sans"
+          },
+          {
+            "id": "LabelValue",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "226.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "210.71428571428572",
+              "saturation": "1.0",
+              "value": "0.9882352941176471"
+            },
+            "text-content": "$valueText",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "right",
+            "line-height": "1.2599999564034599",
+            "typeface": "CoFo Sans"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onItemClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "labelText": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "valueText": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Info_Field",
+      "size": {
+        "width": 297.0,
+        "height": 22.0
+      },
+      "parameters": {
+        "labelText": "ЖК",
+        "valueText": "Остафьево"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

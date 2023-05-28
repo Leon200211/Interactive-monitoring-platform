@@ -1,0 +1,113 @@
+{
+  "name": "blue1line_button",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "jzuwoTvIOeRK3P1G8NpduC",
+    "node": "315:254",
+    "version": "3560670834",
+    "component-id": "1e31ba2cce2d705ee8aa9d872fad022caec2c5db"
+  },
+  "default": "Blue1LineButton",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "ButtonText"
+      }
+    ],
+    "modes": {
+      "Blue1LineButton": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "36.0",
+              "top": "9.0",
+              "right": "36.0",
+              "bottom": "9.0"
+            },
+            "border-radius": "10.0",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "tap-handler": "$onItemClicked",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "ButtonText"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "210.71428571428572",
+              "saturation": "1.0",
+              "value": "0.9882352941176471"
+            }
+          },
+          {
+            "id": "ButtonText",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "$buttonText",
+            "overflow": "visible",
+            "line-height": "1.2189999989100866",
+            "typeface": "Montserrat"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onItemClicked": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "buttonText": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Blue1LineButton",
+      "size": {
+        "width": 130.0,
+        "height": 35.0
+      },
+      "parameters": {
+        "buttonText": "Создать"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

@@ -1,0 +1,87 @@
+{
+  "name": "month_monitoring_label",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "jzuwoTvIOeRK3P1G8NpduC",
+    "node": "139:317",
+    "version": "3531144769",
+    "component-id": "b13c18a511064674917b3ef1d02829275ea7d8d3"
+  },
+  "default": "MonthMonitoringLabel",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "MonthLabel"
+      }
+    ],
+    "modes": {
+      "MonthMonitoringLabel": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "MonthLabel"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "MonthLabel",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "210.71428571428572",
+              "saturation": "1.0",
+              "value": "0.9882352941176471"
+            },
+            "text-content": "$monthName",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "20.0",
+            "line-height": "1.2600000381469727",
+            "typeface": "CoFo Sans"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "monthName": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "MonthMonitoringLabel",
+      "size": {
+        "width": 50.0,
+        "height": 25.0
+      },
+      "parameters": {
+        "monthName": "Март"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

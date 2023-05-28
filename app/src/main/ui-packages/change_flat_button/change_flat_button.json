@@ -1,0 +1,114 @@
+{
+  "name": "change_flat_button",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "jzuwoTvIOeRK3P1G8NpduC",
+    "node": "198:639",
+    "version": "3539571440",
+    "component-id": "961a23ebe9ab7f827227223a499603342fc1f486"
+  },
+  "default": "ChangeFlatButton",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "TextLabelEnter"
+      },
+      {
+        "type": "text",
+        "id": "TextLabelWhat"
+      }
+    ],
+    "modes": {
+      "ChangeFlatButton": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "19.0",
+              "top": "2.0",
+              "right": "19.0",
+              "bottom": "2.0"
+            },
+            "border-radius": "20.0",
+            "tap-handler": "$onItemClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "TextLabelEnter",
+              "TextLabelWhat"
+            ],
+            "item-spacing": "2.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "210.71428571428572",
+              "saturation": "1.0",
+              "value": "0.9882352941176471"
+            }
+          },
+          {
+            "id": "TextLabelEnter",
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "222.85714285714286",
+              "saturation": "0.027888446215139345",
+              "value": "0.984313725490196"
+            },
+            "text-content": "Ввести",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "line-height": "1.2599999564034599",
+            "typeface": "CoFo Sans"
+          },
+          {
+            "id": "TextLabelWhat",
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "222.85714285714286",
+              "saturation": "0.027888446215139345",
+              "value": "0.984313725490196"
+            },
+            "text-content": "квартиру",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "line-height": "1.2599999564034599",
+            "typeface": "CoFo Sans"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onItemClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "ChangeFlatButton",
+      "size": {
+        "width": 99.0,
+        "height": 42.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

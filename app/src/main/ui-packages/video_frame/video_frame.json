@@ -1,0 +1,112 @@
+{
+  "name": "video_frame",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "jzuwoTvIOeRK3P1G8NpduC",
+    "node": "322:353",
+    "version": "3560713123",
+    "component-id": "fb2bbfef59a2596e7c91fdc4b39611fb99b07030"
+  },
+  "default": "VideoFrame",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Vector 146"
+      }
+    ],
+    "modes": {
+      "VideoFrame": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "138.0",
+              "top": "63.0",
+              "right": "138.0",
+              "bottom": "63.0"
+            },
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "tap-handler": "$onItemClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "Vector 146"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "222.85714285714286",
+              "saturation": "0.027888446215139345",
+              "value": "0.984313725490196"
+            }
+          },
+          {
+            "id": "Vector 146",
+            "border-radius": "3.0",
+            "tap-handler": "$onPlayClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "18.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              }
+            },
+            "vector-content": "vector_146.svg"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onItemClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "onPlayClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "VideoFrame",
+      "size": {
+        "width": 294.0,
+        "height": 150.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

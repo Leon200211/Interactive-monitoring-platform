@@ -1,0 +1,186 @@
+{
+  "name": "flat_input_field",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "jzuwoTvIOeRK3P1G8NpduC",
+    "node": "198:657",
+    "version": "3539501275",
+    "component-id": "64845b14998e02e7c8485c3dc119674b9e2bfdf3"
+  },
+  "default": "FlatInputField",
+  "documentation": "ASAD",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Label"
+      },
+      {
+        "type": "group",
+        "id": "FieldGroup"
+      },
+      {
+        "type": "group",
+        "id": "Button"
+      },
+      {
+        "type": "text",
+        "id": "ButtonText"
+      }
+    ],
+    "modes": {
+      "FlatInputField": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "5.0",
+              "top": "14.0",
+              "right": "5.0",
+              "bottom": "14.0"
+            },
+            "border-radius": "20.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "children": [
+              "Label",
+              "FieldGroup",
+              "Button"
+            ],
+            "item-spacing": "9.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "210.71428571428572",
+              "saturation": "1.0",
+              "value": "0.9882352941176471"
+            }
+          },
+          {
+            "id": "Label",
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "Введите квартиру",
+            "overflow": "visible",
+            "text-size": "16.0",
+            "line-height": "1.2599999904632568",
+            "typeface": "CoFo Sans"
+          },
+          {
+            "id": "FieldGroup",
+            "padding": {
+              "left": "12.0",
+              "right": "12.0"
+            },
+            "border-radius": "20.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "92.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink",
+                "min": "30.0"
+              }
+            },
+            "main-axis-align": "start",
+            "children": "$fieldItem",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "222.85714285714286",
+              "saturation": "0.027888446215139345",
+              "value": "0.984313725490196"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "Button",
+            "padding": {
+              "left": "20.0",
+              "top": "5.0",
+              "right": "20.0",
+              "bottom": "5.0"
+            },
+            "border-radius": "20.0",
+            "tap-handler": "$onOkClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "children": [
+              "ButtonText"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "222.85714285714286",
+              "saturation": "0.027888446215139345",
+              "value": "0.984313725490196"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "ButtonText",
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "0.8470588235294118",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.09411764705882353"
+            },
+            "text-content": "ОК",
+            "overflow": "visible",
+            "text-size": "16.0",
+            "line-height": "1.2599999904632568",
+            "typeface": "CoFo Sans"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "fieldItem": {
+      "data-type": "list-item",
+      "required": false,
+      "description": ""
+    },
+    "onOkClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "FlatInputField",
+      "size": {
+        "width": 144.0,
+        "height": 126.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

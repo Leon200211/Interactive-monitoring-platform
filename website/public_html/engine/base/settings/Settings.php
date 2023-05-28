@@ -69,6 +69,11 @@ class Settings
             'controller' => 'Test',
             'controllerPath' => '\engine\main\pages\controllers\\',
             'action' => 'index'
+        ],
+        '/rest' => [
+            'controller' => 'Rest',
+            'controllerPath' => '\engine\main\pages\controllers\\',
+            'action' => 'index'
         ]
 
 

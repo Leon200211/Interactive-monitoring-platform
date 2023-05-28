@@ -23,6 +23,9 @@ require_once "include/head.php";
         ?>
         <div class="main-content">
         <div class="container" style="position: relative">
+
+            <h1>Этаж №<?=isset($_GET['floor']) ? $_GET['floor'] : 2?></h1>
+
                 <div class="img-plan" style="position: relative;">
                     <div class="flat-selection-wrap" style="position: absolute; display: flex">
                      <img src="<?=SITE_URL?>/templates/default/assets/imgs/floor_imgs/<?=$this->section_img?>" alt="план проекта" class="flat-img" id="floor-img" style="">
@@ -35,7 +38,7 @@ require_once "include/head.php";
                         </svg>
                         <div class="modal-focus" id="tooltip1">
                             <div class="modalcard-body">
-                                123
+                                Кварти
                             </div>
                         </div>
                     </div>
@@ -43,15 +46,16 @@ require_once "include/head.php";
     </div>
             <script>
                  const modal = document.querySelector('.modal-focus')
-                const vp = document.querySelectorAll('.visual_poly')
+                 const vp = document.querySelectorAll('.visual_poly')
                  const pd = document.querySelectorAll('path')
-                const fsw = document.querySelector('.flat-selection-wrap')
+                 const fsw = document.querySelector('.flat-selection-wrap')
                  const modal_body = document.querySelector('.modalcard-body')
-                // const modal = document.createElement('div')
+                 // const modal = document.createElement('div')
                  for (let i = 0; i < vp.length; i++) {
                      vp[i].onmouseover =  function (){
-                         modal_body.innerHTML = ''
-                         console.log('123')
+                         console.log(vp[i])
+                         modal_body.innerHTML = '<strong>Квартира№ ' + vp[i].id + "</strong>"
+
                          modal.style.display = "flex";
                          let rect = vp[i].getBoundingClientRect()
                          modal.style.top = rect.top + 'px'
@@ -98,16 +102,13 @@ require_once "include/head.php";
                                         Отчет
                                     </div>
                                     <div class="modal-block_body_checkbox">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['sockets'] == 1) echo "checked"?> name="sockets">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Розетки
-                                        </label>
+                                        Розетки
+                                        <input class="form-check-input" type="number" value="<?=$apartment['sockets']?>" id="flexCheckDefault" name="sockets">
+                                        <br>
                                         <br>
 
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['switches'] == 1) echo "checked"?> name="switches">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Выключатели
-                                        </label>
+                                        Выключатели
+                                        <input class="form-check-input" type="number" value="<?=$apartment['switches']?>" id="flexCheckDefault" name="switches">
                                         <br>
 
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['toilet'] == 1) echo "checked"?> name="toilet">
@@ -116,7 +117,7 @@ require_once "include/head.php";
                                         </label>
                                         <br>
 
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['sink'] == 1) echo "checked"?> name="sink">
+                                        <input class="form-check-input" value="<?=$apartment['sink']?>" id="flexCheckDefault" name="sink">
                                         <label class="form-check-label" for="flexCheckDefault">
                                             Раковина
                                         </label>
@@ -128,46 +129,32 @@ require_once "include/head.php";
                                         </label>
                                         <br>
 
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['floor_finishing'] == 1) echo "checked"?> name="floor_finishing">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Чистовая отделка пола
-                                        </label>
+                                        Чистовая отделка пола
+                                        <input class="form-check-input" type="number" value="<?=$apartment['floor_finishing']?>" id="flexCheckDefault" name="floor_finishing">
                                         <br>
 
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['draft_floor_department'] == 1) echo "checked"?> name="draft_floor_department">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Чернова отдела пола
-                                        </label>
+                                        Чернова отдела пола
+                                        <input class="form-check-input" type="number" value="<?=$apartment['draft_floor_department']?>" id="flexCheckDefault" name="draft_floor_department">
                                         <br>
 
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['ceiling_finishing'] == 1) echo "checked"?> name="ceiling_finishing">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Чистовая отделе потолка
-                                        </label>
+                                        Чистовая отделе потолка
+                                        <input class="form-check-input" type="number" value="<?=$apartment['ceiling_finishing']?>" id="flexCheckDefault" name="ceiling_finishing">
                                         <br>
 
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['draft_ceiling_finish'] == 1) echo "checked"?> name="draft_ceiling_finish">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Черновая отделка потолка
-                                        </label>
+                                        Черновая отделка потолка
+                                        <input class="form-check-input" type="number" value="<?=$apartment['draft_ceiling_finish']?>" id="flexCheckDefault" name="draft_ceiling_finish">
                                         <br>
 
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['wall_finishing'] == 1) echo "checked"?> name="wall_finishing">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Чистовая отделка стен
-                                        </label>
+                                        Чистовая отделка стен
+                                        <input class="form-check-input" type="number" value="<?=$apartment['wall_finishing']?>" id="flexCheckDefault" name="wall_finishing">
                                         <br>
 
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['draft_wall_finish'] == 1) echo "checked"?> name="draft_wall_finish">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Черновая отделка стен
-                                        </label>
+                                        Черновая отделка стен
+                                        <input class="form-check-input" type="number" value="<?=$apartment['draft_wall_finish']?>" id="flexCheckDefault" name="draft_wall_finish">
                                         <br>
 
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['windowsill'] == 1) echo "checked"?> name="windowsill">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Подоконник
-                                        </label>
+                                        Подоконник
+                                        <input class="form-check-input" type="number" value="<?=$apartment['windowsill']?>" id="flexCheckDefault" name="windowsill">
                                         <br>
 
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['kitchen'] == 1) echo "checked"?> name="kitchen">
@@ -176,16 +163,24 @@ require_once "include/head.php";
                                         </label>
                                         <br>
 
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['slopes'] == 1) echo "checked"?> name="slopes">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Откосы
-                                        </label>
+                                        Откосы
+                                        <input class="form-check-input" type="number" value="<?=$apartment['slopes']?>" id="flexCheckDefault" name="slopes">
                                         <br>
 
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['doors'] == 1) echo "checked"?> name="doors">
+                                        Двери
+                                        <input class="form-check-input" type="number" value="<?=$apartment['doors']?>" id="flexCheckDefault" name="doors">
+                                        <br>
+
+                                        Штукатуренные стены
+                                        <input class="form-check-input" type="number" value="<?=$apartment['wall_plaster']?>" id="flexCheckDefault" name="wall_plaster">
+                                        <br>
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" <?php if($apartment['trash'] == 1) echo "checked"?> name="trash">
                                         <label class="form-check-label" for="flexCheckDefault">
-                                            Двери
+                                            Мусор
                                         </label>
+                                        <br>
+                                        Радиаторы
+                                        <input class="form-check-input" type="number" value="<?=$apartment['radiator']?>" id="flexCheckDefault" name="radiator">
                                         <br>
                                     </div>
 

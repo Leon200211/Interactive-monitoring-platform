@@ -62,6 +62,9 @@ class FloorPlanController extends BaseController
                                 'wall_plaster',
                                 'trash',
                                 'radiator',
+                                'floor_plaster',
+                                'ceiling_plaster',
+                                'windows',
                         ],
                     'type' => 'inner',
                     'on' => ['id', 'id_floor']
@@ -125,6 +128,9 @@ class FloorPlanController extends BaseController
                    'wall_plaster' =>$_POST['wall_plaster'],
                    'trash' => isset($_POST['trash']) ? 1 : 0,
                    'radiator' => $_POST['radiator'],
+                   'floor_plaster' => $_POST['floor_plaster'],
+                   'ceiling_plaster' => $_POST['ceiling_plaster'],
+                   'windows' => $_POST['windows'],
                ],
                 'where' => [
                     'id' => $id_apartment

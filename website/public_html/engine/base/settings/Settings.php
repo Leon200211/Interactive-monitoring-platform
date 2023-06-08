@@ -79,7 +79,14 @@ class Settings
             'controller' => 'Report',
             'controllerPath' => '\engine\main\pages\controllers\\',
             'action' => 'index'
+        ],
+
+        '/upload/file' => [
+            'controller' => 'UploadFile',
+            'controllerPath' => '\engine\main\pages\controllers\\',
+            'action' => 'index'
         ]
+
 
 
     ];

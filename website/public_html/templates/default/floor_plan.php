@@ -193,6 +193,19 @@ require_once "include/head.php";
                                             <span>Радиаторы</span>
                                             <input class="form-check-input" type="number" value="<?=$apartment['radiator']?>" id="flexCheckDefault" name="radiator">
                                         </div>
+
+                                        <div class="modal-bloc-content">
+                                            <span>Штукатурка пола</span>
+                                            <input class="form-check-input" type="number" value="<?=$apartment['floor_plaster']?>" id="flexCheckDefault" name="floor_plaster">
+                                        </div>
+                                        <div class="modal-bloc-content">
+                                            <span>Штукатурка потолка</span>
+                                            <input class="form-check-input" type="number" value="<?=$apartment['ceiling_plaster']?>" id="flexCheckDefault" name="ceiling_plaster">
+                                        </div>
+                                        <div class="modal-bloc-content">
+                                            <span>Окна</span>
+                                            <input class="form-check-input" type="number" value="<?=$apartment['windows']?>" id="flexCheckDefault" name="windows">
+                                        </div>
                                     </div>
 
 

@@ -36,6 +36,7 @@ require_once "include/head.php";
                     <div class="building-selection_wrap" style="position: absolute">
                         <button class="back-btn" type="button" id="back-btn2" onclick="back_tomain()"><</button>
                         <button class="back-btn" type="button" id="back-btn1" hidden="true" onclick="back()"><</button>
+                        <a class="show-report" href="home/report">Посмотреть отчёт</a>
                         <img src="<?=SITE_URL?>templates/default/assets/imgs/main-plan-mytishi.jpg" alt=""  class="mytishi-img">
 
                         <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="2.0" x="0px" viewBox="0 0 1920 1080" class="building-selection">
@@ -298,6 +299,9 @@ require_once "include/head.php";
 
             </script>
             <style>
+                .show-report{
+                    padding: 10px; background-color: #0066cc; border: 1px solid transparent; border-radius: 15px; color: whitesmoke; position: relative; z-index: 999
+                }
                 .back-btn{
                     position: absolute; z-index: 999; top: 40px; left: 40px; font-size: 24px;
                     border: none;

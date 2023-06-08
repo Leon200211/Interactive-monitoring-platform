@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+	<title>Auto row/col add on scroll</title>
+	<meta  name = "viewport" content = "initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no">
+
+	<script src="../../codebase/webix/webix.js?v=10.1.0" type="text/javascript" charset="utf-8"></script>
+	<script src="../../codebase/spreadsheet.js?v=10.1.0" type="text/javascript" charset="utf-8"></script>
+
+	<link rel="stylesheet" type="text/css" href="../../codebase/webix/webix.css?v=10.1.0">
+	<link rel="stylesheet" type="text/css" href="../../codebase/spreadsheet.css?v=10.1.0">
+
+	<script src="../common/data.js?v=10.1.0" charset="utf-8"></script>
+</head>
+<body>
+<script type="text/javascript">
+	webix.ready(function(){
+		let ignoreScroll;
+		let scrollPos = {x:0, y:0};
+
+		const ss = webix.ui({
+			view:"spreadsheet",
+			data: base_data,
+			toolbar: "full"
+		});
+		const grid = ss.$$("cells");
+
+		ss.attachEvent("onAfterSheetShow", ()=> scrollPos = {x:0, y:0});
+
+		function getDimension(){
+			const data = ss.serialize();
+			let rows = 1;
+			let cols = 1;
+
+			for(let i=0; i<data.data.length; i++){
+				let line = data.data[i];
+				if (line[0]>rows) rows=line[0];
+				if (line[1]>cols) cols=line[1];
+			}
+
+			if(data.spans)
+				for(let i=0; i<data.spans.length; i++){
+					const spanEndRow = data.spans[i][0] + data.spans[i][3] - 1;
+					const spanEndCol = data.spans[i][1] + data.spans[i][2] - 1;
+
+					if(spanEndRow>rows) rows = spanEndRow;
+					if(spanEndCol>cols) cols = spanEndCol;
+				}
+
+			return {y: rows*1, x: cols*1};
+		}
+
+		ss.attachEvent("onRowOperation", function(){
+			const rowCount = ss.config.rowCount
+			if(rowCount < 50)
+				ss.config.rowCount = 50;
+		});
+
+		ss.attachEvent("onColumnOperation", function(){
+			const columnCount = ss.config.columnCount;
+			if(columnCount < 20)
+				ss.config.columnCount = 20;
+		});
+
+		grid.attachEvent("onScrollY", ()=> handleScroll("y"));
+		grid.attachEvent("onScrollX", ()=> handleScroll("x"));
+
+		let count = 0;
+		let thread;
+
+		function handleScroll(dir){
+			const oldValue = scrollPos[dir];
+			scrollPos = grid.getScrollState();
+			if(!ignoreScroll){
+				const step = scrollPos[dir] - oldValue;
+				if(step){
+					count += step > 0 ? 1 : Math.ceil(step / grid.config[dir == "y" ? "rowHeight" : "columnWidth"]);
+
+					clearTimeout(thread);
+					thread = webix.delay(()=>{
+						if(count){
+							ignoreScroll = true;
+							if(count > 0){
+								if(dir == "y")
+									ss.insertRow([ss.config.rowCount+1, ss.config.rowCount+count]);
+								else
+									ss.insertColumn([ss.config.columnCount+1, ss.config.columnCount+count]);
+							}
+							else{
+								const last = getDimension()[dir];
+								const maxCount = dir == "y" ? ss.config.rowCount : ss.config.columnCount;
+
+								const start = Math.max(maxCount + count, last + 1);
+								const end = Math.max(maxCount, last + 1);
+
+								if(!(maxCount < start || maxCount < end))
+									ss[(dir == "y" ? "deleteRow" : "deleteColumn")]([start, end]);
+							}
+							count = 0;
+							grid.scrollTo(scrollPos.x-1, scrollPos.y-1);
+							ignoreScroll = false;
+						}
+					}, null, [], 200);
+				}
+			}
+		}
+	});
+</script>
+</body>
+</html>

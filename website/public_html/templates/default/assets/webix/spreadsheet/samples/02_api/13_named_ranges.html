@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+    <title>Named ranges</title>
+    <meta  name = "viewport" content = "initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no">
+
+    <script src="../../codebase/webix/webix.js?v=10.1.0" type="text/javascript" charset="utf-8"></script>
+    <script src="../../codebase/spreadsheet.js?v=10.1.0" type="text/javascript" charset="utf-8"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../codebase/webix/webix.css?v=10.1.0">
+    <link rel="stylesheet" type="text/css" href="../../codebase/spreadsheet.css?v=10.1.0">
+
+    <script src="../common/data.js?v=10.1.0" charset="utf-8"></script>
+</head>
+<body>
+    <script type="text/javascript">
+
+        webix.ready(function(){
+
+            var dialog = webix.ui({
+                view: "window",
+                id: "myDialog",
+                move: true,
+                close:true,
+                head: "Range Name",
+                autoheight: true,
+                position: "center",
+                body: {
+                    view: "form",
+                    elements: [
+                        {view: "text", name: "name", label: "Name", required:true},
+                        {view: "checkbox", name: "global", label: "Global"},
+                        {view: "button", value:"Save", click:function(){
+                            var form = this.getFormView();
+                            var range = $$("ssheet").getSelectedRange();
+                            
+                            if(!range)
+                                $$("ssheet").alert({text:"Please select a range."});
+                            else if(form.validate()){
+                                var values = form.getValues();
+                                //adds a range to the current sheet or global
+                                $$("ssheet").ranges.add(values.name, range, !!values.global);
+
+                                form.clear();
+                                dialog.hide();
+                            }
+                        }}
+                    ]
+                }
+            });
+
+            function getRanges(){
+                //gets ranges available for the current sheet
+                var ranges = $$("ssheet").ranges.getRanges();
+                var text = JSON.stringify(ranges, null," ");
+                $$("txt").setValue(text);
+            }
+
+            function clearRanges(){
+                //clears ranges from the current sheet
+                $$("ssheet").ranges.clear();
+                $$("txt").setValue("");
+            }
+
+            var buttons = {
+                width:250, view: "form",
+                rows:[
+                    { view:"button", value:"Add range", click: showDialog},
+                    { view:"button", value:"Get ranges", click:getRanges},
+                    { view:"button", value:"Clear ranges", click:clearRanges},
+                    { view:"textarea", id:"txt" }
+                ]
+            };
+            webix.ui({
+                cols:[
+                    buttons,
+                    {
+                        view:"spreadsheet",
+                        id: "ssheet",
+                        data: base_data,
+                        toolbar: "full"
+                    }
+                ]
+
+            });
+
+            function showDialog(){
+                if(!dialog.isVisible()){
+                    dialog.show();
+                    dialog.getBody().focus();
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+	<title>Custom search filter</title>
+	<meta  name = "viewport" content = "initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no">
+
+	<script src="../../codebase/webix/webix.js?v=10.1.0" type="text/javascript" charset="utf-8"></script>
+	<script src="../../codebase/spreadsheet.js?v=10.1.0" type="text/javascript" charset="utf-8"></script>
+	<script src="../../../webix/sources/core/i18n/ru.js?v=10.1.0" type="text/javascript" charset="utf-8"></script>
+
+	<link rel="stylesheet" type="text/css" href="../../codebase/webix/webix.css?v=10.1.0">
+	<link rel="stylesheet" type="text/css" href="../../codebase/spreadsheet.css?v=10.1.0">
+	
+	<script src="../common/data.js?v=10.1.0" charset="utf-8"></script>
+
+</head>
+<body>
+	<script type="text/javascript">
+		webix.ready(function(){
+			var ss = webix.ui({
+				view: "spreadsheet",
+				subbar:{
+					view: "toolbar",
+					css: "webix_ssheet_toolbar",
+					elements:[
+						{
+							view: "text",
+							id: "input",
+							placeholder: "Type here to search...",
+							on:{
+								onTimedKeyPress: function(){
+									filter();
+								}
+							}
+						}
+					]
+				},
+				data:base_data
+			});
+
+			function equals(a,b){
+				return a.toString().toLowerCase().indexOf(b) !== -1;
+			}
+
+			function filter(){
+				var text = ss.$$("input").getValue().toLowerCase();
+				if (!text) return ss.$$("cells").filter();
+
+				ss.$$('cells').filter(function(obj){
+					for (var i = 1; i <= ss.config.columnCount; i++){
+						var cellValue = ss.getCellValue(obj.id, i, false);
+						if (equals(cellValue, text)) return true;
+					}
+					return false;
+				});
+			};
+		});
+	</script>
+</body>
+</html>

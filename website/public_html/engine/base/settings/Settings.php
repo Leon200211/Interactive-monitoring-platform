@@ -74,6 +74,11 @@ class Settings
             'controller' => 'Rest',
             'controllerPath' => '\engine\main\pages\controllers\\',
             'action' => 'index'
+        ],
+        '/home/report' => [
+            'controller' => 'Report',
+            'controllerPath' => '\engine\main\pages\controllers\\',
+            'action' => 'index'
         ]
 
 

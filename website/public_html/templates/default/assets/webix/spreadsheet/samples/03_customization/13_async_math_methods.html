@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+    <title>Async math methods</title>
+    <meta  name = "viewport" content = "initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no">
+
+    <script src="../../codebase/webix/webix.js?v=10.1.0" type="text/javascript" charset="utf-8"></script>
+    <script src="../../codebase/spreadsheet.js?v=10.1.0" type="text/javascript" charset="utf-8"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../codebase/webix/webix.css?v=10.1.0">
+    <link rel="stylesheet" type="text/css" href="../../codebase/spreadsheet.css?v=10.1.0">
+
+    <script src="../common/data.js?v=10.1.0" charset="utf-8"></script>
+</head>
+<body>
+<script type="text/javascript">
+
+    webix.ready(function(){
+        const ss = webix.ui({
+            view:"spreadsheet",
+            toolbar: "full"
+        });
+
+        const data = [
+            {
+                "name": "Sheet1",
+                "content": {
+                    "data": [
+                        [1,1,"=LOAD(\"../common/cell_data.json\")"],
+                        [2,1,"=LOAD(\"../common/cell_data_error.json\")"]
+                    ]
+                }
+            }
+        ];
+
+        webix.extend(ss, webix.ProgressBar);
+
+        ss.showProgress();
+        ss.disable();
+        const loadedData = {};
+
+        ss.registerMathMethod("LOAD", function(url){
+            return loadedData[url].json().value;
+        });
+
+        data.forEach(sheet=>{
+            sheet.content.data.forEach(item=>{
+                processLoadItem(item[2]);
+            });
+        });
+
+        function processLoadItem(value){ 
+            let urls;
+            if(typeof value == "string" && value[0] == "="){
+                urls = [...value.matchAll(/load\("(.*?)"\)/gi)];
+                if(urls.length){
+                    urls = urls
+                        .map(url=> url[1])
+                        .filter(url => {
+                            const exists = loadedData[url];
+                            if(!exists) loadedData[url] = "/0+"; // /0+ throw error if the link is invalid
+                            return !exists;
+                        });
+                }
+            }
+            return urls;
+        }
+
+        const urls = Object.keys(loadedData);
+        for(let i = 0; i < urls.length; i++){
+            const url = urls[i];
+            webix.ajax(url)
+                .then(res => loadedData[url] = res)
+                .finally(()=>{
+                    urls.pop();
+                    if(!urls.length){
+                        ss.parse(data);
+                        ss.enable();
+                    }
+                });
+        }
+
+        let loadingItem;
+        ss.attachEvent("onBeforeValueChange", (row, col, value)=>{
+            if(loadingItem) return true;
+            const urls = processLoadItem(value);
+            if(urls && urls.length){
+                ss.showProgress();
+                ss.disable();
+
+                for(let i = 0; i < urls.length; i++){
+                    const url = urls[i];
+                    webix.ajax(url)
+                        .then(res => loadedData[url] = res)
+                        .finally(()=>{
+                            urls.pop();
+                            if(!urls.length){
+                                loadingItem = true;
+                                ss.setCellValue(row, col, value);
+                                loadingItem = false;
+                                ss.hideProgress();
+                                ss.enable();
+                                ss.refresh();
+                            }
+                        });
+                }
+                return false;
+            }
+        });
+    });
+
+</script>
+</body>
+</html>

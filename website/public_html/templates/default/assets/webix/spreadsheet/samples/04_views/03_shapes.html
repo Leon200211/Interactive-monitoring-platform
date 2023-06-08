@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+<head>
+    <title>External UI: Shapes</title>
+    <meta  name = "viewport" content = "initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no">
+
+    <script src="../../codebase/webix/webix.js?v=10.1.0" type="text/javascript" charset="utf-8"></script>
+    <script src="../../codebase/spreadsheet.js?v=10.1.0" type="text/javascript" charset="utf-8"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../codebase/webix/webix.css?v=10.1.0">
+    <link rel="stylesheet" type="text/css" href="../../codebase/spreadsheet.css?v=10.1.0">
+
+    <script src="../common/data.js?v=10.1.0" charset="utf-8"></script>
+
+    <style>
+		.webix_shape_win,
+		.webix_shape_win .webix_win_content,
+		.webix_shape_win .webix_win_body,
+		.webix_shape_win .webix_view{
+			background: transparent !important;
+		}
+		.webix_shape_win{
+			border-color: transparent;
+		}
+		.webix_shape_win .webix_ssheet_view_menu, .webix_shape_win .webix_resize_handle{
+			visibility: hidden;
+		}
+		.webix_shape_win.webix_ssheet_ui_focused .webix_ssheet_view_menu,
+		.webix_shape_win.webix_ssheet_ui_focused .webix_resize_handle{
+			visibility: visible;
+		}
+		.webix_shape{
+			fill:rgb(66, 135, 245);
+			stroke-width:1;
+			stroke:rgb(0,0,0);
+		}
+		.webix_degree:after{
+			content:"o";
+			font-size:14px;
+			position: absolute;
+			top: 4px;
+			right: 6px;
+		}
+		.webix_shape_text{
+			position: absolute;
+			display:table;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+		}
+		.webix_shape_text>div{
+			display:table-cell;
+			vertical-align:middle;
+			text-align:center;
+		}
+		.webix_ssheet_button_icon.ssi-shape{
+			margin-top: -4px;
+		}
+		.ssi-shape:before{
+			font-family: "Webix Material Icons";
+			content: "\F035";
+		}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+    webix.ready(function(){
+         const shapes = {
+			arrow: (border, background) => `<svg height="100%" width="100%" viewBox="0 0 24 24"><path d="M4,10V14H13L9.5,17.5L11.92,19.92L19.84,12L11.92,4.08L9.5,6.5L13,10H4Z" style="stroke:${border};fill:${background};stroke-width:1;"/></svg>`,
+			rectangle: (border, background) => `<svg height="100%" width="100%" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg"><rect width="180" height="80" x="10" y="10" style="stroke:${border};fill:${background};stroke-width:1;"/></svg> `,
+			pentagon: (border, background) => `<svg width="100%" height="100%" viewBox="0 0 68 38"><polygon points="34,1.4054544485396612,52.5,14.394440068230896,45.43362879187305,36.59454555146034,22.56637120812695,36.59454555146034,15.5,14.394440068230896" style="stroke:${border};fill:${background};stroke-width:1;"></polygon></svg>`,
+			star: (border, background) => `<svg width="100%" height="100%" viewBox="0 0 40 40"><polygon points="20,1.9299261903920844,24.485291572496003,15.734234222493939,39,15.734234222493942,27.257354213751995,24.26576577750606,31.742645786247998,38.07007380960792,20,29.538542254595797,8.257354213752,38.07007380960792,12.742645786248003,24.26576577750606,1,15.734234222493942,15.514708427503997,15.734234222493939" style="stroke:${border};fill:${background};stroke-width:1;"></polygon></svg>`,
+			circle: (border, background) => `<svg height="100%" width="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" style="stroke:${border};fill:${background};stroke-width:1;"/></svg>`,
+			trapezoid: (border, background) => `<svg width="100%" height="100%" viewBox="0 0 68 38"><polygon points="10,1.5,58,1.5,66.5,36.5,1.5,36.5" style="stroke:${border};fill:${background};stroke-width:1;"></polygon></svg>`
+		};
+
+		const ssheet = webix.ui({
+			view:"spreadsheet",
+			toolbar: "full",
+			on:{
+				onViewInit:function(view, config){
+					if (view == "toolbar"){
+						config.body.elements[12].rows[1] = {
+							cols:[
+								config.body.elements[12].rows[1],
+								{
+									view: "ssheet-button",
+									width:114,
+									icon:"shape",
+									label: "Shape",
+									click: ()=> {
+										const viewid = ssheet.views.add(null, null, "shapes", "arrow");
+										ssheet.callEvent("onCommand",[{
+											config: ssheet.views.getConfig(viewid),
+											id: "shapes",
+											viewid
+										}]);
+									}
+								}
+							]
+						}
+					}
+				}
+			},
+			data:{
+				data: [
+					[1, 1, 1, "", "number"],
+					[2, 1, 2, "", "number"],
+					[3, 1, 3, "", "number"],
+					[4, 1, 4, "", "number"],
+					[4, 3, "=SUM(A1:A7)", "", "number"],
+					[5, 1, 5, "", "number"],
+					[6, 1, 6, "", "number"],
+					[7, 1, 7, "", "number"]
+				]
+			}
+		});
+
+		ssheet.views.register("shapes", (node, conf) => {
+			webix.extend(conf.config, {
+				border: "#000000",
+				color: "#ffffff",
+				background: "#00b4d8"
+			});
+
+			const view = webix.ui(
+				{
+					template: obj => {
+						let shape = shapes[obj.shape](obj.border, obj.background);
+						if(obj.text)
+							shape += `<div class="webix_shape_text"><div style="color:${obj.color}">${obj.text}</div></div>`;
+						return shape;
+					}
+				},
+				node
+			);
+
+			const values = conf.config;
+			values.shape = conf.data;
+			view.setValues(values);
+
+			const win = view.getTopParentView();
+			win.define({minHeight: 50});
+			webix.html.addCss(win.$view, "webix_shape_win");
+
+			return view;
+		});
+
+		ssheet.views.add(25, 25, "shapes", "arrow", { width:200, height: 200, text:"Sum" });
+
+		const dialog = webix.ui({
+			view: "ssheet-dialog",
+			head: "Shape Edit",
+			position: "center",
+			body: {
+				view: "form",
+				on:{
+					onChange: function(val, oldVal, config) {
+						if(config == "user"){
+							const values = this.getValues();
+							const template = $$(values.viewid).getBody();
+
+							const conf = ssheet.views.getConfig(values.viewid);
+
+							const view = ssheet.views.get(values.viewid);
+							view.$view.style.transform = `rotate(${values.angle}deg)`;
+
+							conf.data = values.shape;
+							template.setValues(values);
+							delete values.shape;
+							webix.extend(conf.config, values, true);
+						}
+					}
+				},
+				elementsConfig:{
+					labelWidth: 120
+				},
+				elements:[
+					{
+						view: "richselect",
+						name:"shape",
+						label: "Shape", 
+						suggest:{
+							view:"datasuggest",
+							data: Object.keys(shapes),
+							body:{
+								template: obj => shapes[obj.id]("#8d99ae", "#8d99ae")
+							}
+						}
+					},
+					{ view:"text", label:"Text", name:"text" },
+					{ view:"colorpicker", label:"Text color", name:"color" },
+					{ view:"colorpicker", label:"Border color", name:"border" },
+					{ view:"colorpicker", label:"Shape Color", name:"background" },
+					{
+						label: "Angle",
+						view: "text",
+						icon: "webix_degree",
+						name: "angle",
+						format: {
+							edit: v => (v % 360) + "",
+							parse: v => (v % 360) + ""
+						}
+					}
+				]
+			},
+			on: {
+				onSaveClick: function () {
+					this.hide();
+				},
+				onCancelClick: function () {
+					this.hide();
+				},
+				onHideClick: function () {
+					this.hide();
+				}
+			}
+		});
+
+		ssheet.attachEvent("onCommand", function(obj){
+			if(obj.id == "shapes"){
+				const conf = obj.config;
+				const values = webix.copy(conf.config);
+				webix.extend(values, {
+					border: "#000000",
+					color: "#ffffff",
+					background: "#00b4d8",
+					shape: conf.data,
+					viewid: obj.viewid,
+					angle: 0
+				});
+
+				dialog.getBody().setValues(values);
+				dialog.show();
+			}
+		});
+    });
+</script>
+</body>
+</html>

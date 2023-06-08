@@ -197,6 +197,9 @@ require_once "include/head.php";
 
 
                                     <button type="submit" class="btn btn-primary">Сохранить</button>
+                                    <br>
+                                    <a href="/home/report">Посмотреть отчёт</a>
+
 
                                 </div>
                                     <style>

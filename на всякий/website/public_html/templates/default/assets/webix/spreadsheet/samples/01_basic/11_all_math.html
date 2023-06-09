@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+	<title>All Math Methods</title>
+	<meta  name = "viewport" content = "initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no">
+
+	<script src="../../codebase/webix/webix.js?v=10.1.0" type="text/javascript" charset="utf-8"></script>
+	<script src="../../codebase/spreadsheet.js?v=10.1.0" type="text/javascript" charset="utf-8"></script>
+
+	<link rel="stylesheet" type="text/css" href="../../codebase/webix/webix.css?v=10.1.0">
+	<link rel="stylesheet" type="text/css" href="../../codebase/spreadsheet.css?v=10.1.0">
+
+	<script src="../common/math.js?v=10.1.0" charset="utf-8"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		webix.ready(function(){
+			webix.ui({
+				id: "ssheet",
+				view:"spreadsheet",
+				data: math_data
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a19405f9-00b7-42c5-8240-13b8240e9946" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="interactive-monitoring-platform" id="7167b561-1fb3-47e4-8c78-5621e71ea59f" name="interactive-monitoring-platform" />
+      <server host="127.0.0.1" id="2940aec3-1305-44cf-a103-d8298bec3e57" name="127.0.0.1" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$/public_html" remote-root="C:/OpenServer/modules/system/html/openserver/phpmyadmin" />
+        </path_mappings>
+      </server>
+    </servers>
+  </component>
+  <component name="ProjectId" id="2Pq2tPCndGd1DmCaCSlKF2NFDaG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+<<<<<<< HEAD
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\templates\default\assets\imgs\sections" />
+=======
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+>>>>>>> f157e1307611374c45eba9a822632b4f9a6eff29
+      <recent name="C:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\templates\default\assets\imgs\houses" />
+      <recent name="C:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\templates\default\assets\imgs\houses_page" />
+      <recent name="C:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\templates\default\assets\imgs\projects" />
+      <recent name="C:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\templates\default\assets\imgs" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a19405f9-00b7-42c5-8240-13b8240e9946" name="Changes" comment="" />
+      <created>1684170504619</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684170504619</updated>
+      <workItem from="1684170507544" duration="6883000" />
+      <workItem from="1684237977309" duration="1099000" />
+      <workItem from="1684246979887" duration="42000" />
+      <workItem from="1684512286404" duration="14285000" />
+      <workItem from="1684588136312" duration="306000" />
+      <workItem from="1684588446452" duration="12674000" />
+      <workItem from="1684651790349" duration="7423000" />
+<<<<<<< HEAD
+      <workItem from="1684670055610" duration="1916000" />
+      <workItem from="1684673714741" duration="3372000" />
+      <workItem from="1684743270745" duration="1653000" />
+=======
+>>>>>>> f157e1307611374c45eba9a822632b4f9a6eff29
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

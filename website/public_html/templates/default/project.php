@@ -37,7 +37,7 @@ require_once "include/head.php";
                     <div class="building-selection_wrap" style="position: absolute">
                         <button class="back-btn" type="button" id="back-btn2" onclick="back_tomain()"><</button>
                         <button class="back-btn" type="button" id="back-btn1" hidden="true" onclick="back()"><</button>
-                        <a class="show-report" href="home/report">Посмотреть отчёт</a>
+                        <a class="show-report1" href="home/report" hidden="true">Посмотреть отчёт</a>
                         <img src="<?=SITE_URL?>templates/default/assets/imgs/houses_page/<?=$this->projectGlobalInfo['project_img']?>" alt=""  class="mytishi-img">
 
                         <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="2.0" x="0px" viewBox="0 0 1920 1080" class="building-selection">
@@ -83,6 +83,7 @@ require_once "include/head.php";
                     building_selection[i].addEventListener('click', function (e){
                         document.querySelector('#back-btn2').setAttribute('hidden', true)
                         document.getElementById("back-btn1").removeAttribute("hidden")
+                        document.querySelector('.show-report1').removeAttribute('hidden')
                         mytishi_img.setAttribute('src', '<?=SITE_URL?>templates/default/assets/imgs/houses/houses'+ e.target.id +'.jpg')
                         console.log(e.target.id);
                         switch (e.target.id){
@@ -107,6 +108,7 @@ require_once "include/head.php";
                 function back(){
                     console.log(document.querySelector("#back-btn2").getAttribute('hidden'))
                     document.querySelector("#back-btn2").removeAttribute('hidden')
+                    document.querySelector('.show-report1').setAttribute('hidden', true)
                     document.querySelector(".mytishi-img").setAttribute("src", "<?=SITE_URL?>templates/default/assets/imgs/houses_page/<?=$this->projectGlobalInfo['project_img']?>")
                     document.querySelectorAll('.hover').forEach(function (ev) {
                         ev.setAttribute('hidden', true)
@@ -123,8 +125,12 @@ require_once "include/head.php";
 
             </script>
             <style>
-                .show-report{
-                    padding: 10px; background-color: #0066cc; border: 1px solid transparent; border-radius: 15px; color: whitesmoke; position: relative; z-index: 999
+                .show-report1{
+                    padding: 10px; background-color: #0066cc; border: 3px solid transparent; border-radius: 15px; color: whitesmoke; position: absolute; z-index: 999; right: 20px; top: 40px; transition: .3s;
+                }
+                .show-report1:hover{
+                    transition: .3s;
+                    border: 3px solid #0066cc; color: white; background-color: transparent;
                 }
                 .back-btn{
                     position: absolute; z-index: 999; top: 40px; left: 40px; font-size: 24px;

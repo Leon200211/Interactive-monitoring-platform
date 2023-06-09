@@ -1,0 +1,775 @@
+{
+  "name": "monitoring_item_building_new",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "jzuwoTvIOeRK3P1G8NpduC",
+    "node": "152:227",
+    "version": "3532082913",
+    "component-id": "cc89852ad81d903a40f2be7845f0dd35c1069fdf"
+  },
+  "default": "Open=NotExist",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "DateNumberSection"
+      },
+      {
+        "type": "group",
+        "id": "Description"
+      },
+      {
+        "type": "vector",
+        "id": "SpaceImage"
+      },
+      {
+        "type": "vector",
+        "id": "DateNumberBackground"
+      },
+      {
+        "type": "text",
+        "id": "DateNumber"
+      },
+      {
+        "type": "text",
+        "id": "Date_Full"
+      },
+      {
+        "type": "text",
+        "id": "Coordinates"
+      },
+      {
+        "type": "text",
+        "id": "ProjectName"
+      },
+      {
+        "type": "image",
+        "id": "image 15"
+      },
+      {
+        "type": "image",
+        "id": "ExtendButton"
+      }
+    ],
+    "modes": {
+      "Open=NotExist": {
+        "rules": [
+          {
+            "id": "top_level",
+            "border-radius": "10.0",
+            "tap-handler": "$onItemClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "space-between",
+            "children": [
+              "DateNumberSection",
+              "Description",
+              "SpaceImage"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "222.85714285714286",
+              "saturation": "0.027888446215139345",
+              "value": "0.984313725490196"
+            }
+          },
+          {
+            "id": "DateNumberSection",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "43.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "36.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "DateNumberBackground",
+              "DateNumber"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Description",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "191.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.75"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Date_Full",
+              "Coordinates",
+              "ProjectName",
+              "image 15"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "SpaceImage",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              }
+            }
+          },
+          {
+            "id": "DateNumberBackground",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "43.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "36.0"
+              }
+            },
+            "vector-content": "date_number_background.svg"
+          },
+          {
+            "id": "DateNumber",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "$dateNumber",
+            "overflow": "visible",
+            "text-size": "20.0",
+            "line-height": "1.2189999580383302",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "Date_Full",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "125.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "17.75"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "240.0",
+              "saturation": "0.125",
+              "value": "0.18823529411764706"
+            },
+            "text-content": "$dateFull",
+            "overflow": "visible",
+            "text-size": "10.0",
+            "line-height": "1.2189999580383302",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "Coordinates",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "9.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "17.75"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "240.0",
+              "saturation": "0.125",
+              "value": "0.18823529411764706"
+            },
+            "text-content": "$coordinates",
+            "overflow": "visible",
+            "text-size": "10.0",
+            "line-height": "1.2189999580383302",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "ProjectName",
+            "color": {
+              "alpha": "1.0",
+              "hue": "240.0",
+              "saturation": "0.125",
+              "value": "0.18823529411764706"
+            },
+            "text-content": "$projectName",
+            "overflow": "visible",
+            "line-height": "1.2189999989100866",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "image 15",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "17.25"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "8.33331298828125"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "12.5"
+              }
+            },
+            "image-content": "image_15.png",
+            "scale": "cover"
+          }
+        ]
+      },
+      "Open=Yes": {
+        "rules": [
+          {
+            "id": "top_level",
+            "border-radius": "10.0",
+            "tap-handler": "$onItemClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "space-between",
+            "children": [
+              "DateNumberSection",
+              "Description",
+              "ExtendButton"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "222.85714285714286",
+              "saturation": "0.027888446215139345",
+              "value": "0.984313725490196"
+            }
+          },
+          {
+            "id": "DateNumberSection",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "43.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "36.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "DateNumberBackground",
+              "DateNumber"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Description",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "191.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.75"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Date_Full",
+              "Coordinates",
+              "ProjectName",
+              "image 15"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "ExtendButton",
+            "tap-handler": "$onExtendButtonClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              }
+            },
+            "image-content": "extend_button.png",
+            "scale": "cover"
+          },
+          {
+            "id": "DateNumberBackground",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "43.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "36.0"
+              }
+            },
+            "vector-content": "date_number_background1.svg"
+          },
+          {
+            "id": "DateNumber",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "$dateNumber",
+            "overflow": "visible",
+            "text-size": "20.0",
+            "line-height": "1.2189999580383302",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "Date_Full",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "125.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "17.75"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "240.0",
+              "saturation": "0.125",
+              "value": "0.18823529411764706"
+            },
+            "text-content": "$dateFull",
+            "overflow": "visible",
+            "text-size": "10.0",
+            "line-height": "1.2189999580383302",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "Coordinates",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "9.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "17.75"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "240.0",
+              "saturation": "0.125",
+              "value": "0.18823529411764706"
+            },
+            "text-content": "$coordinates",
+            "overflow": "visible",
+            "text-size": "10.0",
+            "line-height": "1.2189999580383302",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "ProjectName",
+            "color": {
+              "alpha": "1.0",
+              "hue": "240.0",
+              "saturation": "0.125",
+              "value": "0.18823529411764706"
+            },
+            "text-content": "$projectName",
+            "overflow": "visible",
+            "line-height": "1.2189999989100866",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "image 15",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "17.25"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "8.33331298828125"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "12.5"
+              }
+            },
+            "image-content": "image_15.png",
+            "scale": "cover"
+          }
+        ]
+      },
+      "Open=No": {
+        "rules": [
+          {
+            "id": "top_level",
+            "border-radius": "10.0",
+            "tap-handler": "$onItemClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "space-between",
+            "children": [
+              "DateNumberSection",
+              "Description",
+              "ExtendButton"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "222.85714285714286",
+              "saturation": "0.027888446215139345",
+              "value": "0.984313725490196"
+            }
+          },
+          {
+            "id": "DateNumberSection",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "43.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "36.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "DateNumberBackground",
+              "DateNumber"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Description",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "191.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.75"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Date_Full",
+              "Coordinates",
+              "ProjectName",
+              "image 15"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "ExtendButton",
+            "tap-handler": "$onExtendButtonClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              }
+            },
+            "image-content": "extend_button1.png",
+            "scale": "cover"
+          },
+          {
+            "id": "DateNumberBackground",
+            "border-radius": "10.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "43.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "36.0"
+              }
+            },
+            "vector-content": "date_number_background2.svg"
+          },
+          {
+            "id": "DateNumber",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": "0.5"
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": "0.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "$dateNumber",
+            "overflow": "visible",
+            "text-size": "20.0",
+            "line-height": "1.2189999580383302",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "Date_Full",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "125.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "17.75"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "240.0",
+              "saturation": "0.125",
+              "value": "0.18823529411764706"
+            },
+            "text-content": "$dateFull",
+            "overflow": "visible",
+            "text-size": "10.0",
+            "line-height": "1.2189999580383302",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "Coordinates",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "9.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "17.75"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "240.0",
+              "saturation": "0.125",
+              "value": "0.18823529411764706"
+            },
+            "text-content": "$coordinates",
+            "overflow": "visible",
+            "text-size": "10.0",
+            "line-height": "1.2189999580383302",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "ProjectName",
+            "color": {
+              "alpha": "1.0",
+              "hue": "240.0",
+              "saturation": "0.125",
+              "value": "0.18823529411764706"
+            },
+            "text-content": "$projectName",
+            "overflow": "visible",
+            "line-height": "1.2189999989100866",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "image 15",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "17.25"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "8.33331298828125"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "12.5"
+              }
+            },
+            "image-content": "image_15.png",
+            "scale": "cover"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onItemClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "dateNumber": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "dateFull": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "coordinates": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "projectName": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "onExtendButtonClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Open=NotExist",
+      "size": {
+        "width": 310.0,
+        "height": 36.0
+      },
+      "parameters": {
+        "dateNumber": "19",
+        "dateFull": "Март 19 2023",
+        "coordinates": "55.685812, 37.409567",
+        "projectName": "ЖК Остафьево"
+      }
+    },
+    {
+      "design": "Open=Yes",
+      "size": {
+        "width": 310.0,
+        "height": 36.0
+      },
+      "parameters": {
+        "dateNumber": "19",
+        "dateFull": "Март 19 2023",
+        "coordinates": "55.685812, 37.409567",
+        "projectName": "ЖК Остафьево"
+      }
+    },
+    {
+      "design": "Open=No",
+      "size": {
+        "width": 310.0,
+        "height": 36.0
+      },
+      "parameters": {
+        "dateNumber": "19",
+        "dateFull": "Март 19 2023",
+        "coordinates": "55.685812, 37.409567",
+        "projectName": "ЖК Остафьево"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

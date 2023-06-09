@@ -1,0 +1,252 @@
+{
+  "name": "monitoring_item_building_sub_item",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "jzuwoTvIOeRK3P1G8NpduC",
+    "node": "129:3545",
+    "version": "3532108602",
+    "component-id": "ed2ed224218328d18cb66715229f14bb9992d5fd"
+  },
+  "default": "Monitoring_Item_Building_SubItem",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "descr"
+      },
+      {
+        "type": "text",
+        "id": "Март 19 2023"
+      },
+      {
+        "type": "text",
+        "id": "55.499117, 37.517850"
+      },
+      {
+        "type": "text",
+        "id": "Обход № 123. Корпус №1.1"
+      },
+      {
+        "type": "image",
+        "id": "image 16"
+      }
+    ],
+    "modes": {
+      "Monitoring_Item_Building_SubItem": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "25.0",
+              "top": "1.0",
+              "right": "35.0",
+              "bottom": "1.0"
+            },
+            "border-radius": "10.0",
+            "tap-handler": "$onItemClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "end",
+            "cross-axis-align": "start",
+            "children": [
+              "descr"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "222.85714285714286",
+              "saturation": "0.027888446215139345",
+              "value": "0.984313725490196"
+            }
+          },
+          {
+            "id": "descr",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "212.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "29.5"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Март 19 2023",
+              "55.499117, 37.517850",
+              "Обход № 123. Корпус №1.1",
+              "image 16"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Март 19 2023",
+            "margin": {
+              "left": "146.0",
+              "top": "17.0",
+              "bottom": "0.5"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "240.0",
+              "saturation": "0.125",
+              "value": "0.18823529411764706"
+            },
+            "text-content": "$fullDate",
+            "overflow": "visible",
+            "text-size": "10.0",
+            "line-height": "1.2189999580383302",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "55.499117, 37.517850",
+            "margin": {
+              "left": "11.0938720703125",
+              "top": "17.0",
+              "right": "104.9061279296875",
+              "bottom": "0.5"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "240.0",
+              "saturation": "0.125",
+              "value": "0.18823529411764706"
+            },
+            "text-content": "$coordinates",
+            "overflow": "visible",
+            "text-size": "10.0",
+            "line-height": "1.2189999580383302",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "Обход № 123. Корпус №1.1",
+            "margin": {
+              "right": "27.0",
+              "bottom": "12.5"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "240.0",
+              "saturation": "0.125",
+              "value": "0.18823529411764706"
+            },
+            "text-content": "$projectName",
+            "overflow": "visible",
+            "text-align": "right",
+            "line-height": "1.2189999989100866",
+            "typeface": "Montserrat"
+          },
+          {
+            "id": "image 16",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "2.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "17.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "8.33331298828125"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "12.5"
+              }
+            },
+            "image-content": "image_16.png",
+            "scale": "cover"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onItemClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "fullDate": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "coordinates": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "projectName": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Monitoring_Item_Building_SubItem",
+      "size": {
+        "width": 277.0,
+        "height": 31.5
+      },
+      "parameters": {
+        "fullDate": "Март 19 2023",
+        "coordinates": "55.499117, 37.517850",
+        "projectName": "Обход № 123. Корпус №1.1"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

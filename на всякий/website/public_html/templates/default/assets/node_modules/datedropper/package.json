@@ -1,0 +1,53 @@
+{
+  "_args": [
+    [
+      "datedropper@2.0.0",
+      "C:\\Users\\Ovi-PC\\Downloads\\themekit-master\\themekit"
+    ]
+  ],
+  "_from": "datedropper@2.0.0",
+  "_id": "datedropper@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-s/o4vQb5jcjomc4l+LafU26lNrE=",
+  "_location": "/datedropper",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "datedropper@2.0.0",
+    "name": "datedropper",
+    "escapedName": "datedropper",
+    "rawSpec": "2.0.0",
+    "saveSpec": null,
+    "fetchSpec": "2.0.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/datedropper/-/datedropper-2.0.0.tgz",
+  "_spec": "2.0.0",
+  "_where": "C:\\Users\\Ovi-PC\\Downloads\\themekit-master\\themekit",
+  "author": {
+    "name": "Felice Gattuso"
+  },
+  "bugs": {
+    "url": "https://github.com/OwenMelbz/datedropper/issues"
+  },
+  "description": "datedropper is a jQuery datepicker plugin",
+  "homepage": "https://github.com/OwenMelbz/datedropper#readme",
+  "keywords": [
+    "datedropper",
+    "datepicker"
+  ],
+  "license": "MIT",
+  "main": "datedropper.js",
+  "name": "datedropper",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OwenMelbz/datedropper.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "2.0.0"
+}

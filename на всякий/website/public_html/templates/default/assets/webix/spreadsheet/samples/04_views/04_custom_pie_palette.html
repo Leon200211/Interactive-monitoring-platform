@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+    <title>External UI: Custom Pie Palette</title>
+    <meta  name = "viewport" content = "initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no">
+
+    <script src="../../codebase/webix/webix.js?v=10.1.0" type="text/javascript" charset="utf-8"></script>
+    <script src="../../codebase/spreadsheet.js?v=10.1.0" type="text/javascript" charset="utf-8"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../codebase/webix/webix.css?v=10.1.0">
+    <link rel="stylesheet" type="text/css" href="../../codebase/spreadsheet.css?v=10.1.0">
+
+    <script src="../common/data.js?v=10.1.0" charset="utf-8"></script>
+
+    <style>
+        .palette_selector .webix_selected .palette_option{
+            box-shadow: inset 0 0 0 2px #1ca1c1, inset 0 0 0 3px #fff;
+        }
+        .palette_option{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+    webix.ready(function(){
+        var ss = webix.ui({
+            view:"spreadsheet",
+            data: base_data,
+            toolbar: "full"
+        });
+
+        var palettes = [
+            [ "#e33fc7", "#a244ea", "#476cee", "#36abee", "#58dccd", "#a7ee70" ],
+            [ "#F34336", "#FF9700", "#FFEA3B", "#4CB050", "#009788", "#00BCD4" ],
+            [ "#2A2541", "#3B335B", "#5D5190", "#877CB6", "#B7B1D3", "#E7E5F0" ]
+        ];
+
+        var defaultAdd = ss.views.add;
+        ss.views.add = function(x, y, type, data, config){
+            var id;
+            if(type == "chart")
+                config.color = function(item, index){
+                    var config = ss.views.getConfig(id).config;
+                    var palette = palettes[(config.palette || 1) - 1];
+                    return palette[index % palette.length];
+                };
+            return id = defaultAdd.apply(this, arguments);
+        };
+
+        var defaultUpdate = ss.views.update;
+        ss.views.update = function(id, data, config){
+            var cfg = ss.views.getConfig(id);
+            if(cfg.type == "chart")
+                config.color = function(item, index){
+                    var palette = palettes[(config.palette || 1) - 1];
+                    return palette[index % palette.length];
+                };
+            return defaultUpdate.apply(this, arguments);
+        };
+
+        function getPaletteOptions(){
+            var options = [];
+            for(let i = 0; i < palettes.length; i++){
+                var colors = palettes[i];
+                var style = `background: linear-gradient(
+                    45deg,
+                    ${colors[0]} 33%,
+                    ${colors[1]} 33% 66%,
+                    ${colors[2]} 66% 100%
+                )`;
+                options.push({ id: i+1, value: `<span style='${style}' class='palette_option'></span>`});
+            }
+            return options;
+        }
+
+        ss.$$("chartTabs").queryView({name:"type"}).getParentView().addView(
+            { view: "segmented", label:"Palette", name:"palette", labelWidth:180, batch:"pie", css: "palette_selector", options: getPaletteOptions() },
+            1
+        );
+
+        ss.views.add(null, null, "chart", "B3:E7", { type:"pie", legend:1, palette:3 });
+    });
+</script>
+</body>

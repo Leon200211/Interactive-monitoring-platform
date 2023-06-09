@@ -1,0 +1,162 @@
+{
+  "name": "camolet_app_bar",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "jzuwoTvIOeRK3P1G8NpduC",
+    "node": "81:154",
+    "version": "3560661488",
+    "component-id": "1fef9730d255a84e3e2f14065c5117eece87c5c9"
+  },
+  "default": "CamoletAppBar",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "image",
+        "id": "menu"
+      },
+      {
+        "type": "text",
+        "id": "TitleText"
+      },
+      {
+        "type": "image",
+        "id": "avatar"
+      }
+    ],
+    "modes": {
+      "CamoletAppBar": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "13.0",
+              "top": "25.0",
+              "right": "13.0",
+              "bottom": "25.0"
+            },
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "stroke-width": "1.0",
+            "arrangement": "row",
+            "children": [
+              "menu",
+              "TitleText",
+              "avatar"
+            ],
+            "item-spacing": "65.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "210.71428571428572",
+              "saturation": "1.0",
+              "value": "0.9882352941176471"
+            }
+          },
+          {
+            "id": "menu",
+            "tap-handler": "$onBurgerClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "19.0"
+              }
+            },
+            "image-content": "menu.png",
+            "scale": "cover"
+          },
+          {
+            "id": "TitleText",
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "222.85714285714286",
+              "saturation": "0.027888446215139345",
+              "value": "0.984313725490196"
+            },
+            "text-content": "$appBarText",
+            "overflow": "visible",
+            "text-size": "20.0",
+            "line-height": "1.2600000381469727",
+            "typeface": "CoFo Sans"
+          },
+          {
+            "id": "avatar",
+            "tap-handler": "$onProfileClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "26.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              }
+            },
+            "image-content": "avatar.png",
+            "scale": "cover"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onBurgerClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "appBarText": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "onProfileClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "CamoletAppBar",
+      "size": {
+        "width": 351.0,
+        "height": 75.0
+      },
+      "parameters": {
+        "appBarText": "МОНИТОРИНГ"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

@@ -1,0 +1,128 @@
+{
+  "name": "room_progress_button",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "jzuwoTvIOeRK3P1G8NpduC",
+    "node": "203:669",
+    "version": "3539247225",
+    "component-id": "d4e98e8e36d60bede90b3584a68d6afb481c7fc3"
+  },
+  "default": "RoomProgressButton",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "ProgressLabel"
+      },
+      {
+        "type": "text",
+        "id": "RoomLabel"
+      }
+    ],
+    "modes": {
+      "RoomProgressButton": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "24.0",
+              "top": "10.0",
+              "right": "24.0",
+              "bottom": "10.0"
+            },
+            "border-radius": "20.0",
+            "tap-handler": "$onItemClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "end",
+            "children": [
+              "ProgressLabel",
+              "RoomLabel"
+            ],
+            "item-spacing": "2.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "210.71428571428572",
+              "saturation": "1.0",
+              "value": "0.9882352941176471"
+            }
+          },
+          {
+            "id": "ProgressLabel",
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "222.85714285714286",
+              "saturation": "0.027888446215139345",
+              "value": "0.984313725490196"
+            },
+            "text-content": "$progressText",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "line-height": "1.2599999564034599",
+            "typeface": "CoFo Sans"
+          },
+          {
+            "id": "RoomLabel",
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "222.85714285714286",
+              "saturation": "0.027888446215139345",
+              "value": "0.984313725490196"
+            },
+            "text-content": "$roomName",
+            "overflow": "visible",
+            "line-height": "1.2599999564034599",
+            "typeface": "CoFo Sans"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onItemClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "progressText": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "roomName": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "RoomProgressButton",
+      "size": {
+        "width": 93.0,
+        "height": 58.0
+      },
+      "parameters": {
+        "progressText": "0%",
+        "roomName": "Туалет"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

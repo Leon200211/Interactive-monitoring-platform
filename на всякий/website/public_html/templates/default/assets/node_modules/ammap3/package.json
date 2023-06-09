@@ -1,0 +1,52 @@
+{
+  "_args": [
+    [
+      "ammap3@3.21.14",
+      "C:\\Users\\Ovi-PC\\Downloads\\themekit-master\\themekit"
+    ]
+  ],
+  "_from": "ammap3@3.21.14",
+  "_id": "ammap3@3.21.14",
+  "_inBundle": false,
+  "_integrity": "sha512-FQEe8Przcjy1rQlulmKwb9IV+pVA1JyV2uvoX37z3MTEFjMCeBdxRad9JqnCRFJWQr5ExgZ6+EKGkBKh7ZN1/A==",
+  "_location": "/ammap3",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "ammap3@3.21.14",
+    "name": "ammap3",
+    "escapedName": "ammap3",
+    "rawSpec": "3.21.14",
+    "saveSpec": null,
+    "fetchSpec": "3.21.14"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ammap3/-/ammap3-3.21.14.tgz",
+  "_spec": "3.21.14",
+  "_where": "C:\\Users\\Ovi-PC\\Downloads\\themekit-master\\themekit",
+  "author": {
+    "name": "amCharts",
+    "email": "contact@amcharts.com"
+  },
+  "bugs": {
+    "url": "https://github.com/amcharts/ammap3/issues"
+  },
+  "description": "JavaScript Maps V3",
+  "homepage": "https://www.amcharts.com/",
+  "keywords": [
+    "amcharts",
+    "javascript",
+    "maps"
+  ],
+  "license": "Custom",
+  "main": "ammap/ammap.js",
+  "name": "ammap3",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amcharts/ammap3.git"
+  },
+  "version": "3.21.14"
+}

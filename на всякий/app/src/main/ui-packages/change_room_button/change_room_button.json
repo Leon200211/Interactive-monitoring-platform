@@ -1,0 +1,115 @@
+{
+  "name": "change_room_button",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "jzuwoTvIOeRK3P1G8NpduC",
+    "node": "228:244",
+    "version": "3539209188",
+    "component-id": "741b1a14364bdeb0cc602f5ff9c1c7044553bb94"
+  },
+  "default": "ChangeRoomButton",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Label1"
+      },
+      {
+        "type": "text",
+        "id": "Label2"
+      }
+    ],
+    "modes": {
+      "ChangeRoomButton": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "21.0",
+              "top": "2.0",
+              "right": "21.0",
+              "bottom": "2.0"
+            },
+            "border-radius": "20.0",
+            "tap-handler": "$onItemClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "Label1",
+              "Label2"
+            ],
+            "item-spacing": "2.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "210.71428571428572",
+              "saturation": "1.0",
+              "value": "0.9882352941176471"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "Label1",
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "222.85714285714286",
+              "saturation": "0.027888446215139345",
+              "value": "0.984313725490196"
+            },
+            "text-content": "Выбрать",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "line-height": "1.2599999564034599",
+            "typeface": "CoFo Sans"
+          },
+          {
+            "id": "Label2",
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "222.85714285714286",
+              "saturation": "0.027888446215139345",
+              "value": "0.984313725490196"
+            },
+            "text-content": "комнату",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "line-height": "1.2599999564034599",
+            "typeface": "CoFo Sans"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onItemClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "ChangeRoomButton",
+      "size": {
+        "width": 99.0,
+        "height": 42.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

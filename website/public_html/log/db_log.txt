@@ -18,3 +18,14 @@ Fault: 08-06-2023 22:38:19 - Ошибка в SQL запросе: UPDATE apartmen
 fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
  In line 57
 
+<<<<<<< HEAD
+=======
+Fault: 09-06-2023 13:56:08 - Ошибка в SQL запросе: SELECT floors.`id` as id_floor,floors.`id_section`,floors.`floor_number`,floors.`floor_plan_img`,apartments.`id` as id_apartments,apartments.`id_floor` as apartments_id_floor,apartments.`apartment_number`,apartments.`polygon_points`,apartments.`viewBox`,apartments.`coordinates`,apartments.`sockets`,apartments.`switches`,apartments.`toilet`,apartments.`sink`,apartments.`bath`,apartments.`floor_finishing`,apartments.`draft_floor_department`,apartments.`ceiling_finishing`,apartments.`draft_ceiling_finish`,apartments.`wall_finishing`,apartments.`draft_wall_finish`,apartments.`windowsill`,apartments.`slopes`,apartments.`doors`,apartments.`wall_plaster`,apartments.`trash`,apartments.`radiator`,apartments.`floor_plaster`,apartments.`ceiling_plaster`,apartments.`windows` FROM floors  INNER JOIN apartments ON floors.id=apartments.id_floor WHERE floors.id_section='1' AND floors.floor_number='2' - 1054 Unknown column 'apartments.floor_plaster' in 'field list'
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+>>>>>>> bfb38f66d75c85adcd12a1f01c7c1d5d597a6f71
+Fault: 10-06-2023 1:21:27 - Ошибка в SQL запросе: SELECT houses.`report` FROM houses  WHERE houses.id='1' - 1054 Unknown column 'houses.report' in 'field list'
+fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
+ In line 57
+

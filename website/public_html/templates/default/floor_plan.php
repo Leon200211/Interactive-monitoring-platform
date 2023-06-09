@@ -210,8 +210,6 @@ require_once "include/head.php";
 
 
                                     <button type="submit" class="btn btn-primary">Сохранить</button>
-                                    <br>
-                                    <a href="/home/report">Посмотреть отчёт</a>
 
 
                                 </div>
@@ -253,14 +251,6 @@ require_once "include/head.php";
                             <?php for ($i = ++$this->floor_count; $i != 1; $i--): ?>
                                 <a href="<?=SITE_URL?>home/floor?id_section=<?=$this->id_section?>&floor=<?=$i?>"><div id="floor-<?=$i?>" class="floor-selector"><?=$i?></div></a>
                             <?php endfor; ?>
-<!--                            <div id="floor-5" class="floor-selector">5</div>-->
-<!--                            <div id="floor-4" class="floor-selector">4</div>-->
-<!--                            <div id="floor-3" class="floor-selector">3</div>-->
-<!--                            <div id="floor-2" class="floor-selector">2</div>-->
-<!--                            <div id="floor-1" class="floor-selector">1</div>-->
-<!--                            <div id="back-btn" class="floor-selector"><</div>-->
-
-<!--                            <div id="iter-minus" class="floor-selector">-</div>-->
                         </div>
 
         </div>

@@ -1,0 +1,111 @@
+{
+  "name": "end_room_button",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "jzuwoTvIOeRK3P1G8NpduC",
+    "node": "310:235",
+    "version": "3560656441",
+    "component-id": "87338342683703e49228f21caccdef7e1220ef5d"
+  },
+  "default": "EndRoomButton",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "TextLabel"
+      },
+      {
+        "type": "text",
+        "id": "RoomLabel"
+      }
+    ],
+    "modes": {
+      "EndRoomButton": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "11.0",
+              "top": "2.0",
+              "right": "11.0",
+              "bottom": "2.0"
+            },
+            "border-radius": "20.0",
+            "tap-handler": "$onItemClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "TextLabel",
+              "RoomLabel"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "210.71428571428572",
+              "saturation": "1.0",
+              "value": "0.9882352941176471"
+            }
+          },
+          {
+            "id": "TextLabel",
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "222.85714285714286",
+              "saturation": "0.027888446215139345",
+              "value": "0.984313725490196"
+            },
+            "text-content": "Завершить",
+            "overflow": "visible",
+            "line-height": "1.2599999564034599",
+            "typeface": "CoFo Sans"
+          },
+          {
+            "id": "RoomLabel",
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "222.85714285714286",
+              "saturation": "0.027888446215139345",
+              "value": "0.984313725490196"
+            },
+            "text-content": "комнату",
+            "overflow": "visible",
+            "line-height": "1.2599999564034599",
+            "typeface": "CoFo Sans"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onItemClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "EndRoomButton",
+      "size": {
+        "width": 95.0,
+        "height": 40.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

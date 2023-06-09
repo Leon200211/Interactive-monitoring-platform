@@ -1,0 +1,52 @@
+{
+  "_args": [
+    [
+      "icon-kit@1.0.0",
+      "C:\\Users\\Ovi-PC\\Downloads\\themekit-master\\themekit"
+    ]
+  ],
+  "_from": "icon-kit@1.0.0",
+  "_id": "icon-kit@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-LVKkRW4gooAQwi7ZT3S+WiKkQxfwHnVdDvnS5M0EMXfjZlHbImf06aKYSt1bYL4k/hPC8vNacI7G5m2tB4wa4w==",
+  "_location": "/icon-kit",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "icon-kit@1.0.0",
+    "name": "icon-kit",
+    "escapedName": "icon-kit",
+    "rawSpec": "1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "1.0.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/icon-kit/-/icon-kit-1.0.0.tgz",
+  "_spec": "1.0.0",
+  "_where": "C:\\Users\\Ovi-PC\\Downloads\\themekit-master\\themekit",
+  "author": {
+    "name": "Lavalite",
+    "email": "info@lavalite.org"
+  },
+  "bugs": {
+    "url": "https://github.com/IconKit/IconKit/issues"
+  },
+  "description": "Simple and beautiful line icons.",
+  "homepage": "https://github.com/IconKit/IconKit#readme",
+  "keywords": [
+    "Icons",
+    "Font Icon",
+    "Slim Icon"
+  ],
+  "license": "MIT",
+  "main": "",
+  "name": "icon-kit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IconKit/IconKit.git"
+  },
+  "version": "1.0.0"
+}

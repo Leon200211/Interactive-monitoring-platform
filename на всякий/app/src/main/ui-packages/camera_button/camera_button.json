@@ -1,0 +1,124 @@
+{
+  "name": "camera_button",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "jzuwoTvIOeRK3P1G8NpduC",
+    "node": "198:646",
+    "version": "3538893566",
+    "component-id": "5fc5d762428a6174c98855c2cbe07909b0570adc"
+  },
+  "default": "CameraButton",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Group 1"
+      },
+      {
+        "type": "vector",
+        "id": "Ellipse 4"
+      },
+      {
+        "type": "vector",
+        "id": "Ellipse 3"
+      }
+    ],
+    "modes": {
+      "CameraButton": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "children": [
+              "Group 1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Group 1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "59.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "59.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Ellipse 4",
+              "Ellipse 3"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Ellipse 4",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "59.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "59.0"
+              }
+            },
+            "vector-content": "ellipse_4.svg"
+          },
+          {
+            "id": "Ellipse 3",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "2.77001953125"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "2.77001953125"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "53.46875"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "53.46875"
+              }
+            },
+            "vector-content": "ellipse_3.svg"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "CameraButton",
+      "size": {
+        "width": 59.0,
+        "height": 59.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

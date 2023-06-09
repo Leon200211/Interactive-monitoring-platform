@@ -10,6 +10,8 @@ class ReportController extends BaseController
 {
 
     protected $projects = [];
+    protected $report_file;
+
 
     public function index()
     {
@@ -25,6 +27,12 @@ class ReportController extends BaseController
         // метод для проверки доступа
         //$this->allAccessCheck();
 
+        $id_house = $_REQUEST['id_house'];
+
+        $this->report_file = $this->model->read('houses', [
+            'fields' => ['report'],
+            'where' => ['id' => $id_house]
+        ])[0]['report'];
 
     }
 

@@ -1,0 +1,97 @@
+{
+  "name": "flat_progress",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "jzuwoTvIOeRK3P1G8NpduC",
+    "node": "203:665",
+    "version": "3539191858",
+    "component-id": "170aa88c068debe7228174e24fa83a56ce93bd19"
+  },
+  "default": "FlatProgress",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "ProgressLabel"
+      }
+    ],
+    "modes": {
+      "FlatProgress": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "12.0",
+              "top": "2.0",
+              "right": "12.0",
+              "bottom": "2.0"
+            },
+            "border-radius": "20.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "ProgressLabel"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "210.71428571428572",
+              "saturation": "1.0",
+              "value": "0.9882352941176471"
+            }
+          },
+          {
+            "id": "ProgressLabel",
+            "font-weight": "500.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "222.85714285714286",
+              "saturation": "0.027888446215139345",
+              "value": "0.984313725490196"
+            },
+            "text-content": "$progressText",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "line-height": "1.2599999564034599",
+            "typeface": "CoFo Sans"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "progressText": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "FlatProgress",
+      "size": {
+        "width": 46.0,
+        "height": 22.0
+      },
+      "parameters": {
+        "progressText": "0%"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

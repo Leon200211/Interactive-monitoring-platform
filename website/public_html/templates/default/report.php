@@ -11,31 +11,37 @@
 
     <script type="text/javascript" src="<?=SITE_URL?>templates/default/assets/webix/spreadsheet/codebase/spreadsheet.js"></script>
     <link rel="stylesheet" href="<?=SITE_URL?>templates/default/assets/webix/spreadsheet/codebase/spreadsheet.css" type="text/css">
+    <a href="/projects" class="close-widget">❌</a>
 
 </head>
 <body>
-<a href="/">123</a>
+
+<style>
+    .close-widget{
+        text-decoration: none;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1000;
+        font-size: 30px;
+        transition: transform .5s ease-in-out;
+    }
+    .close-widget:hover{
+        transform: rotate(90deg);
+    }
+</style>
 <script>
+
+    console.log("binary-><?=SITE_URL?>/files/report/<?=$this->report_file?>")
+
     webix.ready(function(){
-        const sheet_data = {
-            "styles": [
-                ["wss1",";;left;;;;;;;;;"],
-            ],
-            "sizes": [
-                [0,185,185],
-            ],
-            "data": [
-                [1,1,"Report - July 2016 12312312312312312312312312312312312312321","wss1", "string"],
-                [2,1,"ogon","string"],
-            ],
-            "spans": [
-                [1,1,3,1]
-            ]
-        };
 
         webix.ui({
 
-            view:"spreadsheet", url:"some_data_link", toolbar:"full", data: 'binary->'
+            view:"spreadsheet",
+            url:"binary-><?=SITE_URL?>/files/report/<?=$this->report_file?>",
+            toolbar:"full",
+            datatype: 'excel',
         });
     });
 </script>

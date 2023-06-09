@@ -1,0 +1,52 @@
+{
+  "_args": [
+    [
+      "amcharts3@3.21.14",
+      "C:\\Users\\Ovi-PC\\Downloads\\themekit-master\\themekit"
+    ]
+  ],
+  "_from": "amcharts3@3.21.14",
+  "_id": "amcharts3@3.21.14",
+  "_inBundle": false,
+  "_integrity": "sha512-RnJdhla2UuoZ62ODlpiqc02SBASV3hsn8zp9i3SzUE3VRgHxaG1mAH09uJGfR9kq+Q1QbtTWd4MTS/ok22xZ9g==",
+  "_location": "/amcharts3",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "amcharts3@3.21.14",
+    "name": "amcharts3",
+    "escapedName": "amcharts3",
+    "rawSpec": "3.21.14",
+    "saveSpec": null,
+    "fetchSpec": "3.21.14"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/amcharts3/-/amcharts3-3.21.14.tgz",
+  "_spec": "3.21.14",
+  "_where": "C:\\Users\\Ovi-PC\\Downloads\\themekit-master\\themekit",
+  "author": {
+    "name": "amCharts",
+    "email": "contact@amcharts.com"
+  },
+  "bugs": {
+    "url": "https://github.com/amcharts/amcharts3/issues"
+  },
+  "description": "JavaScript Charts V3",
+  "homepage": "https://www.amcharts.com/",
+  "keywords": [
+    "amcharts",
+    "javascript",
+    "charts"
+  ],
+  "license": "Custom",
+  "main": "amcharts/amcharts.js",
+  "name": "amcharts3",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amcharts/amcharts3.git"
+  },
+  "version": "3.21.14"
+}

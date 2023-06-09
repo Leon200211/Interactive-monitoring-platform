@@ -1,0 +1,101 @@
+
+/* Кнопка */
+.btn-modal {
+    cursor: pointer;
+    padding: 1rem 3rem;
+    color: #fff;
+    text-decoration: none;
+    background-color: #83bec5;
+    transition: all 0.3s ease-out;
+}
+.btn-modal:hover {
+    background-color: #527c82;
+}
+
+/* Модальное окно */
+.modal-block {
+    background-color: #ffffff;
+    color: black;
+    position: fixed;
+    top:0;
+    left: 100vw;
+    width:40vw;
+    height: 100vh;
+    transition: all .5s;
+    font-family: 'Raleway', sans-serif;
+    z-index: 9;
+
+}
+.modal-block:target{
+    left:60vw;
+}
+
+/* Заголовкии текст */
+.modal-block h3{
+    margin: 20px 0;
+    font-size: 1.7em;
+}
+.modal-block p{
+    width: 50%;
+    text-align:justify;
+}
+
+/* Кнопка закрыть */
+.close-block{
+    display: flex;
+    position: absolute;
+    top: 7%;
+    right: 5%;
+    padding: .5em;
+    color: #020202;
+    text-decoration: none;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+.modal-block_title{
+    margin-top: 80px;
+    margin-left: 30px;
+}
+.modal-block_title_apartment{
+    font-size: 20px;
+}
+
+
+.modal-block_body{
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+
+    margin-left: 30px;
+}
+.modal-block_body_img{
+    text-align: center;
+}
+.modal-block_line{
+    margin-top: 10px;
+    border-bottom: 2px solid #000000; /* Параметры линии */
+}
+.modal-block_body_title{
+    font-size: 20px;
+}
+.modal-block_body_subtitle{
+    font-size: 16px;
+}
+.modal-block_body_checkbox{
+    margin-left: 20px;
+}
+
+
+
+
+
+
+

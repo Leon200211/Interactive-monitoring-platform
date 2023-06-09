@@ -1,0 +1,41 @@
+Fault: 05-05-2023 8:41:41 - Ошибка подключение к БД: 1045 Access denied for user ''@'localhost' (using password: NO)
+fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
+ In line 29
+
+Fault: 05-05-2023 8:52:42 - Ошибка в SQL запросе: SELECT users.* FROM users  WHERE users.login='' - 1146 Table 'interactive-monitoring-platform.users' doesn't exist
+fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 05-05-2023 8:55:52 - Ошибка в SQL запросе: UPDATE users SET cookie='' WHERE id='1'  - 1146 Table 'interactive-monitoring-platform.users' doesn't exist
+fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 05-05-2023 14:27:01 - Ошибка подключение к БД: 1045 Access denied for user 'root'@'localhost' (using password: YES)
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
+ In line 29
+
+Fault: 14-05-2023 18:07:59 - Ошибка в SQL запросе: SELECT user_roles.*,roles.`title` FROM user_roles  INNER JOIN roles ON user_roles.id_role=roles.id WHERE user_roles.id_user='1' - 1146 Table 'interactive-monitoring-platform.user_roles' doesn't exist
+fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-05-2023 17:13:18 - Ошибка в SQL запросе: SELECT houses.`id` as houses_id_db,houses.`id_project`,houses.`house_number`,houses.`title`,houses.`address`,houses.`coordinates`,houses.`area_coordinates`,sections.* FROM houses  LEFT JOIN sections ON houses.id_house=sections.houses_id_db WHERE houses.id_project='1' - 1054 Unknown column 'houses.id_house' in 'on clause'
+fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-05-2023 17:13:39 - Ошибка в SQL запросе: SELECT houses.`id` as houses_id_db,houses.`id_project`,houses.`house_number`,houses.`title`,houses.`address`,houses.`coordinates`,houses.`area_coordinates`,sections.* FROM houses  LEFT JOIN sections ON houses.houses_id_db=sections.id_house WHERE houses.id_project='1' - 1054 Unknown column 'houses.houses_id_db' in 'on clause'
+fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 21-05-2023 11:10:34 - Ошибка в SQL запросе: SELECT sections.`id` as section_db_id,sections.`house_number`,sections.`section_number`,sections.`polygon_points` FROM sections  WHERE sections.id_house='1' - 1054 Unknown column 'sections.house_number' in 'field list'
+fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+
+Fault: 28-05-2023 12:39:29 - Ошибка подключение к БД: 2002 Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
+ In line 29
+
+Fault: 28-05-2023 16:57:11 - Ошибка в SQL запросе: SELECT floors.`id` as id_floor,floors.`id_section`,floors.`floor_number`,floors.`floor_plan_img`,apartments.`id` as id_apartments,apartments.`id_floor` as apartments_id_floor,apartments.`apartment_number`,apartments.`polygon_points`,apartments.`viewBox`,apartments.`coordinates`,apartments.`sockets`,apartments.`switches`,apartments.`toilet`,apartments.`sink`,apartments.`bath`,apartments.`floor_finishing`,apartments.`draft_floor_department`,apartments.`ceiling_finishing`,apartments.`draft_ceiling_finish`,apartments.`wall_finishing`,apartments.`draft_wall_finish`,apartments.`windowsill`,apartments.`slopes`,apartments.`doors`,apartments.`wall_plaster`,apartments.`trash`,apartments.`radiator` FROM floors  INNER JOIN apartments ON floors.id=apartments.id_floor WHERE floors.id_section='1' AND floors.floor_number='2' - 1054 Unknown column 'apartments.wall_plaster' in 'field list'
+fileC:\OSPanel\domains\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
+ In line 57
+

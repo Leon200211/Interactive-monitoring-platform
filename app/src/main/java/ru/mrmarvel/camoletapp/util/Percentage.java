@@ -1,0 +1,41 @@
+package ru.mrmarvel.camoletapp.util;
+
+public enum Percentage {
+    FLOOR_ROUGH,
+    FLOOR_PLASTER,
+    FLOOR_FINISH,
+
+    WALL_ROUGH,
+    WALL_PLASTER,
+    WALL_FINISH,
+
+
+    CEILING_ROUGH,
+    CEILING_PLASTER,
+    CEILING_FINISH,
+
+    DOORS,
+    TRASH,
+    SOCKET_SWITCH,
+    WINDOW,
+    RADIATOR,
+    KITCHEN_STUFF,
+    TOILET,
+    BATH,
+    SINK,
+
+    MOP_FLOOR_ROUGH,
+    MOP_FLOOR_PLASTER,
+    MOP_FLOOR_FINISH,
+
+    MOP_WALL_ROUGH,
+    MOP_WALL_PLASTER,
+    MOP_WALL_FINISH,
+
+
+    MOP_CEILING_ROUGH,
+    MOP_CEILING_PLASTER,
+    MOP_CEILING_FINISH,
+}
+
+

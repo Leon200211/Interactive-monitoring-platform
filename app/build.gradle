@@ -23,14 +23,27 @@ plugins {
 }
 
 android {
+
+    packagingOptions {
+        exclude("META-INF/DEPENDENCIES")
+        exclude("META-INF/LICENSE")
+        exclude("META-INF/LICENSE.txt")
+        exclude("META-INF/license.txt")
+        exclude("META-INF/NOTICE")
+        exclude("META-INF/NOTICE.txt")
+        exclude("META-INF/notice.txt")
+        exclude("META-INF/ASL2.0")
+        exclude("META-INF/*.kotlin_module")
+    }
+
     compileSdk 32
 
     defaultConfig {
-        applicationId "ru.mrmarvel.hellofigma"
+        applicationId "ru.mrmarvel.camoletapp"
         minSdk 26
         targetSdk 32
         versionCode 1
-        versionName "1.0"
+        versionName "1.2.3"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -67,16 +80,30 @@ android {
             path file('src/main/jni/CMakeLists.txt')
         }
     }
+//    configurations.all {
+//        c -> c.resolutionStrategy.eachDependency {
+//            DependencyResolveDetails dependency ->
+//                println dependency.requested.group
+//                if (dependency.requested.group == 'org.bouncycastle') {
+//                    dependency.useTarget 'org.bouncycastle:bcprov-jdk15to18:1.68'
+//                }
+//                if (dependency.requested.group == 'org.apache') {
+//                }
+//        }
+//    }
 }
 
 dependencies {
-
+    // CORE
     implementation 'androidx.core:core-ktx:1.7.0'
 
     implementation "androidx.compose.ui:ui:$compose_version"
     implementation "androidx.compose.material:material:$compose_version"
     implementation "androidx.compose.ui:ui-tooling-preview:$compose_version"
     implementation "androidx.navigation:navigation-compose:$nav_version"
+
+    // BCRYPT
+    implementation "de.nycode:bcrypt:2.2.0"
 
     //  Camerax dependencies
     implementation "androidx.camera:camera-core:1.0.2"
@@ -105,6 +132,7 @@ dependencies {
     kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
     kapt "androidx.hilt:hilt-compiler:1.0.0"
     implementation 'androidx.hilt:hilt-navigation-compose:1.0.0'
+    implementation 'org.apache.poi:poi-ooxml:5.2.3'
 
     // RETROFIT
     def retrofit_version = "2.6.0"

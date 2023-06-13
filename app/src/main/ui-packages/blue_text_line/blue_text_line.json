@@ -1,0 +1,85 @@
+{
+  "name": "blue_text_line",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "jzuwoTvIOeRK3P1G8NpduC",
+    "node": "404:238",
+    "version": "3581950447",
+    "component-id": "4ce169c0457a65406f5f455a6c936664a3a7d3da"
+  },
+  "default": "BlueTextLine",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "TextLabel"
+      }
+    ],
+    "modes": {
+      "BlueTextLine": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "TextLabel"
+            ],
+            "item-spacing": "10.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "TextLabel",
+            "color": {
+              "alpha": "1.0",
+              "hue": "210.71428571428572",
+              "saturation": "1.0",
+              "value": "0.9882352941176471"
+            },
+            "text-content": "$text",
+            "overflow": "visible",
+            "line-height": "1.2744140625",
+            "typeface": "Abel"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "text": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "BlueTextLine",
+      "size": {
+        "width": 66.0,
+        "height": 18.0
+      },
+      "parameters": {
+        "text": "Квартира "
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

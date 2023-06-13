@@ -1,0 +1,105 @@
+{
+  "name": "profile_label",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "jzuwoTvIOeRK3P1G8NpduC",
+    "node": "478:234",
+    "version": "3616195361",
+    "component-id": "bf24fcf2d855af1b27550de0a6f63bc8e2cc4493"
+  },
+  "default": "ProfileLabel",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "TextLabel"
+      }
+    ],
+    "modes": {
+      "ProfileLabel": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "19.0",
+              "top": "5.0",
+              "right": "19.0",
+              "bottom": "5.0"
+            },
+            "border-radius": "10.0",
+            "tap-handler": "$onItemClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "TextLabel"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "222.85714285714286",
+              "saturation": "0.027888446215139345",
+              "value": "0.984313725490196"
+            }
+          },
+          {
+            "id": "TextLabel",
+            "color": {
+              "alpha": "1.0",
+              "hue": "240.0",
+              "saturation": "0.125",
+              "value": "0.18823529411764706"
+            },
+            "text-content": "$text",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "20.0",
+            "line-height": "1.2744140625",
+            "typeface": "Abel"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onItemClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "text": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "ProfileLabel",
+      "size": {
+        "width": 123.0,
+        "height": 35.0
+      },
+      "parameters": {
+        "text": "ID: 120894"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

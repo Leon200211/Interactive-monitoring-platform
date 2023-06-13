@@ -1,0 +1,83 @@
+{
+  "name": "blue1line_button_bold",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "jzuwoTvIOeRK3P1G8NpduC",
+    "node": "507:268",
+    "version": "3619018302",
+    "component-id": "99539b2ebceda12acd0b1f04a39ab3eb54b0487c"
+  },
+  "default": "Blue1LineButtonBold",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "textLabel"
+      }
+    ],
+    "modes": {
+      "Blue1LineButtonBold": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "textLabel"
+            ],
+            "item-spacing": "10.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "textLabel",
+            "color": {
+              "alpha": "1.0",
+              "hue": "210.71428571428572",
+              "saturation": "1.0",
+              "value": "0.9882352941176471"
+            },
+            "text-content": "$text",
+            "overflow": "visible",
+            "text-size": "20.0",
+            "line-height": "1.2600000381469727",
+            "typeface": "CoFo Sans"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "text": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Blue1LineButtonBold",
+      "size": {
+        "width": 320.0,
+        "height": 25.0
+      },
+      "parameters": {
+        "text": "ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

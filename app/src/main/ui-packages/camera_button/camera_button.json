@@ -4,11 +4,11 @@
   "source-key": {
     "type": "figma",
     "file": "jzuwoTvIOeRK3P1G8NpduC",
-    "node": "198:646",
-    "version": "3538893566",
-    "component-id": "5fc5d762428a6174c98855c2cbe07909b0570adc"
+    "node": "415:227",
+    "version": "3582190824",
+    "component-id": "ff7f621270b98a8f9b4668d16c08163b781e9e77"
   },
-  "default": "CameraButton",
+  "default": "Action=START",
   "design": {
     "atoms": [
       {
@@ -27,13 +27,18 @@
       {
         "type": "vector",
         "id": "Ellipse 3"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 378"
       }
     ],
     "modes": {
-      "CameraButton": {
+      "Action=START": {
         "rules": [
           {
             "id": "top_level",
+            "tap-handler": "$onItemClick",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "shrink"
@@ -42,7 +47,6 @@
                 "sizing-mode": "shrink"
               }
             },
-            "main-axis-align": "start",
             "children": [
               "Group 1"
             ],
@@ -53,11 +57,11 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "59.0"
+                "value": "60.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "59.0"
+                "value": "60.0"
               }
             },
             "is-structured": "false",
@@ -72,11 +76,11 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "59.0"
+                "value": "60.0"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "59.0"
+                "value": "60.0"
               }
             },
             "vector-content": "ellipse_4.svg"
@@ -86,35 +90,127 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "2.77001953125"
+                "offset": "2.8170166015625"
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "2.77001953125"
+                "offset": "2.8170166015625"
               }
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "53.46875"
+                "value": "54.375"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
-                "value": "53.46875"
+                "value": "54.375"
               }
             },
             "vector-content": "ellipse_3.svg"
           }
         ]
+      },
+      "Action=STOP": {
+        "rules": [
+          {
+            "id": "top_level",
+            "tap-handler": "$onItemClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "Group 1"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Group 1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "60.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "60.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Ellipse 4",
+              "Rectangle 378"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Ellipse 4",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "60.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "60.0"
+              }
+            },
+            "vector-content": "ellipse_5.svg"
+          },
+          {
+            "id": "Rectangle 378",
+            "border-radius": "5.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "15.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "15.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "30.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "30.0"
+              }
+            },
+            "vector-content": "rectangle_378.svg"
+          }
+        ]
       }
+    }
+  },
+  "parameters": {
+    "onItemClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
     }
   },
   "previews": [
     {
-      "design": "CameraButton",
+      "design": "Action=START",
       "size": {
-        "width": 59.0,
-        "height": 59.0
+        "width": 60.0,
+        "height": 60.0
+      }
+    },
+    {
+      "design": "Action=STOP",
+      "size": {
+        "width": 60.0,
+        "height": 60.0
       }
     }
   ],

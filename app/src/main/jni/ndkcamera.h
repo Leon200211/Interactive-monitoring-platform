@@ -69,7 +69,11 @@ public:
     virtual void on_image(const unsigned char* nv21, int nv21_width, int nv21_height) const;
 
 public:
+    mutable double timer;
     mutable int accelerometer_orientation;
+    const double socket_elapsed = 1500.0; //in ms
+    mutable int sockets_num = 0;
+    mutable int prev_sockets_num = 0;
 
 private:
     ASensorManager* sensor_manager;

@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">HelloFigma</string>
+    <string name="app_name">СтройКонтроль</string>
+    <string name="company_name">САМОЛЁТ</string>
+    <string name="login_error_wrong_password">Неправильный пароль</string>
+    <string name="login_error_blank_fields">Остались незаполненные поля</string>
+    <string name="login_error_unknown_user">Пользователь не найден</string>
 </resources>

@@ -1,0 +1,116 @@
+{
+  "name": "drawer_navigation_item",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "jzuwoTvIOeRK3P1G8NpduC",
+    "node": "494:263",
+    "version": "3617103538",
+    "component-id": "c4d32a32589918faa9b14e6f83dbc8c038bbc98b"
+  },
+  "default": "DrawerNavigationItem",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "TextLabel"
+      }
+    ],
+    "modes": {
+      "DrawerNavigationItem": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "17.0",
+              "top": "9.0",
+              "right": "17.0",
+              "bottom": "9.0"
+            },
+            "border-radius": "10.0",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "tap-handler": "$onItemClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "TextLabel"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "222.85714285714286",
+              "saturation": "0.027888446215139345",
+              "value": "0.984313725490196"
+            }
+          },
+          {
+            "id": "TextLabel",
+            "font-weight": "600.0",
+            "color": {
+              "alpha": "0.8470588235294118",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.09411764705882353"
+            },
+            "text-content": "$text",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "line-height": "1.2189999989100866",
+            "typeface": "Montserrat"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onItemClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "text": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "DrawerNavigationItem",
+      "size": {
+        "width": 129.0,
+        "height": 35.0
+      },
+      "parameters": {
+        "text": "Мониторинг"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

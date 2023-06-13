@@ -25,6 +25,13 @@ class UploadFileController extends BaseController
         // метод для проверки доступа
         //$this->allAccessCheck();
 
+        $res = [
+          'req' => $_REQUEST,
+          'file' => $_FILES
+        ];
+
+        file_put_contents(__DIR__ . '/test.log', print_r($res, 1), FILE_APPEND);
+
         $token = 'qwerty';
         if($token != $_REQUEST['token']){
             exit('Access denied');

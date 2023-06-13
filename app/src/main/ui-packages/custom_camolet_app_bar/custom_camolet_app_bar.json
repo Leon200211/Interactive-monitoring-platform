@@ -1,0 +1,188 @@
+{
+  "name": "custom_camolet_app_bar",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "jzuwoTvIOeRK3P1G8NpduC",
+    "node": "462:238",
+    "version": "3615302790",
+    "component-id": "1431e31c5c3c9b732565e8e6bee78bb3c07aa0e9"
+  },
+  "default": "CustomCamoletAppBar",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "image",
+        "id": "menu"
+      },
+      {
+        "type": "text",
+        "id": "TitleText"
+      },
+      {
+        "type": "image",
+        "id": "avatar"
+      }
+    ],
+    "modes": {
+      "CustomCamoletAppBar": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "36.0",
+              "top": "25.0",
+              "right": "36.0",
+              "bottom": "25.0"
+            },
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "stroke-width": "1.0",
+            "arrangement": "row",
+            "main-axis-align": "space-between",
+            "children": [
+              "menu",
+              "TitleText",
+              "avatar"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "210.71428571428572",
+              "saturation": "1.0",
+              "value": "0.9882352941176471"
+            }
+          },
+          {
+            "id": "menu",
+            "presence": "$showLeftImage",
+            "tap-handler": "$onLeftImageClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "24.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "19.0"
+              }
+            },
+            "image-content": "$leftImage",
+            "scale": "cover"
+          },
+          {
+            "id": "TitleText",
+            "color": {
+              "alpha": "1.0",
+              "hue": "222.85714285714286",
+              "saturation": "0.027888446215139345",
+              "value": "0.984313725490196"
+            },
+            "text-content": "$labelText",
+            "overflow": "visible",
+            "text-size": "20.0",
+            "line-height": "1.2744140625",
+            "typeface": "Abel"
+          },
+          {
+            "id": "avatar",
+            "presence": "$showRightImage",
+            "tap-handler": "$onRightImageClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "26.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.0"
+              }
+            },
+            "image-content": "$rightImage",
+            "scale": "cover"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "leftImage": {
+      "data-type": "image",
+      "required": false,
+      "description": ""
+    },
+    "showLeftImage": {
+      "data-type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    "onLeftImageClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "labelText": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "rightImage": {
+      "data-type": "image",
+      "required": false,
+      "description": ""
+    },
+    "showRightImage": {
+      "data-type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    "onRightImageClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "CustomCamoletAppBar",
+      "size": {
+        "width": 350.0,
+        "height": 75.0
+      },
+      "parameters": {
+        "leftImage": "menu.png",
+        "showLeftImage": true,
+        "labelText": "МОНИТОРИНГ",
+        "rightImage": "avatar.png",
+        "showRightImage": true
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

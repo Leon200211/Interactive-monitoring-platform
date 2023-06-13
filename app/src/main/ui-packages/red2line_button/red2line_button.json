@@ -1,0 +1,123 @@
+{
+  "name": "red2line_button",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "jzuwoTvIOeRK3P1G8NpduC",
+    "node": "397:249",
+    "version": "3581981328",
+    "component-id": "1862f0b32e24c0dbc88c671b6bc018a75ab9ae85"
+  },
+  "default": "Red2LineButton",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Line1Label"
+      },
+      {
+        "type": "text",
+        "id": "Line2Label"
+      }
+    ],
+    "modes": {
+      "Red2LineButton": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "11.0",
+              "top": "2.0",
+              "right": "11.0",
+              "bottom": "2.0"
+            },
+            "border-radius": "20.0",
+            "tap-handler": "$onItemClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "Line1Label",
+              "Line2Label"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.9747899159663865",
+              "value": "0.9333333333333333"
+            }
+          },
+          {
+            "id": "Line1Label",
+            "color": {
+              "alpha": "1.0",
+              "hue": "222.85714285714286",
+              "saturation": "0.027888446215139345",
+              "value": "0.984313725490196"
+            },
+            "text-content": "$line1",
+            "overflow": "visible",
+            "line-height": "1.2744140625",
+            "typeface": "Abel"
+          },
+          {
+            "id": "Line2Label",
+            "color": {
+              "alpha": "1.0",
+              "hue": "222.85714285714286",
+              "saturation": "0.027888446215139345",
+              "value": "0.984313725490196"
+            },
+            "text-content": "$line2",
+            "overflow": "visible",
+            "line-height": "1.2744140625",
+            "typeface": "Abel"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onItemClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "line1": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "line2": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Red2LineButton",
+      "size": {
+        "width": 100.0,
+        "height": 40.0
+      },
+      "parameters": {
+        "line1": "Завершить",
+        "line2": "МОП"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

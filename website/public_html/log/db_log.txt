@@ -29,3 +29,7 @@ Fault: 10-06-2023 1:21:27 - Ошибка в SQL запросе: SELECT houses.`r
 fileC:\OpenServer\domains\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
  In line 57
 
+Fault: 10-06-2023 9:34:49 - Ошибка в SQL запросе: SELECT floors.`id` as id_floor,floors.`id_section`,floors.`floor_number`,floors.`floor_plan_img`,apartments.`id` as id_apartments,apartments.`id_floor` as apartments_id_floor,apartments.`apartment_number`,apartments.`polygon_points`,apartments.`viewBox`,apartments.`coordinates`,apartments.`sockets`,apartments.`switches`,apartments.`toilet`,apartments.`sink`,apartments.`bath`,apartments.`floor_finishing`,apartments.`draft_floor_department`,apartments.`ceiling_finishing`,apartments.`draft_ceiling_finish`,apartments.`wall_finishing`,apartments.`draft_wall_finish`,apartments.`windowsill`,apartments.`slopes`,apartments.`doors`,apartments.`wall_plaster`,apartments.`trash`,apartments.`radiator`,apartments.`floor_plaster`,apartments.`ceiling_plaster`,apartments.`windows` FROM floors  INNER JOIN apartments ON floors.id=apartments.id_floor WHERE floors.id_section='1' AND floors.floor_number='2' - 1054 Unknown column 'apartments.wall_plaster' in 'field list'
+fileD:\my_work\Sites\Interactive-monitoring-platform\Interactive-monitoring-platform\website\public_html\engine\base\models\BaseModel.php
+ In line 57
+

@@ -13,6 +13,17 @@ enum class RoomType {
         return ""
     }
 
+    fun toEndRoomType(): String {
+        return when (this) {
+            KITCHEN -> "Кухню"
+            LIVING -> "Жилую"
+            SANITARY -> "Санузел"
+            HALL -> "Коридор"
+        }
+        return ""
+    }
+
+
     companion object {
         fun toEnum(room: String?): RoomType? {
             when (room) {

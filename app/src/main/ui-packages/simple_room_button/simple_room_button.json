@@ -1,0 +1,101 @@
+{
+  "name": "simple_room_button",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "jzuwoTvIOeRK3P1G8NpduC",
+    "node": "397:258",
+    "version": "3582249381",
+    "component-id": "42ef9fb7bdb97f9b5ef17c75f2d2d90a8b639194"
+  },
+  "default": "SimpleRoomButton",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "RoomNameLabel"
+      }
+    ],
+    "modes": {
+      "SimpleRoomButton": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "27.0",
+              "top": "11.0",
+              "right": "27.0",
+              "bottom": "11.0"
+            },
+            "border-radius": "20.0",
+            "tap-handler": "$onItemClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "RoomNameLabel"
+            ],
+            "item-spacing": "10.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "210.71428571428572",
+              "saturation": "1.0",
+              "value": "0.9882352941176471"
+            }
+          },
+          {
+            "id": "RoomNameLabel",
+            "color": {
+              "alpha": "1.0",
+              "hue": "222.85714285714286",
+              "saturation": "0.027888446215139345",
+              "value": "0.984313725490196"
+            },
+            "text-content": "$roomName",
+            "overflow": "visible",
+            "line-height": "1.2744140625",
+            "typeface": "Abel"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onItemClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": ""
+    },
+    "roomName": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "SimpleRoomButton",
+      "size": {
+        "width": 94.0,
+        "height": 40.0
+      },
+      "parameters": {
+        "roomName": "Кухня"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
